@@ -32,7 +32,7 @@
             "Les adversaires comptent les points de leurs cartes restantes. Le gagnant de la manche marque la somme des points.",
             "La partie continue jusqu’à ce qu’un joueur atteigne 500 points (ou un score fixé en début de partie)."
         ],
-        "cards": [
+        "material": [
             {
                 "name": "Cartes numérotées (0-9)",
                 "effect": "Peuvent être jouées si elles correspondent à la couleur ou au chiffre de la défausse.",
@@ -79,7 +79,7 @@
     {
         "id": 2,
         "name": "Tarot",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/tarot-card-2-svgrepo-com.svg",
         "description": "Jeu de levées avec annonces et atouts.",
         "setup": [
         {
@@ -110,7 +110,7 @@
             "À la fin de la partie, les points sont comptés en fonction des annonces et des cartes remportées.",
             "Le gagnant est celui qui atteint le score fixé en début de partie."
         ],
-        "cards": [
+        "material": [
         {
             "name": "Atouts",
             "effect": "Cartes numérotées de 1 à 21 et l'Excuse (Fou).",
@@ -168,7 +168,7 @@
             "Si un joueur frappe la pile par erreur (sans qu'il y ait une paire), il doit donner une carte de son paquet au joueur dont c'était le tour.",
             "Le jeu continue jusqu'à ce qu'un joueur ait collecté toutes les cartes ou que les autres joueurs abandonnent."
         ],
-        "cards": [
+        "material": [
             {
                 "name": "Cartes numérotées (2-10)",
                 "effect": "Utilisées pour former des paires.",
@@ -198,7 +198,7 @@
     {
         "id": 4,
         "name": "Menteur",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/playing-cards-svgrepo-co.svg",
         "description": "Jeu de bluff où l'objectif est de se débarrasser de toutes ses cartes en mentant sur les cartes jouées.",
         "setup": [
             {
@@ -227,7 +227,7 @@
             "Le jeu continue dans le sens des aiguilles d'une montre jusqu'à ce qu'un joueur se débarrasse de toutes ses cartes.",
             "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie."
         ],
-        "cards": [
+        "material": [
             {
                 "name": "Cartes numérotées (2-10)",
                 "effect": "Utilisées pour jouer et bluffer.",
@@ -256,7 +256,7 @@
     {
         "id": 5,
         "name": "Pouilleux",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/spades-2-of-playing-cards-svgrepo-com.svg",
         "description": "Jeu de cartes simple où l'objectif est de ne pas finir avec la carte du pouilleux (le valet de trèfle).",
         "setup": [
             {
@@ -285,7 +285,7 @@
             "Le jeu continue dans le sens des aiguilles d'une montre jusqu'à ce que toutes les paires soient formées.",
             "Le joueur qui se retrouve avec la carte du pouilleux (le valet sans paire) à la fin du jeu perd la partie."
         ],
-        "cards": [
+        "material": [
             {
                 "name": "Cartes numérotées (2-10)",
                 "effect": "Utilisées pour former des paires.",
@@ -345,7 +345,7 @@
             "Le jeu continue jusqu'à ce que toutes les cartes de la pyramide soient retournées.",
             "Le joueur avec le moins de gorgées à la fin gagne."
         ],
-        "cards": [
+        "material": [
             {
                 "name": "Cartes numérotées (2-10)",
                 "effect": "Utilisées pour jouer et donner des gorgées.",
@@ -374,6 +374,240 @@
             "Une carte de la pyramide ne peut être utilisée qu'une seule fois.",
             "Le jeu continue jusqu'à ce que toutes les cartes soient retournées.",
             "Le joueur avec le moins de gorgées à la fin gagne."
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Président",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes où l'objectif est de se débarrasser de toutes ses cartes pour devenir le président.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "52"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "Varie selon le nombre de joueurs"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "4 à 7"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer toutes les cartes aux joueurs, face cachée.",
+            "Le joueur avec le 3 de trèfle commence en posant cette carte au centre.",
+            "Les joueurs doivent jouer une carte ou une combinaison de cartes de valeur égale ou supérieure à la dernière carte jouée.",
+            "Si un joueur ne peut pas jouer, il passe son tour.",
+            "Le tour continue jusqu'à ce que tous les joueurs passent consécutivement.",
+            "Le dernier joueur à avoir joué commence le nouveau tour en posant une carte ou une combinaison de son choix.",
+            "Le premier joueur à se débarrasser de toutes ses cartes devient le président pour la prochaine manche, le deuxième devient le vice-président, et ainsi de suite.",
+            "Le président peut échanger ses pires cartes avec le vice-président au début de la prochaine manche."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour jouer et former des combinaisons.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et former des combinaisons.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et former des combinaisons.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Distribuer toutes les cartes aux joueurs.",
+            "Le joueur avec le 3 de trèfle commence en posant cette carte au centre.",
+            "Les joueurs jouent une carte ou une combinaison de valeur égale ou supérieure à la dernière carte jouée.",
+            "Si un joueur ne peut pas jouer, il passe son tour.",
+            "Le tour continue jusqu'à ce que tous les joueurs passent consécutivement.",
+            "Le dernier joueur à avoir joué commence le nouveau tour.",
+            "Le premier joueur à se débarrasser de toutes ses cartes devient le président pour la prochaine manche.",
+            "Le président peut échanger ses pires cartes avec le vice-président au début de la prochaine manche."
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Yam's",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de dés où l'objectif est de réaliser des combinaisons spécifiques pour marquer des points.",
+        "setup": [
+            {
+                "name": "Nombre total de dés",
+                "value": "5"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "1 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "5 dés, feuille de score, stylo"
+            }
+        ],
+        "rules": [
+            "Chaque joueur a 13 tours pour remplir sa feuille de score.",
+            "À chaque tour, un joueur lance les 5 dés jusqu'à 3 fois pour obtenir la meilleure combinaison possible.",
+            "Après chaque lancer, le joueur peut choisir de garder certains dés et relancer les autres.",
+            "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il doit choisir une catégorie sur sa feuille de score pour inscrire son score.",
+            "Chaque catégorie ne peut être utilisée qu'une seule fois par partie.",
+            "Le jeu se termine lorsque tous les joueurs ont rempli toutes les catégories de leur feuille de score.",
+            "Le joueur avec le score total le plus élevé gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Dès 6 faces)",
+                "effect": "Utilisées pour obtenir des face spéciales.",
+                "count": 5
+            },
+            {
+                "name": "Feuille de score",
+                "effect": "Utilisée pour enregistrer les scores des joueurs.",
+                "count": 1
+            },
+            {
+                "name": "Stylo",
+                "effect": "Utilisé pour écrire sur la feuille de score.",
+                "count": 1
+            }
+        ],
+        "etapes": [
+            "Chaque joueur a 13 tours pour remplir sa feuille de score.",
+            "À chaque tour, un joueur lance les 5 dés jusqu'à 3 fois.",
+            "Après chaque lancer, le joueur peut garder certains dés et relancer les autres.",
+            "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il choisit une catégorie pour inscrire son score.",
+            "Chaque catégorie ne peut être utilisée qu'une seule fois par partie.",
+            "Le jeu se termine lorsque tous les joueurs ont rempli toutes les catégories.",
+            "Le joueur avec le score total le plus élevé gagne la partie."
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Skyjo",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes où l'objectif est de terminer la partie avec le moins de points possible en échangeant et en retournant des cartes.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "150"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "12"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 8"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes Skyjo, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer 12 cartes à chaque joueur, face cachée, en formant un tableau de 3x4 devant eux.",
+            "Chaque joueur retourne 2 de ses cartes pour les révéler.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur peut soit piocher une carte de la pioche, soit prendre la carte du dessus de la défausse.",
+            "Le joueur peut ensuite échanger cette carte avec une de ses cartes (face cachée ou révélée) ou la défausser directement.",
+            "Si une carte est échangée avec une carte face cachée, la nouvelle carte est révélée.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait toutes ses cartes révélées.",
+            "Les autres joueurs ont un dernier tour pour jouer avant de compter les points.",
+            "Le joueur avec le moins de points à la fin de la partie gagne."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (-2 à 12)",
+                "effect": "Utilisées pour jouer et échanger.",
+                "count": 150
+            }
+        ],
+        "etapes": [
+            "Distribuer 12 cartes à chaque joueur, face cachée, en formant un tableau de 3x4.",
+            "Chaque joueur retourne 2 de ses cartes pour les révéler.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur peut piocher une carte de la pioche ou prendre la carte du dessus de la défausse.",
+            "Le joueur peut échanger cette carte avec une de ses cartes ou la défausser directement.",
+            "Si une carte est échangée avec une carte face cachée, la nouvelle carte est révélée.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait toutes ses cartes révélées.",
+            "Les autres joueurs ont un dernier tour pour jouer avant de compter les points.",
+            "Le joueur avec le moins de points à la fin gagne."
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Kem's",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes en équipe où l'objectif est de faire un signe secret pour indiquer à son partenaire qu'on a une combinaison de quatre cartes identiques.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "52"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "4"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "4 (2 équipes de 2)"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+            "Distribuer 4 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur peut soit piocher une carte de la pioche, soit prendre la carte du dessus de la défausse.",
+            "Le joueur peut ensuite échanger cette carte avec une de ses cartes en main ou la défausser directement.",
+            "L'objectif est de collecter quatre cartes identiques (même valeur) en main.",
+            "Lorsqu'un joueur a quatre cartes identiques, il doit faire un signe secret convenu avec son partenaire pour indiquer qu'il a réussi.",
+            "Le partenaire doit alors dire 'Kem's!' pour que l'équipe gagne le point.",
+            "Si un adversaire pense qu'une équipe a fait 'Kem's' sans avoir les quatre cartes, il peut dire 'Contre-Kem's!'. Si l'équipe n'a pas les quatre cartes, elle perd un point. Sinon, l'équipe gagne un point.",
+            "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre de points fixé en début de partie."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour jouer et former des combinaisons.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et former des combinaisons.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et former des combinaisons.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+            "Distribuer 4 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur peut piocher une carte de la pioche ou prendre la carte du dessus de la défausse.",
+            "Le joueur peut échanger cette carte avec une de ses cartes en main ou la défausser directement.",
+            "L'objectif est de collecter quatre cartes identiques en main.",
+            "Lorsqu'un joueur a quatre cartes identiques, il fait un signe secret pour indiquer qu'il a réussi.",
+            "Le partenaire doit dire 'Kem's!' pour que l'équipe gagne le point.",
+            "Si un adversaire pense qu'une équipe a fait 'Kem's' sans avoir les quatre cartes, il peut dire 'Contre-Kem's!'.",
+            "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre de points fixé en début de partie."
         ]
     }
 ]
