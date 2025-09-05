@@ -88,7 +88,7 @@
         },
         {
             "name": "Cartes par joueur",
-            "value": "18 (pour 4 joueurs) ou 15 (5 joueurs)"
+            "value": "24 (pour 3 joueurs) 18 (pour 4 joueurs) ou 15 (5 joueurs) "
         },
         {
             "name": "Nombre de joueurs",
@@ -101,7 +101,7 @@
         ],
         "rules": [
             "Le jeu se joue avec un jeu de 78 cartes comprenant des atouts, des figures et des cartes numérotées.",
-            "Chaque joueur reçoit un nombre de cartes selon le nombre de participants (18 pour 4 joueurs, 15 pour 5 joueurs).",
+            "Chaque joueur reçoit un nombre de cartes selon le nombre de participants (24 pour 3 joueurs, 18 pour 4 joueurs, 15 pour 5 joueurs).",
             "Le reste des cartes forme le chien (cartes communes).",
             "Un joueur fait une annonce (petite, garde, garde sans le chien, garde contre le chien) avant de jouer.",
             "Le joueur qui fait l'annonce doit réaliser un certain nombre de points en fonction de son annonce et des bouts (1, 2 ou 3).",

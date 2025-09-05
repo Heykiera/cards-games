@@ -30,7 +30,7 @@ html[data-theme*='dark']{
 .App, body {
     display: grid;
     position: relative;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         'sidebar header'
@@ -69,15 +69,15 @@ header {
     top: 10px;
     position: sticky;
     grid-area: header; 
-    width: 100%;
+    width: 100vh;
 }
 
 main { 
     grid-area: main; 
-    width: 100%;
+    width: 100vh;
 }
 
 footer { 
     grid-area: footer;
-    width: 30vh;
+    width: 100vh;
 }
