@@ -1,10 +1,7 @@
 /*--------------------------------------------------------------------------------
 # VAR
 ------------------------------------------------------------------------------- */
-* {
-    --border-round: 7px;
-}
-/* Theme ---------- */
+
 html[data-theme*='light']{
     --text-main: #14161a;
     --text-second: #8f95a0;
@@ -17,20 +14,18 @@ html[data-theme*='dark']{
 }
 
 /*--------------------------------------------------------------------------------
-# APP
---------------------------------------------------------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/*--------------------------------------------------------------------------------
 # Grid;
 --------------------------------------------------------------------------------*/
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 .App, body {
     display: grid;
     position: relative;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: 270px 1;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         'sidebar header'
@@ -66,17 +61,18 @@ header {
     top: 10px;
     position: sticky;
     grid-area: header; 
-    width: 100vh;
+    width: 100%;
 }
 
 main { 
     grid-area: main; 
-    width: 100vh;
+    width: calc(100% - 20px);
+    padding: 10px;
 }
 
 footer { 
     grid-area: footer;
-    width: 100vh;
+    width: 100%;
 }
 .App.sidebar-closed {
     grid-template-columns: 70px 1fr;
@@ -90,28 +86,28 @@ footer {
 
 /* smartphones */
 @media (max-width: 480px) { 
-    Aside {
-        position: absolute;
-        width: 300px;
-    }
-    .App.App.sidebar-open {
+    .App {
         grid-template-columns: 70px 1fr;
+        max-width: 480px;
+    }
+    Aside {
+        width: 300px;
     }
 }   
  /* tablettes */  
 @media (min-width: 481px) and (max-width: 768px) { 
-    Aside {
-        position: absolute;
-        width: 300px;
-    }
-    .App.App.sidebar-open {
+    .App {
         grid-template-columns: 70px 1fr;
+        max-width: 768px;
+    }
+    Aside {
+        width: 300px;
     }
 
 }
 /* laptops / écrans larges / TV */
 @media (min-width: 769px) {
     .App {
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 270px 1fr;
     }
 }     

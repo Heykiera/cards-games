@@ -14,19 +14,19 @@ const RulesGame = ({ game }) => {
             <h3>setup :</h3>
             <ul>
                 {game.setup.map((setup, index) => (
-                    <li key={index}> {setup.name} {setup.value}</li>
+                    <p key={index}> {setup.name} {setup.value}</p>
                 ))}
             </ul>
             <h3>Règles du jeu :</h3>
             <ul>
                 {game.rules.map((rule, index) => (
-                    <li key={index}>{rule}</li>
+                    <p key={index}>{rule}</p>
                 ))}
             </ul>
             <h3>Etapes du jeu :</h3>
             <ul>
                 {game.etapes.map((etapes, index) => (
-                    <li key={index}>{etapes}</li>
+                    <p key={index}>{etapes}</p>
                 ))}
             </ul>
         </div>
