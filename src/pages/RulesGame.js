@@ -12,23 +12,23 @@ const RulesGame = ({ game }) => {
             <h2>{game.name}</h2>
             <p>{game.description}</p>
             <h3>setup :</h3>
-            <ol>
+            <ul>
                 {game.setup.map((setup, index) => (
                     <li key={index}> {setup.name} {setup.value}</li>
                 ))}
-            </ol>
+            </ul>
             <h3>Règles du jeu :</h3>
-            <ol>
+            <ul>
                 {game.rules.map((rule, index) => (
                     <li key={index}>{rule}</li>
                 ))}
-            </ol>
+            </ul>
             <h3>Etapes du jeu :</h3>
-            <ol>
+            <ul>
                 {game.etapes.map((etapes, index) => (
                     <li key={index}>{etapes}</li>
                 ))}
-            </ol>
+            </ul>
         </div>
     )
 }

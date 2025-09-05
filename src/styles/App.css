@@ -30,7 +30,7 @@ html[data-theme*='dark']{
 .App, body {
     display: grid;
     position: relative;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 260px 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         'sidebar header'
@@ -39,12 +39,7 @@ html[data-theme*='dark']{
     background-color: #8f95a0;
     color: #14161a;
     min-height: 100vh;
-}
-/* petit écran */
-@media (max-width: 780px) {
-  .body {
-    grid-template-columns: 70px 1fr;
-  }
+    transition: grid-template-columns 0.3s ease;
 }
 
 aside {
@@ -63,6 +58,8 @@ aside {
         'games';
     background-color: #14161a;
     color: #e9e9e9;
+    overflow: hidden;
+    transition: width 0.3s ease;
 }
 
 header { 
@@ -81,3 +78,37 @@ footer {
     grid-area: footer;
     width: 100vh;
 }
+.App.sidebar-closed {
+    grid-template-columns: 70px 1fr;
+}
+.App.sidebar-closed aside {
+    width:  55px;
+}
+.App.sidebar-closed aside .Aside-game button span {
+    display: none;
+}
+
+/* smartphones */
+@media (max-width: 480px) { 
+    .App{
+        grid-template-columns: 60px 1fr;
+    }
+    Aside {
+        width:  50px;  
+    }
+}   
+ /* tablettes */  
+@media (min-width: 481px) and (max-width: 768px) { 
+    .App{
+        grid-template-columns: 60px 1fr;
+    }
+    Aside {
+        width:  50px;  
+    }
+} 
+/* laptops / écrans larges / TV */
+@media (min-width: 769px) {
+    .App {
+        grid-template-columns: 280px 1fr;
+    }
+}     

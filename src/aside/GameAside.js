@@ -1,7 +1,7 @@
 
 import '../styles/Aside.css';
 
-const GameAside = ({ games, onSelect}) => {
+const GameAside = ({ games, onSelect, setOpen, isOpen}) => {
     
     return(
         <div>
@@ -13,6 +13,9 @@ const GameAside = ({ games, onSelect}) => {
                 </button>
             </ol>
         ))}
+        <button className="toggle-btn" onClick={() => setOpen(!isOpen)}>
+          {isOpen ? "⏴" : "⏵"}
+        </button>
         </div>
     )
 }
