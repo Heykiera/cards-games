@@ -6,7 +6,7 @@ import Games from './components/games.json';
 
 function App() {
   const [selectedGame, setSelectedGame] = useState(null);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const game = Games.find((game) => game.id === selectedGame);
 
