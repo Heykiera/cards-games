@@ -440,7 +440,7 @@
     {
         "id": 8,
         "name": "Yam's",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/dice-6-svgrepo-com.svg",
         "description": "Jeu de dés où l'objectif est de réaliser des combinaisons spécifiques pour marquer des points.",
         "setup": [
             {
@@ -608,6 +608,49 @@
             "Le partenaire doit dire 'Kem's!' pour que l'équipe gagne le point.",
             "Si un adversaire pense qu'une équipe a fait 'Kem's' sans avoir les quatre cartes, il peut dire 'Contre-Kem's!'.",
             "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre de points fixé en début de partie."
+        ]
+    },
+    {
+        "id": 11,
+        "name": "421",
+        "logo": "./assets/svg/two-dices-svgrepo-com.svg",
+        "description": "Jeu de dés où l'objectif est de réaliser des combinaisons spécifiques pour marquer des points.",
+        "setup": [
+            {
+                "name": "Nombre total de dés",
+                "value": "3"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "1 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "Surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Chaque joueur a 3 lancers de dés par tour pour obtenir la meilleure combinaison possible.",
+            "Les combinaisons possibles sont : 421 (meilleure), brelan (trois dés identiques), paire (deux dés identiques), et somme des dés.",
+            "Le joueur peut choisir de relancer un ou plusieurs dés après chaque lancer, jusqu'à un maximum de 3 lancers.",
+            "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il doit annoncer sa combinaison.",
+            "Le joueur avec la meilleure combinaison à la fin de chaque tour gagne un point.",
+            "Le jeu continue jusqu'à ce qu'un joueur atteigne un nombre de points fixé en début de partie."
+        ],
+        "material": [
+            {
+                "name": "Dès 6 faces)",
+                "effect": "Utilisées pour obtenir des face spéciales.",
+                "count": 3
+            }
+        ],
+        "etapes": [
+            "Chaque joueur a 3 lancers de dés par tour.",
+            "Les combinaisons possibles sont : 421, brelan, paire, et somme des dés.",
+            "Le joueur peut relancer un ou plusieurs dés après chaque lancer, jusqu'à un maximum de 3 lancers.",
+            "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il annonce sa combinaison.",
+            "Le joueur avec la meilleure combinaison à la fin de chaque tour gagne un point.",
+            "Le jeu continue jusqu'à ce qu'un joueur atteigne un nombre de points fixé en début de partie."
         ]
     }
 ]
