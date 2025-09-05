@@ -1,0 +1,379 @@
+[
+    {
+        "id": 1,
+        "name": "Uno",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes très populaire où l'objectif est d'être le premier joueur à atteindre 500 points en se débarrassant de toutes ses cartes.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "108"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "7"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 10"
+            },
+            {
+                "name": "Matériel",
+                "value": "Paquet de cartes UNO, feuilles et stylos pour compter les points"
+            }
+        ],
+        "rules": [
+            "Chaque joueur commence avec 7 cartes en main.",
+            "Le reste du paquet constitue la pioche, la première carte de la pioche est posée sur la défausse.",
+            "À son tour, un joueur doit jouer une carte qui correspond à la couleur ou au chiffre/symbole de la carte de défausse.",
+            "Si un joueur ne peut pas jouer, il doit piocher une carte. Si cette carte peut être jouée immédiatement, il peut la poser.",
+            "Lorsqu’il reste une seule carte en main, le joueur doit annoncer 'UNO'. S’il oublie et qu’un autre joueur le signale avant son prochain tour, il doit piocher 2 cartes de pénalité.",
+            "La manche se termine lorsqu’un joueur n’a plus de cartes.",
+            "Les adversaires comptent les points de leurs cartes restantes. Le gagnant de la manche marque la somme des points.",
+            "La partie continue jusqu’à ce qu’un joueur atteigne 500 points (ou un score fixé en début de partie)."
+        ],
+        "cards": [
+            {
+                "name": "Cartes numérotées (0-9)",
+                "effect": "Peuvent être jouées si elles correspondent à la couleur ou au chiffre de la défausse.",
+                "count": 76
+            },
+            {
+                "name": "+2",
+                "effect": "Le joueur suivant pioche 2 cartes et perd son tour.",
+                "count": 8
+            },
+            {
+                "name": "Inversion",
+                "effect": "Inverse le sens du jeu.", 
+                "count": 8
+            },
+            {
+                "name": "Passe ton tour",
+                "effect": "Le joueur suivant perd son tour.", 
+                "count": 8
+            },
+            {
+                "name": "Joker",
+                "effect": "Le joueur choisit une nouvelle couleur de jeu.", 
+                "count": 4
+            },
+            {
+                "name": "Joker +4",
+                "effect": "Le joueur choisit une nouvelle couleur et le joueur suivant pioche 4 cartes.", 
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Distribuer 7 cartes à chaque joueur.",
+            "Poser une carte de la pioche sur la défausse pour commencer.",
+            "À son tour, un joueur joue une carte de même couleur ou chiffre/symbole.",
+            "S’il ne peut pas, il pioche une carte et la joue si possible, sinon il passe.",
+            "Les cartes spéciales déclenchent leurs effets immédiatement.",
+            "Lorsqu’il reste une carte en main, annoncer 'UNO'.",
+            "La manche se termine lorsqu’un joueur n’a plus de cartes.",
+            "Compter les points : chaque carte numérotée vaut sa valeur, les cartes spéciales valent 20 points, les jokers 50 points.",
+            "Recommencer les manches jusqu’à ce qu’un joueur atteigne 500 points ou un score défini."
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Tarot",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de levées avec annonces et atouts.",
+        "setup": [
+        {
+            "name": "Nombre total de cartes",
+            "value": "78"
+        },
+        {
+            "name": "Cartes par joueur",
+            "value": "18 (pour 4 joueurs) ou 15 (5 joueurs)"
+        },
+        {
+            "name": "Nombre de joueurs",
+            "value": "3 à 5"
+        },
+        {
+            "name": "Matériel",
+            "value": "Jeu de cartes de tarot, feuilles et stylos pour compter les points"
+        }
+        ],
+        "rules": [
+            "Le jeu se joue avec un jeu de 78 cartes comprenant des atouts, des figures et des cartes numérotées.",
+            "Chaque joueur reçoit un nombre de cartes selon le nombre de participants (18 pour 4 joueurs, 15 pour 5 joueurs).",
+            "Le reste des cartes forme le chien (cartes communes).",
+            "Un joueur fait une annonce (petite, garde, garde sans le chien, garde contre le chien) avant de jouer.",
+            "Le joueur qui fait l'annonce doit réaliser un certain nombre de points en fonction de son annonce et des bouts (1, 2 ou 3).",
+            "Les joueurs jouent à tour de rôle en suivant la couleur demandée ou en jouant un atout si possible.",
+            "Le joueur qui remporte la levée commence la suivante.",
+            "À la fin de la partie, les points sont comptés en fonction des annonces et des cartes remportées.",
+            "Le gagnant est celui qui atteint le score fixé en début de partie."
+        ],
+        "cards": [
+        {
+            "name": "Atouts",
+            "effect": "Cartes numérotées de 1 à 21 et l'Excuse (Fou).",
+            "count": 22
+        },
+        {
+            "name": "Figures",
+            "effect": "Roi, Dame, Cavalier, Valet dans chaque couleur.",
+            "count": 16
+        },
+        {
+            "name": "Cartes numérotées",
+            "effect": "Cartes de 1 à 10 dans chaque couleur.",
+            "count": 40
+        }
+        ],
+        "etapes": [
+            "Mélanger et distribuer les cartes selon le nombre de joueurs.",
+            "Le joueur à gauche du donneur commence la partie.",
+            "Les joueurs jouent une carte en suivant la couleur demandée ou en jouant un atout.",
+            "Le joueur qui remporte la levée prend les cartes et commence la suivante.",
+            "Après toutes les levées, compter les points en fonction des annonces et des cartes remportées.",
+            "Le gagnant est celui qui atteint le score fixé en début de partie."
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Bataille Corse",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes rapide où l'objectif est de collecter toutes les cartes en jouant des paires et en frappant la pile.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "52"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "26 (pour 2 joueurs), 17 (pour 3 joueurs), 13 (pour 4 joueurs)"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 4"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer toutes les cartes aux joueurs, face cachée.",
+            "Chaque joueur place son paquet de cartes devant lui, face cachée.",
+            "À tour de rôle, chaque joueur retourne la carte du dessus de son paquet et la place au centre pour former une pile commune.",
+            "Si un joueur retourne une carte qui forme une paire avec une carte déjà sur la pile (même valeur), il doit frapper la pile rapidement.",
+            "Le premier joueur à frapper la pile remporte toutes les cartes de la pile et les ajoute à son paquet, qu'il place sous son paquet existant.",
+            "Si un joueur frappe la pile par erreur (sans qu'il y ait une paire), il doit donner une carte de son paquet au joueur dont c'était le tour.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait collecté toutes les cartes ou que les autres joueurs abandonnent."
+        ],
+        "cards": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour former des paires.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour former des paires.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour former des paires.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Distribuer toutes les cartes aux joueurs.",
+            "Chaque joueur place son paquet de cartes devant lui, face cachée.",
+            "À tour de rôle, chaque joueur retourne la carte du dessus de son paquet et la place au centre pour former une pile commune.",
+            "Si une paire est formée, frapper la pile rapidement pour la remporter.",
+            "Le premier à frapper la pile remporte toutes les cartes de la pile.",
+            "Si un joueur frappe par erreur, il doit donner une carte au joueur dont c'était le tour.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait collecté toutes les cartes."
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Menteur",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de bluff où l'objectif est de se débarrasser de toutes ses cartes en mentant sur les cartes jouées.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "52"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "Varie selon le nombre de joueurs"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "3 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer toutes les cartes aux joueurs, face cachée.",
+            "Le joueur à gauche du donneur commence en posant une ou plusieurs cartes face cachée au centre et en annonçant leur valeur (par exemple, 'deux 3').",
+            "Les autres joueurs doivent décider si le joueur ment ou dit la vérité.",
+            "Si un joueur pense que le joueur ment, il peut le défier en disant 'Menteur!'.",
+            "Si le joueur qui a posé les cartes mentait, il doit ramasser toutes les cartes du centre. Sinon, le joueur qui a défié doit ramasser les cartes.",
+            "Le jeu continue dans le sens des aiguilles d'une montre jusqu'à ce qu'un joueur se débarrasse de toutes ses cartes.",
+            "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie."
+        ],
+        "cards": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour jouer et bluffer.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et bluffer.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et bluffer.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Distribuer toutes les cartes aux joueurs.",
+            "Le joueur à gauche du donneur commence en posant des cartes face cachée et en annonçant leur valeur.",
+            "Les autres joueurs décident s'ils croient le joueur ou le défient.",
+            "Si défié, vérifier si le joueur mentait ou disait la vérité.",
+            "Le joueur qui a menti ramasse les cartes du centre, sinon le défiant ramasse les cartes.",
+            "Le jeu continue jusqu'à ce qu'un joueur se débarrasse de toutes ses cartes."
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Pouilleux",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes simple où l'objectif est de ne pas finir avec la carte du pouilleux (le valet de trèfle).",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "51 (un valet retiré)"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "Varie selon le nombre de joueurs"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "3 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard (un valet retiré), surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Retirer un valet du jeu (généralement le valet de trèfle) pour créer la carte du pouilleux.",
+            "Distribuer toutes les cartes aux joueurs, face cachée.",
+            "Chaque joueur regarde ses cartes et forme des paires de même valeur, qu'il place face visible devant lui.",
+            "Le joueur à gauche du donneur commence en tirant une carte au hasard dans la main du joueur à sa gauche.",
+            "Si la carte tirée forme une paire avec une carte en main, le joueur place la paire face visible devant lui.",
+            "Le jeu continue dans le sens des aiguilles d'une montre jusqu'à ce que toutes les paires soient formées.",
+            "Le joueur qui se retrouve avec la carte du pouilleux (le valet sans paire) à la fin du jeu perd la partie."
+        ],
+        "cards": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour former des paires.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour former des paires (un valet retiré).",
+                "count": 11
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour former des paires.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Retirer un valet du jeu pour créer la carte du pouilleux.",
+            "Distribuer toutes les cartes aux joueurs.",
+            "Chaque joueur forme des paires de même valeur et les place devant lui.",
+            "Le joueur à gauche du donneur commence en tirant une carte dans la main du joueur à sa gauche.",
+            "Si une paire est formée, la placer devant soi.",
+            "Le jeu continue jusqu'à ce que toutes les paires soient formées.",
+            "Le joueur avec la carte du pouilleux à la fin perd la partie."
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Pyramide",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de boissons avec une pyramide de cartes.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "52"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "4"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 10"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard, boissons pour chaque joueur"
+            }
+        ],
+        "rules": [
+            "Distribuer 4 cartes à chaque joueur, face cachée.",
+            "Former une pyramide de cartes au centre de la table (5 rangées, 1 carte en haut, 5 en bas), face visible.",
+            "Les joueurs ne peuvent voir que leurs propres cartes.",
+            "À tour de rôle, chaque joueur retourne une carte de la pyramide, en commençant par le bas.",
+            "Si un joueur a une carte de même valeur que celle retournée, il peut donner une gorgée à un autre joueur.",
+            "Si plusieurs joueurs ont la même valeur, ils peuvent se partager les gorgées.",
+            "Le jeu continue jusqu'à ce que toutes les cartes de la pyramide soient retournées.",
+            "Le joueur avec le moins de gorgées à la fin gagne."
+        ],
+        "cards": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour jouer et donner des gorgées.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et donner des gorgées.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et donner des gorgées.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Distribuer 1 carte à chaque joueur avec la question 'Quel couleur sera la catre ?' vrais il distribue une gorgée faux il en bois une.",
+            "Distribuer 1 carte à chaque joueur avec la question 'Inferieur ou superieur ?' vrais il distribue deux gorgées faux il en bois deux.",
+            "Distribuer 1 carte à chaque joueur avec la question 'Interne ou externe ?' vrais il distribue trois gorgées faux il en bois trois.",
+            "Distribuer 1 carte à chaque joueur avec la question 'Quel couleur ?' vrais il distribue quatre gorgées faux il en bois quatre.",
+            "Former une pyramide de cartes au centre de la table, face visible.",
+            "Les joueurs ne peuvent voir que leurs propres cartes.",
+            "À tour de rôle, chaque joueur retourne une carte de la pyramide.",
+            "Si un joueur a une carte de même valeur, il peut donner autant de gorgée que l'étage où elle se trouve à un ou plusieurs joueurs qui se partage les gorgées, le joueurs peut aussi choisir de boire lui-même mais le buveurs peuvent dire menteur et le joueur doit boire le double.",
+            "Une carte de la pyramide ne peut être utilisée qu'une seule fois.",
+            "Le jeu continue jusqu'à ce que toutes les cartes soient retournées.",
+            "Le joueur avec le moins de gorgées à la fin gagne."
+        ]
+    }
+]

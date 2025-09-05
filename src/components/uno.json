@@ -1,0 +1,77 @@
+{
+  "id": "uno",
+  "name": "Uno",
+  "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+  "description": "Jeu de cartes très populaire où l'objectif est d'être le premier joueur à atteindre 500 points en se débarrassant de toutes ses cartes.",
+  "setup": [
+    {
+      "name": "Nombre total de cartes",
+      "value": "108"
+    },
+    {
+      "name": "Cartes par joueur",
+      "value": "7"
+    },
+    {
+      "name": "Nombre de joueurs",
+      "value": "2 à 10"
+    },
+    {
+      "name": "Matériel",
+      "value": "Paquet de cartes UNO, feuilles et stylos pour compter les points"
+    }
+  ],
+  "rules": [
+    "Chaque joueur commence avec 7 cartes en main.",
+    "Le reste du paquet constitue la pioche, la première carte de la pioche est posée sur la défausse.",
+    "À son tour, un joueur doit jouer une carte qui correspond à la couleur ou au chiffre/symbole de la carte de défausse.",
+    "Si un joueur ne peut pas jouer, il doit piocher une carte. Si cette carte peut être jouée immédiatement, il peut la poser.",
+    "Lorsqu’il reste une seule carte en main, le joueur doit annoncer 'UNO'. S’il oublie et qu’un autre joueur le signale avant son prochain tour, il doit piocher 2 cartes de pénalité.",
+    "La manche se termine lorsqu’un joueur n’a plus de cartes.",
+    "Les adversaires comptent les points de leurs cartes restantes. Le gagnant de la manche marque la somme des points.",
+    "La partie continue jusqu’à ce qu’un joueur atteigne 500 points (ou un score fixé en début de partie)."
+  ],
+  "cards": [
+    {
+      "name": "Cartes numérotées (0-9)",
+      "effect": "Peuvent être jouées si elles correspondent à la couleur ou au chiffre de la défausse.",
+      "count": 76
+    },
+    {
+      "name": "+2",
+      "effect": "Le joueur suivant pioche 2 cartes et perd son tour.",
+      "count": 8
+    },
+    {
+      "name": "Inversion",
+      "effect": "Inverse le sens du jeu.", 
+      "count": 8
+    },
+    {
+      "name": "Passe ton tour",
+      "effect": "Le joueur suivant perd son tour.", 
+      "count": 8
+    },
+    {
+      "name": "Joker",
+      "effect": "Le joueur choisit une nouvelle couleur de jeu.", 
+      "count": 4
+    },
+    {
+      "name": "Joker +4",
+      "effect": "Le joueur choisit une nouvelle couleur et le joueur suivant pioche 4 cartes.", 
+      "count": 4
+    }
+  ],
+  "etapes": [
+    "Distribuer 7 cartes à chaque joueur.",
+    "Poser une carte de la pioche sur la défausse pour commencer.",
+    "À son tour, un joueur joue une carte de même couleur ou chiffre/symbole.",
+    "S’il ne peut pas, il pioche une carte et la joue si possible, sinon il passe.",
+    "Les cartes spéciales déclenchent leurs effets immédiatement.",
+    "Lorsqu’il reste une carte en main, annoncer 'UNO'.",
+    "La manche se termine lorsqu’un joueur n’a plus de cartes.",
+    "Compter les points : chaque carte numérotée vaut sa valeur, les cartes spéciales valent 20 points, les jokers 50 points.",
+    "Recommencer les manches jusqu’à ce qu’un joueur atteigne 500 points ou un score défini."
+  ]
+}
