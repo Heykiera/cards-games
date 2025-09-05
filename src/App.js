@@ -1,20 +1,22 @@
+import { useState } from 'react';
 import GameAside from './aside/GameAside';
 import RulesGame from './pages/RulesGame';
 import './styles/App.css';
 import Games from './components/games.json';
 
 function App() {
-  const games = Games;
+  const SelectedGame = useState(null)
+
   return (
     <div className="App">
       <aside className="App-aside">
-        <GameAside games={games}/>
+        <GameAside games={Games} onSelect={SelectedGame}/>
       </aside>
       <header className="App-header">
       </header>
       <main className="App-main">
         {
-          games.map((game) => (
+          Games.map((game) => (
             <RulesGame key={game.id} game={game}/>
           ))
         }

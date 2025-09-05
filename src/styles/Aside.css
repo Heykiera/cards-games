@@ -1,0 +1,19 @@
+.Aside-game {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+}
+.Aside-game button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.6rem;
+    border-radius: 5px;
+    background-color: #262930;
+    width: calc(100% - 1.2rem);
+}
+.Aside-game button:hover, .Aside-game button:focus {
+    background-color: #8f95a0;
+}
