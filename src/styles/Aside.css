@@ -15,7 +15,7 @@
     width: calc(100% - 1.2rem);
 }
 .Aside-game button:hover, .Aside-game button:focus {
-    background-color: #55fabc;
+    background-color: #dc143c;
 }
 
 .App.sidebar-closed .Aside-game button {

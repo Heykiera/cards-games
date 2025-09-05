@@ -90,22 +90,25 @@ footer {
 
 /* smartphones */
 @media (max-width: 480px) { 
-    .App{
-        grid-template-columns: 60px 1fr;
-    }
     Aside {
-        width:  50px;  
+        position: absolute;
+        width: 300px;
+    }
+    .App.App.sidebar-open {
+        grid-template-columns: 70px 1fr;
     }
 }   
  /* tablettes */  
 @media (min-width: 481px) and (max-width: 768px) { 
-    .App{
-        grid-template-columns: 60px 1fr;
-    }
     Aside {
-        width:  50px;  
+        position: absolute;
+        width: 300px;
     }
-} 
+    .App.App.sidebar-open {
+        grid-template-columns: 70px 1fr;
+    }
+
+}
 /* laptops / écrans larges / TV */
 @media (min-width: 769px) {
     .App {
