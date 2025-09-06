@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import GameAside from './aside/GameAside';
 import RulesGame from './pages/RulesGame';
 import './styles/App.css';
@@ -10,6 +10,11 @@ function App() {
 
   const game = Games.find((game) => game.id === selectedGame);
 
+  useEffect(() => {
+    // à chaque changement de jeu → remonter en haut
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [game]); // dépendance sur game
+  
   return (
     <div className={`App ${isOpen ? "sidebar-open" : "sidebar-closed"}`}>
       <aside className="App-aside">
