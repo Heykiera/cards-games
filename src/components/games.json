@@ -758,5 +758,343 @@
             "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie.",
             "Si la pioche est épuisée, mélanger la défausse pour former une nouvelle pioche."
         ]
+    },
+    {
+        "id": 14,
+        "name": "6 qui prend",
+        "logo": "./assets/svg/bull-frontal-head-svgrepo-com.svg",
+        "description": "Jeu de cartes où l'objectif est d'éviter de ramasser des cartes en jouant stratégiquement.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "104 (deux jeux de 52 cartes)"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "10"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 10"
+            },
+            {
+                "name": "Matériel",
+                "value": "Deux jeux de cartes standard, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Mélanger les deux jeux de cartes et distribuer 10 cartes à chaque joueur, face cachée.",
+            "Placer 4 cartes face visible au centre pour commencer 4 rangées.",
+            "À tour de rôle, chaque joueur choisit une carte de sa main et la place face cachée devant lui.",
+            "Une fois que tous les joueurs ont choisi une carte, elles sont révélées simultanément.",
+            "Les cartes sont placées dans les rangées en fonction de leur valeur, en suivant ces règles :",
+            "- La carte doit être placée dans la rangée dont la carte du dessus est la plus proche mais inférieure à la carte jouée.",
+            "- Si une carte est inférieure à toutes les cartes du dessus des rangées, le joueur doit ramasser une rangée de son choix et placer sa carte à la place.",
+            "- Si une rangée atteint 6 cartes, le joueur qui a joué la 6ème carte doit ramasser toute la rangée et placer sa carte à la place.",
+            "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+            "Le joueur avec le moins de points (cartes ramassées) à la fin de la partie gagne."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (1-104)",
+                "effect": "Utilisées pour jouer et former des rangées.",
+                "count": 104
+            }
+        ],
+        "etapes": [
+            "Mélanger les deux jeux de cartes et distribuer 10 cartes à chaque joueur, face cachée.",
+            "Placer 4 cartes face visible au centre pour commencer 4 rangées.",
+            "À tour de rôle, chaque joueur choisit une carte de sa main et la place face cachée devant lui.",
+            "Une fois que tous les joueurs ont choisi une carte, elles sont révélées simultanément.",
+            "Les cartes sont placées dans les rangées en fonction de leur valeur, en suivant les règles spécifiées.",
+            "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+            "Le joueur avec le moins de points (cartes ramassées) à la fin de la partie gagne."
+        ]
+    },
+    {
+        "id": 15,
+        "name": "1000 Bornes",
+        "logo": "./assets/svg/meandering-road-with-trees-at-sides-svgrepo-com.svg",
+        "description": "Jeu de cartes où l'objectif est d'être le premier à parcourir 1000 kilomètres en jouant des cartes de distance tout en gérant les obstacles.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "106"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "6"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes 1000 Bornes, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer 6 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur peut jouer une carte de sa main ou piocher une carte de la pioche.",
+            "Les cartes de distance (25, 50, 75, 100, 200 km) sont jouées pour avancer vers l'objectif de 1000 km.",
+            "Les cartes d'obstacle (panne d'essence, crevaison, accident, limitation de vitesse) sont jouées contre les adversaires pour les ralentir.",
+            "Les cartes de réparation (réservoir plein, roue de secours, réparation, fin de limitation) sont jouées pour se débarrasser des obstacles.",
+            "Le premier joueur à atteindre exactement 1000 km gagne la partie. Si un joueur dépasse 1000 km, il doit attendre son prochain tour pour jouer une carte de distance appropriée."
+        ],
+        "material": [
+            {
+                "name": "Cartes de distance (25, 50, 75, 100, 200 km)",
+                "effect": "Utilisées pour avancer vers l'objectif de 1000 km.",
+                "count": 56
+            },
+            {
+                "name": "Cartes d'obstacle (panne d'essence, crevaison, accident, limitation de vitesse)",
+                "effect": "Utilisées pour ralentir les adversaires.",
+                "count": 28
+            },
+            {
+                "name": "Cartes de réparation (réservoir plein, roue de secours, réparation, fin de limitation)",
+                "effect": "Utilisées pour se débarrasser des obstacles.",
+                "count": 22
+            }
+        ],
+        "etapes": [
+            "Distribuer 6 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur peut jouer une carte de sa main ou piocher une carte de la pioche.",
+            "Les cartes de distance sont jouées pour avancer vers l'objectif de 1000 km.",
+            "Les cartes d'obstacle sont jouées contre les adversaires pour les ralentir.",
+            "Les cartes de réparation sont jouées pour se débarrasser des obstacles.",
+            "Le premier joueur à atteindre exactement 1000 km gagne la partie. Si un joueur dépasse 1000 km, il doit attendre son prochain tour pour jouer une carte de distance appropriée."
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Citadelles",
+        "logo": "./assets/svg/protection-fort-svgrepo-com.svg",
+        "description": "Jeu de cartes et de stratégie où les joueurs incarnent des personnages avec des capacités spéciales pour construire des quartiers dans une cité.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "110"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "4"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 8"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes Citadelles, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer 4 cartes personnage à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec 2 cartes retirées du jeu.",
+            "À tour de rôle, chaque joueur choisit un personnage parmi ceux disponibles, révélant ainsi son rôle et sa capacité spéciale.",
+            "Les personnages incluent le roi, le voleur, l'assassin, le magicien, le marchand, l'architecte et le condottiere.",
+            "Après que tous les joueurs ont choisi leur personnage, ils jouent dans l'ordre des personnages (du roi au condottiere).",
+            "Chaque joueur peut utiliser la capacité spéciale de son personnage, gagner de l'or, piocher des cartes quartier ou construire des quartiers dans sa cité.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait construit 8 quartiers. La partie se termine alors et les points sont comptés en fonction des quartiers construits et des bonus obtenus.",
+            "Le joueur avec le plus de points gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Cartes Personnage",
+                "effect": "Chaque carte représente un personnage avec une capacité spéciale unique.",
+                "count": 28
+            },
+            {
+                "name": "Cartes Quartier",
+                "effect": "Utilisées pour construire des quartiers dans la cité.",
+                "count": 80
+            },
+            {
+                "name": "Pièces d'or",
+                "effect": "Utilisées comme monnaie pour acheter des quartiers.",
+                "count": 50
+            }
+        ],
+        "etapes": [
+            "Distribuer 4 cartes personnage à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec 2 cartes retirées du jeu.",
+            "À tour de rôle, chaque joueur choisit un personnage parmi ceux disponibles, révélant ainsi son rôle et sa capacité spéciale.",
+            "Les personnages incluent le roi, le voleur, l'assassin, le magicien, le marchand, l'architecte et le condottiere.",
+            "Après que tous les joueurs ont choisi leur personnage, ils jouent dans l'ordre des personnages (du roi au condottiere).",
+            "Chaque joueur peut utiliser la capacité spéciale de son personnage, gagner de l'or, piocher des cartes quartier ou construire des quartiers dans sa cité.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait construit 8 quartiers. La partie se termine alors et les points sont comptés en fonction des quartiers construits et des bonus obtenus.",
+            "Le joueur avec le plus de points gagne la partie."
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Poker",
+        "logo": "./assets/svg/poker-chip-svgrepo-com.svg",
+        "description": "Jeu de cartes où l'objectif est de former la meilleure main possible en combinant des cartes personnelles et communes.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "52"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "2 (cartes privées) + 5 (cartes communes)"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 10"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard, jetons pour les mises, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer 2 cartes privées à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche.",
+            "Le jeu se déroule en plusieurs tours de mise : pré-flop, flop, turn et river.",
+            "Après chaque tour de mise, des cartes communes sont révélées au centre de la table : 3 cartes pour le flop, 1 carte pour le turn et 1 carte pour la river.",
+            "Les joueurs utilisent leurs 2 cartes privées et les 5 cartes communes pour former la meilleure main possible de 5 cartes.",
+            "Les combinaisons de mains, de la plus faible à la plus forte, sont : carte haute, paire, double paire, brelan, quinte, couleur, full, carré, quinte flush et quinte flush royale.",
+            "Le joueur avec la meilleure main remporte le pot. En cas d'égalité, le pot est partagé entre les joueurs concernés.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait tous les jetons ou que les joueurs décident d'arrêter."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour jouer et former des combinaisons.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et former des combinaisons.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et former des combinaisons.",
+                "count": 4
+            },
+            {
+                "name": "Jetons",
+                "effect": "Utilisés pour les mises.",
+                "count": 100
+            }
+        ],  
+        "etapes": [
+            "Distribuer 2 cartes privées à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche.",
+            "Le jeu se déroule en plusieurs tours de mise : pré-flop, flop, turn et river.",
+            "Après chaque tour de mise, des cartes communes sont révélées au centre de la table.",
+            "Les joueurs utilisent leurs 2 cartes privées et les 5 cartes communes pour former la meilleure main possible de 5 cartes.",
+            "Les combinaisons de mains, de la plus faible à la plus forte, sont : carte haute, paire, double paire, brelan, quinte, couleur, full, carré, quinte flush et quinte flush royale.",
+            "Le joueur avec la meilleure main remporte le pot. En cas d'égalité, le pot est partagé entre les joueurs concernés.",
+            "Le jeu continue jusqu'à ce qu'un joueur ait tous les jetons ou que les joueurs décident d'arrêter."
+        ]      
+    },
+    {
+        "id": 18,
+        "name": "Times'Up",
+        "logo": "./assets/svg/time-sand-svgrepo-com.svg",
+        "description": "Jeu de société où les joueurs doivent faire deviner des noms de personnages célèbres en trois manches avec des règles différentes.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "40"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "Varie selon le nombre de joueurs"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "4 à 12"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes Times'Up, sablier, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Former deux équipes de joueurs.",
+            "Distribuer un nombre égal de cartes à chaque joueur, qui choisit secrètement un certain nombre de cartes à utiliser pour la partie.",
+            "Le jeu se déroule en trois manches :",
+            "- Manche 1 : Les joueurs peuvent dire n'importe quoi pour faire deviner le nom sur la carte (sauf le nom lui-même).",
+            "- Manche 2 : Les joueurs ne peuvent dire qu'un seul mot pour faire deviner le nom sur la carte.",
+            "- Manche 3 : Les joueurs ne peuvent faire que des gestes pour faire deviner le nom sur la carte.",
+            "Chaque équipe joue à tour de rôle, avec un temps limité (généralement 30 secondes) pour faire deviner autant de cartes que possible.",
+            "L'équipe marque un point pour chaque carte correctement devinée.",
+            "Le jeu continue jusqu'à ce que toutes les cartes aient été utilisées.",
+            "L'équipe avec le plus de points à la fin des trois manches gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Cartes Personnage",
+                "effect": "Chaque carte représente un personnage/objet/évènement célèbre à faire deviner.",
+                "count": 40
+            },
+            {
+                "name": "Sablier",
+                "effect": "Utilisé pour limiter le temps de chaque tour.",
+                "count": 1
+            }
+        ],
+        "etapes": [
+            "Former deux équipes de joueurs.",
+            "Distribuer un nombre égal de cartes à chaque joueur, qui choisit secrètement un certain nombre de cartes à utiliser pour la partie.",
+            "Le jeu se déroule en trois manches avec des règles différentes pour faire deviner les cartes.",
+            "Chaque équipe joue à tour de rôle, avec un temps limité pour faire deviner autant de cartes que possible.",
+            "L'équipe marque un point pour chaque carte correctement devinée.",
+            "Le jeu continue jusqu'à ce que toutes les cartes aient été utilisées.",
+            "L'équipe avec le plus de points à la fin des trois manches gagne la partie."
+        ]
+    },
+    {
+        "id": 19,
+        "name": "11/21",
+        "logo": "./assets/svg/dice-svgrepo-com.svg",
+        "description": "Jeu de dés où l'objectif est d'atteindre exactement 11 ou 21 points en lançant des dés et en choisissant judicieusement quand s'arrêter.",
+        "setup": [
+            {
+                "name": "Nombre total de dés",
+                "value": "2"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "1 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "Surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Chaque joueur a 3 lancers de dés par tour pour atteindre exactement 11 ou 21 points.",
+            "Après chaque lancer, le joueur peut choisir de s'arrêter et de conserver son score actuel ou de relancer les dés pour augmenter son score.",
+            "Si le score dépasse 21, le joueur perd automatiquement la partie.",
+            "Si un joueur atteint exactement 11 ou 21 points, il gagne immédiatement la partie.",
+            "Le jeu continue jusqu'à ce qu'un joueur atteigne exactement 11 ou 21 points ou que tous les joueurs aient épuisé leurs lancers.",
+            "Le joueur avec le score le plus proche de 21 sans le dépasser gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Dès 6 faces)",
+                "effect": "Utilisées pour obtenir des face spéciales.",
+                "count": 2
+            }
+        ],
+        "etapes": [
+            "Chaque joueur a 3 lancers de dés par tour pour atteindre exactement 11 ou 21 points.",
+            "Après chaque lancer, le joueur peut choisir de s'arrêter et de conserver son score actuel ou de relancer les dés pour augmenter son score.",
+            "Si le score dépasse 21, le joueur perd automatiquement la partie.",
+            "Si un joueur atteint exactement 11 ou 21 points, il gagne immédiatement la partie.",
+            "Le jeu continue jusqu'à ce qu'un joueur atteigne exactement 11 ou 21 points ou que tous les joueurs aient épuisé leurs lancers.",
+            "Le joueur avec le score le plus proche de 21 sans le dépasser gagne la partie."
+        ]
     }
 ]
