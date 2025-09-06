@@ -1161,5 +1161,133 @@
             "Les points sont comptés en fonction des plis remportés et des combinaisons spéciales (belote et rebelote).",
             "L'équipe avec le plus de points à la fin de la partie gagne."
         ]
+    },
+    {
+        "id": 21,
+        "name": "Echecs",
+        "logo": "./assets/svg/chess-3-svgrepo-com.svg",
+        "description": "Jeu de stratégie où l'objectif est de mettre le roi adverse en échec et mat.",
+        "setup": [
+            {
+                "name": "Nombre total de pièces",
+                "value": "32"
+            },
+            {
+                "name": "Pièces par joueur",
+                "value": "16"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2"
+            },
+            {
+                "name": "Matériel",
+                "value": "Échiquier et pièces d'échecs, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Chaque joueur commence avec 16 pièces : 1 roi, 1 dame, 2 tours, 2 fous, 2 cavaliers et 8 pions.",
+            "Le joueur avec les pièces blanches commence la partie.",
+            "Les joueurs déplacent leurs pièces selon des règles spécifiques pour chaque type de pièce.",
+            "L'objectif est de mettre le roi adverse en échec et mat, ce qui signifie que le roi est attaqué et ne peut pas échapper à la capture.",
+            "Si un joueur met le roi adverse en échec, l'autre joueur doit immédiatement protéger son roi ou déplacer son roi hors d'échec.",
+            "Le jeu peut également se terminer par une partie nulle dans certaines conditions (pat, accord mutuel, etc.).",
+            "Le joueur qui met le roi adverse en échec et mat gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Roi",
+                "effect": "La pièce la plus importante. Peut se déplacer d'une case dans n'importe quelle direction.",
+                "count": 1
+            },
+            {
+                "name": "Dame",
+                "effect": "La pièce la plus puissante. Peut se déplacer de n'importe quel nombre de cases en ligne droite ou en diagonale.",
+                "count": 1
+            },
+            {
+                "name": "Tour",
+                "effect": "Peut se déplacer de n'importe quel nombre de cases en ligne droite (horizontalement ou verticalement).",
+                "count": 2
+            },
+            {
+                "name": "Fou",
+                "effect": "Peut se déplacer de n'importe quel nombre de cases en diagonale.",
+                "count": 2
+            },
+            {
+                "name": "Cavalier",
+                "effect": "Se déplace en forme de 'L' : deux cases dans une direction et une case perpendiculairement.",
+                "count": 2
+            },
+            {
+                "name": "Pion",
+                "effect": "Se déplace d'une case vers l'avant, avec des règles spéciales pour la première avancée et la capture.",
+                "count": 8
+            }
+        ],
+        "etapes": [
+            "Chaque joueur commence avec 16 pièces : 1 roi, 1 dame, 2 tours, 2 fous, 2 cavaliers et 8 pions.",
+            "Le joueur avec les pièces blanches commence la partie.",
+            "Les joueurs déplacent leurs pièces selon des règles spécifiques pour chaque type de pièce.",
+            "L'objectif est de mettre le roi adverse en échec et mat.",
+            "Si un joueur met le roi adverse en échec, l'autre joueur doit immédiatement protéger son roi ou déplacer son roi hors d'échec.",
+            "Le jeu peut également se terminer par une partie nulle dans certaines conditions (pat, accord mutuel, etc.).",
+            "Le joueur qui met le roi adverse en échec et mat gagne la partie."
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Dames",
+        "logo": "./assets/svg/token-bat-coin-svgrepo-com.svg",
+        "description": "Jeu de stratégie où l'objectif est de capturer toutes les pièces adverses ou de bloquer leurs mouvements.",
+        "setup": [
+            {
+                "name": "Nombre total de pièces",
+                "value": "24"
+            },
+            {
+                "name": "Pièces par joueur",
+                "value": "12"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2"
+            },
+            {
+                "name": "Matériel",
+                "value": "Plateau de dames et pièces de dames, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Chaque joueur commence avec 12 pièces placées sur les cases noires des trois premières rangées de son côté du plateau.",
+            "Le joueur avec les pièces blanches commence la partie.",
+            "Les pièces se déplacent en diagonale d'une case vers l'avant sur les cases noires.",
+            "Pour capturer une pièce adverse, une pièce doit sauter par-dessus elle dans une case vide immédiatement derrière. Les captures sont obligatoires.",
+            "Si une pièce atteint la dernière rangée du côté adverse, elle est promue en dame, ce qui lui permet de se déplacer en diagonale vers l'avant et vers l'arrière.",
+            "Le jeu continue jusqu'à ce qu'un joueur capture toutes les pièces adverses ou bloque tous leurs mouvements.",
+            "Le joueur qui capture toutes les pièces adverses ou bloque tous leurs mouvements gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Pièces de dames",
+                "effect": "Utilisées pour jouer et capturer les pièces adverses.",
+                "count": 24
+            },
+            {
+                "name": "Plateau de dames",
+                "effect": "Surface de jeu avec un damier 8x8.",
+                "count": 1
+            }
+        ],
+        "etapes": [
+            "Chaque joueur commence avec 12 pièces placées sur les cases noires des trois premières rangées de son côté du plateau.",
+            "Le joueur avec les pièces blanches commence la partie.",
+            "Les pièces se déplacent en diagonale d'une case vers l'avant sur les cases noires.",
+            "Pour capturer une pièce adverse , une pièce doit sauter par-dessus elle dans une case vide immédiatement derrière. Les captures sont obligatoires.",
+            "Si une pièce atteint la dernière rangée du côté adverse, elle est promue en dame, ce qui lui permet de se déplacer en diagonale vers l'avant et vers l'arrière.",
+            "Le jeu continue jusqu'à ce qu'un joueur capture toutes les pièces adverses ou bloque tous leurs mouvements.",
+            "Le joueur qui capture toutes les pièces adverses ou bloque tous leurs mouvements gagne la partie."
+            ]
     }
 ]
