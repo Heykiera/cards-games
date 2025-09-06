@@ -1096,5 +1096,70 @@
             "Le jeu continue jusqu'à ce qu'un joueur atteigne exactement 11 ou 21 points ou que tous les joueurs aient épuisé leurs lancers.",
             "Le joueur avec le score le plus proche de 21 sans le dépasser gagne la partie."
         ]
+    },
+    {
+        "id": 20,
+        "name": "Belote",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes en équipe où l'objectif est de marquer des points en remportant des plis avec des combinaisons spécifiques.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "32"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "8"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "4 (2 équipes de 2)"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes Belote, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+            "Distribuer 8 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "Le joueur à gauche du donneur commence l'enchère en choisissant une couleur d'atout ou en passant. Les autres joueurs peuvent surenchérir ou passer.",
+            "Le joueur qui remporte l'enchère choisit la couleur d'atout et le jeu commence.",
+            "À tour de rôle, chaque joueur joue une carte. Les joueurs doivent suivre la couleur si possible. Si un joueur ne peut pas suivre, il doit jouer un atout s'il en a un.",
+            "Le joueur qui joue la carte la plus forte dans la couleur demandée ou le plus fort atout remporte le pli et commence le prochain tour.",
+            "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+            "Les points sont comptés en fonction des plis remportés et des combinaisons spéciales (belote et rebelote).",
+            "L'équipe avec le plus de points à la fin de la partie gagne."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (7-10)",
+                "effect": "Utilisées pour jouer et former des plis.",
+                "count": 24
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et former des plis.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et former des plis.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+            "Distribuer 8 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "Le joueur à gauche du donneur commence l'enchère en choisissant une couleur d'atout ou en passant. Les autres joueurs peuvent surenchérir ou passer.",
+            "Le joueur qui remporte l'enchère choisit la couleur d'atout et le jeu commence.",
+            "À tour de rôle, chaque joueur joue une carte. Les joueurs doivent suivre la couleur si possible. Si un joueur ne peut pas suivre, il doit jouer un atout s'il en a un.",
+            "Le joueur qui joue la carte la plus forte dans la couleur demandée ou le plus fort atout remporte le pli et commence le prochain tour.",
+            "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+            "Les points sont comptés en fonction des plis remportés et des combinaisons spéciales (belote et rebelote).",
+            "L'équipe avec le plus de points à la fin de la partie gagne."
+        ]
     }
 ]
