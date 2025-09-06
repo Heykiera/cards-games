@@ -4,7 +4,9 @@
     padding: 0.5rem;
     justify-content: center;
     padding: 0.5rem 0.45rem;
+    overflow-y: auto;     /* permet de scroller verticalement */
 }
+
 .Aside-game button {
     all: unset;
     cursor: pointer;
@@ -28,17 +30,17 @@
 .toggle-btn {
     all: unset;
     cursor: pointer;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
     background-color: #262930;
     color: #ffffff;
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 0.45rem;
     border-radius: 5px;
     transition: width 0.3s ease;
 }
-.App.sidebar-closed .toggle-btn {
+.App.sidebar-open .toggle-btn {
     padding: 0.5rem 0.6rem;
+    width: 200px;
 }
 
