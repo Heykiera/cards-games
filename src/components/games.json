@@ -652,5 +652,174 @@
             "Le joueur avec la meilleure combinaison à la fin de chaque tour gagne un point.",
             "Le jeu continue jusqu'à ce qu'un joueur atteigne un nombre de points fixé en début de partie."
         ]
+    },
+    {
+        "id": 12,
+        "name": "Loup Garou",
+        "logo": "./assets/svg/werewolf-svgrepo-com.svg",
+        "description": "Jeu de rôle et de déduction où les joueurs incarnent des villageois ou des loups-garous, avec des rôles spéciaux.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "Varie selon le nombre de joueurs"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "1"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "8 à 18"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes Loup Garou, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer une carte rôle à chaque joueur, face cachée. Les rôles incluent villageois, loups-garous, voyante, sorcière, chasseur, etc.",
+            "Le jeu se déroule en deux phases : nuit et jour.",
+            "Pendant la nuit, les loups-garous se réveillent et choisissent une victime. La voyante peut regarder la carte d'un joueur. La sorcière peut utiliser ses potions.",
+            "Pendant le jour, tous les joueurs discutent et votent pour éliminer un joueur qu'ils soupçonnent d'être un loup-garou.",
+            "Le joueur éliminé révèle son rôle et quitte la partie.",
+            "Le jeu continue jusqu'à ce que tous les loups-garous soient éliminés (victoire des villageois) ou que les loups-garous égalent ou dépassent le nombre de villageois (victoire des loups-garous)."
+        ],
+        "material": [
+            {
+                "name": "Cartes Rôle",
+                "effect": "Chaque carte représente un rôle spécifique avec des capacités uniques.",
+                "count": "Varie selon le nombre de joueurs"
+            }
+        ],
+        "etapes": [
+            "Distribuer une carte rôle à chaque joueur, face cachée.",
+            "Le jeu se déroule en deux phases : nuit et jour.",
+            "Pendant la nuit, les loups-garous choisissent une victime, la voyante regarde une carte, la sorcière peut utiliser ses potions.",
+            "Pendant le jour, tous les joueurs discutent et votent pour éliminer un joueur.",
+            "Le joueur éliminé révèle son rôle et quitte la partie.",
+            "Le jeu continue jusqu'à ce que tous les loups-garous soient éliminés ou qu'ils égalent ou dépassent le nombre de villageois."
+        ]
+    },
+    {
+        "id": 13,
+        "name": "8 Américain",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes où l'objectif est de se débarrasser de toutes ses cartes en jouant des cartes correspondantes ou des 8 pour changer la couleur.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "52"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "7"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes standard, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Distribuer 7 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur doit jouer une carte qui correspond soit par la couleur, soit par le numéro à la carte du dessus de la défausse.",
+            "Si un joueur ne peut pas jouer, il doit piocher une carte. S'il peut jouer cette carte, il peut le faire immédiatement.",
+            "Les 8 sont des cartes spéciales qui permettent au joueur de changer la couleur en cours.",
+            "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie.",
+            "Si la pioche est épuisée, mélanger la défausse pour former une nouvelle pioche."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (2-10)",
+                "effect": "Utilisées pour jouer et correspondre par couleur ou numéro.",
+                "count": 36
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et correspondre par couleur ou numéro.",
+                "count": 12
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et correspondre par couleur ou numéro.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Distribuer 7 cartes à chaque joueur, face cachée.",
+            "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+            "À tour de rôle, chaque joueur doit jouer une carte qui correspond soit par la couleur, soit par le numéro à la carte du dessus de la défausse.",
+            "Si un joueur ne peut pas jouer, il doit piocher une carte. S'il peut jouer cette carte, il peut le faire immédiatement.",
+            "Les 8 sont des cartes spéciales qui permettent au joueur de changer la couleur en cours.",
+            "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie.",
+            "Si la pioche est épuisée, mélanger la défausse pour former une nouvelle pioche."
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Belote",
+        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "description": "Jeu de cartes en équipe où l'objectif est de marquer des points en remportant des plis avec des combinaisons spécifiques.",
+        "setup": [
+            {
+                "name": "Nombre total de cartes",
+                "value": "32"
+            },
+            {
+                "name": "Cartes par joueur",
+                "value": "8"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "4 (2 équipes de 2)"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de cartes Belote, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+            "Distribuer 8 cartes à chaque joueur, en deux fois (3 cartes puis 5 cartes).",
+            "La carte du dessus de la pioche est retournée pour déterminer l'atout potentiel.",
+            "Les joueurs, à tour de rôle, peuvent accepter ou refuser l'atout. Si personne n'accepte, une nouvelle carte est retournée et le processus recommence.",
+            "Le joueur qui accepte l'atout devient le preneur et son équipe doit marquer plus de points que l'équipe adverse pour gagner la manche.",
+            "Le jeu se déroule en plusieurs tours où les joueurs jouent une carte chacun dans le sens des aiguilles d'une montre.",
+            "Les règles de jeu des cartes incluent suivre la couleur, couper avec un atout si possible, et jouer la carte la plus haute pour remporter le pli.",
+            "Des combinaisons spéciales comme la 'belote' (Roi et Dame d'atout) rapportent des points supplémentaires.",
+            "Le score est comptabilisé à la fin de chaque manche, et le jeu continue jusqu'à ce qu'une équipe atteigne un score prédéterminé."
+        ],
+        "material": [
+            {
+                "name": "Cartes numérotées (7-10)",
+                "effect": "Utilisées pour jouer et former des plis.",
+                "count": 24
+            },
+            {
+                "name": "Figures (Valet, Dame, Roi)",
+                "effect": "Utilisées pour jouer et former des plis.",
+                "count": 8
+            },
+            {
+                "name": "As",
+                "effect": "Utilisé pour jouer et former des plis.",
+                "count": 4
+            }
+        ],
+        "etapes": [
+            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+            "Distribuer 8 cartes à chaque joueur, en deux fois (3 cartes puis 5 cartes).",
+            "La carte du dessus de la pioche est retournée pour déterminer l'atout potentiel.",
+            "Les joueurs, à tour de rôle, peuvent accepter ou refuser l'atout. Si personne n'accepte, une nouvelle carte est retournée et le processus recommence.",
+            "Le joueur qui accepte l'atout devient le preneur et son équipe doit marquer plus de points que l'équipe adverse pour gagner la manche.",
+            "Le jeu se déroule en plusieurs tours où les joueurs jouent une carte chacun dans le sens des aiguilles d'une montre.",
+            "Les règles de jeu des cartes incluent suivre la couleur, couper avec un atout si possible, et jouer la carte la plus haute pour remporter le pli.",
+            "Des combinaisons spéciales comme la 'belote' (Roi et Dame d'atout) rapportent des points supplémentaires.",
+            "Le score est comptabilisé à la fin de chaque manche, et le jeu continue jusqu'à ce qu'une équipe atteigne un score prédéterminé."
+        ]
     }
 ]
