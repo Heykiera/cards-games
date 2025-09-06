@@ -656,7 +656,7 @@
     {
         "id": 12,
         "name": "Loup Garou",
-        "logo": "./assets/svg/werewolf-svgrepo-com.svg",
+        "logo": "./assets/svg/werewolf-6-svgrepo-com.svg",
         "description": "Jeu de rôle et de déduction où les joueurs incarnent des villageois ou des loups-garous, avec des rôles spéciaux.",
         "setup": [
             {
@@ -757,69 +757,6 @@
             "Les 8 sont des cartes spéciales qui permettent au joueur de changer la couleur en cours.",
             "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie.",
             "Si la pioche est épuisée, mélanger la défausse pour former une nouvelle pioche."
-        ]
-    },
-    {
-        "id": 14,
-        "name": "Belote",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
-        "description": "Jeu de cartes en équipe où l'objectif est de marquer des points en remportant des plis avec des combinaisons spécifiques.",
-        "setup": [
-            {
-                "name": "Nombre total de cartes",
-                "value": "32"
-            },
-            {
-                "name": "Cartes par joueur",
-                "value": "8"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "4 (2 équipes de 2)"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes Belote, surface plane pour jouer"
-            }
-        ],
-        "rules": [
-            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
-            "Distribuer 8 cartes à chaque joueur, en deux fois (3 cartes puis 5 cartes).",
-            "La carte du dessus de la pioche est retournée pour déterminer l'atout potentiel.",
-            "Les joueurs, à tour de rôle, peuvent accepter ou refuser l'atout. Si personne n'accepte, une nouvelle carte est retournée et le processus recommence.",
-            "Le joueur qui accepte l'atout devient le preneur et son équipe doit marquer plus de points que l'équipe adverse pour gagner la manche.",
-            "Le jeu se déroule en plusieurs tours où les joueurs jouent une carte chacun dans le sens des aiguilles d'une montre.",
-            "Les règles de jeu des cartes incluent suivre la couleur, couper avec un atout si possible, et jouer la carte la plus haute pour remporter le pli.",
-            "Des combinaisons spéciales comme la 'belote' (Roi et Dame d'atout) rapportent des points supplémentaires.",
-            "Le score est comptabilisé à la fin de chaque manche, et le jeu continue jusqu'à ce qu'une équipe atteigne un score prédéterminé."
-        ],
-        "material": [
-            {
-                "name": "Cartes numérotées (7-10)",
-                "effect": "Utilisées pour jouer et former des plis.",
-                "count": 24
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour jouer et former des plis.",
-                "count": 8
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour jouer et former des plis.",
-                "count": 4
-            }
-        ],
-        "etapes": [
-            "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
-            "Distribuer 8 cartes à chaque joueur, en deux fois (3 cartes puis 5 cartes).",
-            "La carte du dessus de la pioche est retournée pour déterminer l'atout potentiel.",
-            "Les joueurs, à tour de rôle, peuvent accepter ou refuser l'atout. Si personne n'accepte, une nouvelle carte est retournée et le processus recommence.",
-            "Le joueur qui accepte l'atout devient le preneur et son équipe doit marquer plus de points que l'équipe adverse pour gagner la manche.",
-            "Le jeu se déroule en plusieurs tours où les joueurs jouent une carte chacun dans le sens des aiguilles d'une montre.",
-            "Les règles de jeu des cartes incluent suivre la couleur, couper avec un atout si possible, et jouer la carte la plus haute pour remporter le pli.",
-            "Des combinaisons spéciales comme la 'belote' (Roi et Dame d'atout) rapportent des points supplémentaires.",
-            "Le score est comptabilisé à la fin de chaque manche, et le jeu continue jusqu'à ce qu'une équipe atteigne un score prédéterminé."
         ]
     }
 ]
