@@ -1,23 +1,25 @@
-
-import '../styles/Aside.css';
+import '../styles/AsideGames.css';
 
 const GameAside = ({ games, onSelect, setOpen, isOpen}) => {
     
     return(
-        <div>
-        {games.map((game) => (
-            <ol className="Aside-game">
-                <button key={game.id} onClick={() => onSelect(game.id)}>
-                    <img src={game.logo} alt={game.name} height={30}/>
-                    <span>{game.name}</span>                    
+        <>
+            <section className='Aside-game'>
+                {games.map((game) => (
+                    <div className="list-game">
+                        <button key={game.id} onClick={() => onSelect(game.id)}>
+                            <img src={game.logo} alt={game.name} />
+                            <span>{game.name}</span>                    
+                        </button>
+                    </div>
+                ))}
+            </section>
+            <div className='Aside-btn'>
+                <button className="toggle-btn" onClick={() => setOpen(!isOpen)}>
+                {isOpen ? "←" : "→"}
                 </button>
-            </ol>
-        ))}
-        <div className='space'></div>
-        <button className="toggle-btn" onClick={() => setOpen(!isOpen)}>
-          {isOpen ? "←" : "→"}
-        </button>
-        </div>
+            </div>
+        </>
     )
 }
 

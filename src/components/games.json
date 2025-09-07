@@ -64,7 +64,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer 7 cartes à chaque joueur.",
             "Poser une carte de la pioche sur la défausse pour commencer.",
             "À son tour, un joueur joue une carte de même couleur ou chiffre/symbole.",
@@ -127,7 +127,7 @@
             "count": 40
         }
         ],
-        "etapes": [
+        "steps": [
             "Mélanger et distribuer les cartes selon le nombre de joueurs.",
             "Le joueur à gauche du donneur commence la partie.",
             "Les joueurs jouent une carte en suivant la couleur demandée ou en jouant un atout.",
@@ -185,7 +185,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer toutes les cartes aux joueurs.",
             "Chaque joueur place son paquet de cartes devant lui, face cachée.",
             "À tour de rôle, chaque joueur retourne la carte du dessus de son paquet et la place au centre pour former une pile commune.",
@@ -244,7 +244,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer toutes les cartes aux joueurs.",
             "Le joueur à gauche du donneur commence en posant des cartes face cachée et en annonçant leur valeur.",
             "Les autres joueurs décident s'ils croient le joueur ou le défient.",
@@ -302,7 +302,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Retirer un valet du jeu pour créer la carte du pouilleux.",
             "Distribuer toutes les cartes aux joueurs.",
             "Chaque joueur forme des paires de même valeur et les place devant lui.",
@@ -362,7 +362,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer 1 carte à chaque joueur avec la question 'Quel couleur sera la catre ?' vrais il distribue une gorgée faux il en bois une.",
             "Distribuer 1 carte à chaque joueur avec la question 'Inferieur ou superieur ?' vrais il distribue deux gorgées faux il en bois deux.",
             "Distribuer 1 carte à chaque joueur avec la question 'Interne ou externe ?' vrais il distribue trois gorgées faux il en bois trois.",
@@ -426,7 +426,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer toutes les cartes aux joueurs.",
             "Le joueur avec le 3 de trèfle commence en posant cette carte au centre.",
             "Les joueurs jouent une carte ou une combinaison de valeur égale ou supérieure à la dernière carte jouée.",
@@ -482,7 +482,7 @@
                 "count": 1
             }
         ],
-        "etapes": [
+        "steps": [
             "Chaque joueur a 13 tours pour remplir sa feuille de score.",
             "À chaque tour, un joueur lance les 5 dés jusqu'à 3 fois.",
             "Après chaque lancer, le joueur peut garder certains dés et relancer les autres.",
@@ -533,7 +533,7 @@
                 "count": 150
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer 12 cartes à chaque joueur, face cachée, en formant un tableau de 3x4.",
             "Chaque joueur retourne 2 de ses cartes pour les révéler.",
             "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
@@ -597,7 +597,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
             "Distribuer 4 cartes à chaque joueur, face cachée.",
             "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
@@ -644,7 +644,7 @@
                 "count": 3
             }
         ],
-        "etapes": [
+        "steps": [
             "Chaque joueur a 3 lancers de dés par tour.",
             "Les combinaisons possibles sont : 421, brelan, paire, et somme des dés.",
             "Le joueur peut relancer un ou plusieurs dés après chaque lancer, jusqu'à un maximum de 3 lancers.",
@@ -691,7 +691,7 @@
                 "count": "Varie selon le nombre de joueurs"
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer une carte rôle à chaque joueur, face cachée.",
             "Le jeu se déroule en deux phases : nuit et jour.",
             "Pendant la nuit, les loups-garous choisissent une victime, la voyante regarde une carte, la sorcière peut utiliser ses potions.",
@@ -749,7 +749,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer 7 cartes à chaque joueur, face cachée.",
             "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
             "À tour de rôle, chaque joueur doit jouer une carte qui correspond soit par la couleur, soit par le numéro à la carte du dessus de la défausse.",
@@ -801,7 +801,7 @@
                 "count": 104
             }
         ],
-        "etapes": [
+        "steps": [
             "Mélanger les deux jeux de cartes et distribuer 10 cartes à chaque joueur, face cachée.",
             "Placer 4 cartes face visible au centre pour commencer 4 rangées.",
             "À tour de rôle, chaque joueur choisit une carte de sa main et la place face cachée devant lui.",
@@ -860,7 +860,7 @@
                 "count": 22
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer 6 cartes à chaque joueur, face cachée.",
             "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
             "À tour de rôle, chaque joueur peut jouer une carte de sa main ou piocher une carte de la pioche.",
@@ -920,7 +920,7 @@
                 "count": 50
             }
         ],
-        "etapes": [
+        "steps": [
             "Distribuer 4 cartes personnage à chaque joueur, face cachée.",
             "Le reste des cartes forme la pioche, avec 2 cartes retirées du jeu.",
             "À tour de rôle, chaque joueur choisit un personnage parmi ceux disponibles, révélant ainsi son rôle et sa capacité spéciale.",
@@ -986,7 +986,7 @@
                 "count": 100
             }
         ],  
-        "etapes": [
+        "steps": [
             "Distribuer 2 cartes privées à chaque joueur, face cachée.",
             "Le reste des cartes forme la pioche.",
             "Le jeu se déroule en plusieurs tours de mise : pré-flop, flop, turn et river.",
@@ -1044,7 +1044,7 @@
                 "count": 1
             }
         ],
-        "etapes": [
+        "steps": [
             "Former deux équipes de joueurs.",
             "Distribuer un nombre égal de cartes à chaque joueur, qui choisit secrètement un certain nombre de cartes à utiliser pour la partie.",
             "Le jeu se déroule en trois manches avec des règles différentes pour faire deviner les cartes.",
@@ -1088,7 +1088,7 @@
                 "count": 2
             }
         ],
-        "etapes": [
+        "steps": [
             "Chaque joueur a 3 lancers de dés par tour pour atteindre exactement 11 ou 21 points.",
             "Après chaque lancer, le joueur peut choisir de s'arrêter et de conserver son score actuel ou de relancer les dés pour augmenter son score.",
             "Si le score dépasse 21, le joueur perd automatiquement la partie.",
@@ -1149,7 +1149,7 @@
                 "count": 4
             }
         ],
-        "etapes": [
+        "steps": [
             "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
             "Distribuer 8 cartes à chaque joueur, face cachée.",
             "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
@@ -1226,7 +1226,7 @@
                 "count": 8
             }
         ],
-        "etapes": [
+        "steps": [
             "Chaque joueur commence avec 16 pièces : 1 roi, 1 dame, 2 tours, 2 fous, 2 cavaliers et 8 pions.",
             "Le joueur avec les pièces blanches commence la partie.",
             "Les joueurs déplacent leurs pièces selon des règles spécifiques pour chaque type de pièce.",
@@ -1280,7 +1280,7 @@
                 "count": 1
             }
         ],
-        "etapes": [
+        "steps": [
             "Chaque joueur commence avec 12 pièces placées sur les cases noires des trois premières rangées de son côté du plateau.",
             "Le joueur avec les pièces blanches commence la partie.",
             "Les pièces se déplacent en diagonale d'une case vers l'avant sur les cases noires.",
@@ -1289,5 +1289,206 @@
             "Le jeu continue jusqu'à ce qu'un joueur capture toutes les pièces adverses ou bloque tous leurs mouvements.",
             "Le joueur qui capture toutes les pièces adverses ou bloque tous leurs mouvements gagne la partie."
             ]
+    },
+    {
+        "id": 23,
+        "name": "Dominos",
+        "logo": "./assets/svg/domino-game-svgrepo-com.svg",
+        "description": "Jeu de tuiles où l'objectif est de se débarrasser de toutes ses tuiles en les plaçant sur la table selon des règles spécifiques.",
+        "setup": [
+            {
+                "name": "Nombre total de tuiles",
+                "value": "28"
+            },
+            {
+                "name": "Tuiles par joueur",
+                "value": "7 (pour 2 joueurs), 5 (pour 3-4 joueurs)"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2 à 4"
+            },
+            {
+                "name": "Matériel",
+                "value": "Jeu de dominos, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Mélanger les tuiles et distribuer le nombre approprié à chaque joueur (7 pour 2 joueurs, 5 pour 3-4 joueurs).",
+            "Le reste des tuiles forme la pioche.",
+            "Le joueur avec la tuile double la plus élevée commence la partie en la plaçant au centre de la table.",
+            "À tour de rôle, chaque joueur doit placer une tuile qui correspond par un côté à une tuile déjà sur la table.",
+            "Si un joueur ne peut pas jouer, il doit piocher une tuile de la pioche. S'il peut jouer cette tuile, il peut le faire immédiatement.",
+            "Le jeu continue jusqu'à ce qu'un joueur se débarrasse de toutes ses tuiles ou que plus aucun joueur ne puisse jouer.",
+            "Le joueur qui se débarrasse de toutes ses tuiles en premier gagne la partie. Si personne ne peut jouer, le joueur avec le moins de points (somme des valeurs des tuiles restantes) gagne."
+        ],
+        "material": [
+            {
+                "name": "Tuiles de dominos",
+                "effect": "Utilisées pour jouer et former des chaînes.",
+                "count": 28
+            }
+        ],
+        "steps": [
+            "Mélanger les tuiles et distribuer le nombre approprié à chaque joueur (7 pour 2 joueurs, 5 pour 3-4 joueurs).",
+            "Le reste des tuiles forme la pioche.",
+            "Le joueur avec la tuile double la plus élevée commence la partie en la plaçant au centre de la table.",
+            "À tour de rôle, chaque joueur doit placer une tuile qui correspond par un côté à une tuile déjà sur la table.",
+            "Si un joueur ne peut pas jouer, il doit piocher une tuile de la pioche. S'il peut jouer cette tuile, il peut le faire immédiatement.",
+            "Le jeu continue jusqu'à ce qu'un joueur se débarrasse de toutes ses tuiles ou que plus aucun joueur ne puisse jouer.",
+            "Le joueur qui se débarrasse de toutes ses tuiles en premier gagne la partie. Si personne ne peut jouer, le joueur avec le moins de points (somme des valeurs des tuiles restantes) gagne."
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Bowling",
+        "logo": "./assets/svg/bowling-strike-svgrepo-com.svg",
+        "description": "Jeu où l'objectif est de faire tomber le maximum de quilles en lançant une boule sur une piste.",
+        "setup": [
+            {
+                "name": "Nombre total de quilles",
+                "value": "10"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "1 à 6"
+            },
+            {
+                "name": "Matériel",
+                "value": "Piste de bowling, boule de bowling, quilles, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Chaque joueur a 10 frames (tours) pour faire tomber le maximum de quilles.",
+            "Dans chaque frame, le joueur a droit à deux lancers pour faire tomber les 10 quilles.",
+            "Si le joueur fait tomber toutes les quilles en un seul lancer, c'est un strike. Il marque 10 points plus le total des quilles tombées dans les deux lancers suivants.",
+            "Si le joueur fait tomber toutes les quilles en deux lancers, c'est un spare. Il marque 10 points plus le total des quilles tombées dans le lancer suivant.",
+            "Si le joueur ne fait pas tomber toutes les quilles en deux lancers, il marque le total des quilles tombées dans cette frame.",
+            "Le jeu continue jusqu'à ce que tous les joueurs aient joué leurs 10 frames.",
+            "Le joueur avec le score total le plus élevé gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Boule de bowling",
+                "effect": "Utilisée pour faire tomber les quilles.",
+                "count": 1
+            },
+            {
+                "name": "Quilles",
+                "effect": "Cibles à faire tomber avec la boule.",
+                "count": 10
+            },
+            {
+                "name": "Piste de bowling",
+                "effect": "Surface sur laquelle le jeu se déroule.",
+                "count": 1
+            }
+        ],
+        "steps": [
+            "Chaque joueur a 10 frames (tours) pour faire tomber le maximum de quilles.",
+            "Dans chaque frame, le joueur a droit à deux lancers pour faire tomber les 10 quilles.",
+            "Si le joueur fait tomber toutes les quilles en un seul lancer, c'est un strike. Il marque 10 points plus le total des quilles tombées dans les deux lancers suivants.",
+            "Si le joueur fait tomber toutes les quilles en deux lancers, c'est un spare. Il marque 10 points plus le total des quilles tombées dans le lancer suivant.",
+            "Si le joueur ne fait pas tomber toutes les quilles en deux lancers, il marque le total des quilles tombées dans cette frame.",
+            "Le jeu continue jusqu'à ce que tous les joueurs aient joué leurs 10 frames.",
+            "Le joueur avec le score total le plus élevé gagne la partie."
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Morpion",
+        "logo": "./assets/svg/tictactoe-svgrepo-com.svg",
+        "description": "Jeu de stratégie où l'objectif est d'aligner trois symboles identiques sur une grille 3x3.",
+        "setup": [
+            {
+                "name": "Nombre total de cases",
+                "value": "9"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "2"
+            },
+            {
+                "name": "Matériel",
+                "value": "Grille de morpion, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Le jeu se joue sur une grille 3x3.",
+            "Deux joueurs s'affrontent, l'un utilisant le symbole 'X' et l'autre le symbole 'O'.",
+            "Les joueurs jouent à tour de rôle, en plaçant leur symbole dans une case vide de la grille.",
+            "Le premier joueur à aligner trois de ses symboles horizontalement, verticalement ou en diagonale gagne la partie.",
+            "Si toutes les cases sont remplies sans qu'un joueur ait aligné trois symboles, la partie se termine par un match nul."
+        ],
+        "material": [
+            {
+                "name": "Grille de morpion",
+                "effect": "Surface de jeu avec une grille 3x3.",
+                "count": 1
+            }
+        ],
+        "steps": [
+            "Le jeu se joue sur une grille 3x3.",
+            "Deux joueurs s'affrontent, l'un utilisant le symbole 'X' et l'autre le symbole 'O'.",
+            "Les joueurs jouent à tour de rôle, en plaçant leur symbole dans une case vide de la grille.",
+            "Le premier joueur à aligner trois de ses symboles horizontalement, verticalement ou en diagonale gagne la partie.",
+            "Si toutes les cases sont remplies sans qu'un joueur ait aligné trois symboles, la partie se termine par un match nul."
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Billard",
+        "logo": "./assets/svg/pool-cue-svgrepo-com.svg",
+        "description": "Jeu où l'objectif est de rentrer les boules numérotées dans les poches en utilisant une boule blanche pour les frapper.",
+        "setup": [
+            {
+                "name": "Nombre total de boules",
+                "value": "16 (1 blanche + 15 numérotées)"
+            },
+            {
+                "name": "Nombre de joueurs",
+                "value": "1 à 4"
+            },
+            {
+                "name": "Matériel",
+                "value": "Table de billard, boule blanche, boules numérotées, queue de billard, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Chaque joueur choisit un type de boules (pleines ou rayées) après le premier coup.",
+            "Le joueur doit d'abord toucher une de ses boules avant de toucher une boule adverse ou la boule noire (8).",
+            "Si un joueur rentre une de ses boules, il continue à jouer. Sinon, c'est au tour du joueur suivant.",
+            "Le joueur qui rentre toutes ses boules en premier, puis la boule noire (8) dans une poche désignée, gagne la partie.",
+            "Si un joueur rentre la boule noire (8) avant d'avoir rentré toutes ses boules, il perd la partie."
+        ],
+        "material": [
+            {
+                "name": "Boule blanche",
+                "effect": "Utilisée pour frapper les autres boules.",
+                "count": 1
+            },
+            {
+                "name": "Boules numérotées",
+                "effect": "Cibles à rentrer dans les poches.",
+                "count": 15
+            },
+            {
+                "name": "Queue de billard",
+                "effect": "Utilisée pour frapper la boule blanche.",
+                "count": 1
+            },
+            {
+                "name": "Table de billard",
+                "effect": "Surface de jeu avec des poches.",
+                "count": 1
+            }
+        ],
+        "steps": [
+            "Chaque joueur choisit un type de boules (pleines ou rayées) après le premier coup.",
+            "Le joueur doit d'abord toucher une de ses boules avant de toucher une boule adverse ou la boule noire (8).",
+            "Si un joueur rentre une de ses boules, il continue à jouer. Sinon, c'est au tour du joueur suivant.",
+            "Le joueur qui rentre toutes ses boules en premier, puis la boule noire (8) dans une poche désignée, gagne la partie.",
+            "Si un joueur rentre la boule noire (8) avant d'avoir rentré toutes ses boules, il perd la partie."
+        ]
     }
 ]

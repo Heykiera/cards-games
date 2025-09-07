@@ -25,8 +25,8 @@ const RulesGame = ({ game }) => {
             </ul>
             <h3>Etapes du jeu :</h3>
             <ul>
-                {game.etapes.map((etapes, index) => (
-                    <p key={index}>{etapes}</p>
+                {game.steps.map((steps, index) => (
+                    <p key={index}>{steps}</p>
                 ))}
             </ul>
         </div>
