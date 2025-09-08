@@ -2,7 +2,7 @@ const RulesGame = ({ game }) => {
 
     if (!game) {
         return (
-            <header>
+            <header className="no-game-selected">
                 <h1>Sélectionne un jeu dans la liste pour voir ses règles.</h1>
             </header>
     )

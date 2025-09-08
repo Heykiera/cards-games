@@ -52,10 +52,22 @@ aside {
     overflow-y: scroll;   /* scrollable */
     -ms-overflow-style: none;
     scrollbar-width: none;
+    z-index: 100;
 }
 
 aside::-webkit-scrollbar {
     display: none;
+}
+
+.no-game-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
 }
 
 header { 
@@ -63,6 +75,7 @@ header {
     position: sticky;
     grid-area: header; 
     width: 100%;
+    z-index: 10;
 }
 
 main { 
@@ -70,12 +83,14 @@ main {
     width: calc(100% - 40px);
     padding: 10px;
     margin: 10px;
+    z-index: 10;
 }
 
 footer { 
     grid-area: footer;
     width: calc(100% - 40px);
     margin: 20px;
+    z-index: 10;
 }
 .App.sidebar-closed {
     grid-template-columns: 70px 1fr;
