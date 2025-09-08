@@ -1490,5 +1490,54 @@
             "Le joueur qui rentre toutes ses boules en premier, puis la boule noire (8) dans une poche désignée, gagne la partie.",
             "Si un joueur rentre la boule noire (8) avant d'avoir rentré toutes ses boules, il perd la partie."
         ]
+    },
+    {
+        "id": 27,
+        "name": "Baby-foot",
+        "logo": "./assets/svg/babyfoot.svg",
+        "description": "Jeu où l'objectif est de marquer des buts en manipulant des figurines montées sur des barres pour frapper une balle dans le but adverse.",
+        "setup": [
+            {
+                "name": "Nombre total de joueurs",
+                "value": "2 à 4"
+            },
+            {
+                "name": "Matériel",
+                "value": "Table de baby-foot, figurines montées sur des barres, balle, surface plane pour jouer"
+            }
+        ],
+        "rules": [
+            "Chaque équipe contrôle une série de barres avec des figurines montées pour frapper la balle.",
+            "Le jeu commence par un service, où la balle est placée au centre de la table et un joueur la lance en jeu.",
+            "Les joueurs manipulent les barres pour déplacer les figurines et frapper la balle vers le but adverse.",
+            "Un but est marqué lorsque la balle entre complètement dans le but adverse.",
+            "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre prédéterminé de buts (généralement 5 ou 10) pour gagner la partie.",
+            "Les joueurs ne doivent pas tourner les barres à plus de 360 degrés pour frapper la balle."
+        ],
+        "material": [
+            {
+                "name": "Table de baby-foot",
+                "effect": "Surface de jeu avec des barres et des figurines.",
+                "count": 1
+            },
+            {
+                "name": "Figurines montées sur des barres",
+                "effect": "Utilisées pour frapper la balle.",
+                "count": 22 
+            },
+            {
+                "name": "Balle",
+                "effect": "Utilisée pour marquer des buts.",
+                "count": 1
+            }
+        ],
+        "steps": [
+            "Chaque équipe contrôle une série de barres avec des figurines montées pour frapper la balle.",
+            "Le jeu commence par un service, où la balle est placée au centre de la table et un joueur la lance en jeu.",
+            "Les joueurs manipulent les barres pour déplacer les figurines et frapper la balle vers le but adverse.",
+            "Un but est marqué lorsque la balle entre complètement dans le but adverse.",
+            "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre prédéterminé de buts (généralement 5 ou 10) pour gagner la partie.",
+            "Les joueurs ne doivent pas tourner les barres à plus de 360 degrés pour frapper la balle."
+        ]
     }
 ]
