@@ -80,8 +80,9 @@
     background-color: #262930;
     color: #ffffff;
     padding: 0.5rem 0.5rem;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: width 0.3s ease;
     width: calc(100% - 1.2rem);
     text-align: center;
+    font-size: 1.2rem;
 }

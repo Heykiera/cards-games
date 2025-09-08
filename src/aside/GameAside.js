@@ -16,7 +16,7 @@ const GameAside = ({ games, onSelect, setOpen, isOpen}) => {
             </section>
             <div className='Aside-btn'>
                 <button className="toggle-btn" onClick={() => setOpen(!isOpen)}>
-                {isOpen ? "←" : "→"}
+                {isOpen ? "←⊸" : "→"}
                 </button>
             </div>
         </>
