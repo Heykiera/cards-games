@@ -4,22 +4,13 @@
         "name": "Uno",
         "logo": "./assets/svg/playing-card-uno.svg",
         "description": "Jeu de cartes très populaire où l'objectif est d'être le premier joueur à atteindre 500 points en se débarrassant de toutes ses cartes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 10],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "108"
-            },
-            {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "7"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 10"
-            },
-            {
-                "name": "Matériel",
-                "value": "Paquet de cartes UNO, feuilles et stylos pour compter les points"
             }
         ],
         "rules": [
@@ -36,31 +27,37 @@
             {
                 "name": "Cartes numérotées (0-9)",
                 "effect": "Peuvent être jouées si elles correspondent à la couleur ou au chiffre de la défausse.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 76
             },
             {
                 "name": "+2",
                 "effect": "Le joueur suivant pioche 2 cartes et perd son tour.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 8
             },
             {
                 "name": "Inversion",
                 "effect": "Inverse le sens du jeu.", 
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 8
             },
             {
                 "name": "Passe ton tour",
                 "effect": "Le joueur suivant perd son tour.", 
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 8
             },
             {
                 "name": "Joker",
                 "effect": "Le joueur choisit une nouvelle couleur de jeu.", 
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 4
             },
             {
                 "name": "Joker +4",
                 "effect": "Le joueur choisit une nouvelle couleur et le joueur suivant pioche 4 cartes.", 
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 4
             }
         ],
@@ -81,23 +78,14 @@
         "name": "Tarot",
         "logo": "./assets/svg/tarot-card-2-svgrepo-com.svg",
         "description": "Jeu de levées avec annonces et atouts.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [3, 4, 5],
         "setup": [
-        {
-            "name": "Nombre total de cartes",
-            "value": "78"
-        },
-        {
-            "name": "Cartes par joueur",
-            "value": "24 (pour 3 joueurs) 18 (pour 4 joueurs) ou 15 (5 joueurs) "
-        },
-        {
-            "name": "Nombre de joueurs",
-            "value": "3 à 5"
-        },
-        {
-            "name": "Matériel",
-            "value": "Jeu de cartes de tarot, feuilles et stylos pour compter les points"
-        }
+            {
+                "name": "Cartes par joueur",
+                "img":"",
+                "value": "24 (pour 3 joueurs) 18 (pour 4 joueurs) ou 15 (5 joueurs) "
+            }
         ],
         "rules": [
             "Le jeu se joue avec un jeu de 78 cartes comprenant des atouts, des figures et des cartes numérotées.",
@@ -112,19 +100,10 @@
         ],
         "material": [
         {
-            "name": "Atouts",
-            "effect": "Cartes numérotées de 1 à 21 et l'Excuse (Fou).",
-            "count": 22
-        },
-        {
-            "name": "Figures",
-            "effect": "Roi, Dame, Cavalier, Valet dans chaque couleur.",
-            "count": 16
-        },
-        {
-            "name": "Cartes numérotées",
-            "effect": "Cartes de 1 à 10 dans chaque couleur.",
-            "count": 40
+            "name": "Cartes de Tarot",
+            "effect": "Cartes de 1 à 10 dans chaque couleurs, Valet, Cavalier, Dame, Roi et les attouts de 1 à 21 avec l'Excuse",
+            "img": "./assets/svg/cards-svgrepo-com.svg",
+            "count": 78
         }
         ],
         "steps": [
@@ -139,24 +118,15 @@
     {
         "id": 3,
         "name": "Bataille Corse",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/bataille-corse.svg",
         "description": "Jeu de cartes rapide où l'objectif est de collecter toutes les cartes en jouant des paires et en frappant la pile.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 4],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "52"
-            },
-            {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "26 (pour 2 joueurs), 17 (pour 3 joueurs), 13 (pour 4 joueurs)"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 4"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -170,19 +140,10 @@
         ],
         "material": [
             {
-                "name": "Cartes numérotées (2-10)",
+                "name": "Cartes classique",
                 "effect": "Utilisées pour former des paires.",
-                "count": 36
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour former des paires.",
-                "count": 12
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour former des paires.",
-                "count": 4
+                "img": "./assets/svg/trump-4-svgrepo-com.svg",
+                "count": 52
             }
         ],
         "steps": [
@@ -200,22 +161,13 @@
         "name": "Menteur",
         "logo": "./assets/svg/playing-cards-svgrepo-co.svg",
         "description": "Jeu de bluff où l'objectif est de se débarrasser de toutes ses cartes en mentant sur les cartes jouées.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 6],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "52"
-            },
-            {
                 "name": "Cartes par joueur",
-                "value": "Varie selon le nombre de joueurs"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "3 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard, surface plane pour jouer"
+                "img":"card-games/public/assets/svg/trump-4-svgrepo-com.svg",
+                "value": "26 (pour 2 joueurs), 17 (pour 3 joueurs), 13 (pour 4 joueurs), 10 (pour 5 joueurs, 8 (pour 6 joueurs)"
             }
         ],
         "rules": [
@@ -229,19 +181,10 @@
         ],
         "material": [
             {
-                "name": "Cartes numérotées (2-10)",
-                "effect": "Utilisées pour jouer et bluffer.",
-                "count": 36
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour jouer et bluffer.",
-                "count": 12
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour jouer et bluffer.",
-                "count": 4
+                "name": "Cartes classique",
+                "effect": "Utilisées pour être honnête ou mentir.",
+                "img": "./assets/svg/trump-4-svgrepo-com.svg",
+                "count": 52
             }
         ],
         "steps": [
@@ -256,24 +199,15 @@
     {
         "id": 5,
         "name": "Pouilleux",
-        "logo": "./assets/svg/spades-2-of-playing-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/card-pick-svgrepo-com.svg",
         "description": "Jeu de cartes simple où l'objectif est de ne pas finir avec la carte du pouilleux (le valet de trèfle).",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 6],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "51 (un valet retiré)"
-            },
-            {
                 "name": "Cartes par joueur",
-                "value": "Varie selon le nombre de joueurs"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "3 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard (un valet retiré), surface plane pour jouer"
+                "img":"card-games/public/assets/svg/trump-4-svgrepo-com.svg",
+                "value": "26 (pour 2 joueurs), 17 (pour 3 joueurs), 13 (pour 4 joueurs), 10 (pour 5 joueurs, 8 (pour 6 joueurs)"
             }
         ],
         "rules": [
@@ -287,19 +221,10 @@
         ],
         "material": [
             {
-                "name": "Cartes numérotées (2-10)",
+                "name": "Cartes classique, le valet de pique retiré",
                 "effect": "Utilisées pour former des paires.",
-                "count": 36
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour former des paires (un valet retiré).",
-                "count": 11
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour former des paires.",
-                "count": 4
+                "img": "./assets/svg/trump-4-svgrepo-com.svg",
+                "count": 51
             }
         ],
         "steps": [
@@ -315,24 +240,15 @@
     {
         "id": 6,
         "name": "Pyramide",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/pyramide.svg",
         "description": "Jeu de boissons avec une pyramide de cartes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 10],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "52"
-            },
-            {
                 "name": "Cartes par joueur",
+                "img":"card-games/public/assets/svg/trump-4-svgrepo-com.svg",
                 "value": "4"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 10"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard, boissons pour chaque joueur"
             }
         ],
         "rules": [
@@ -347,19 +263,10 @@
         ],
         "material": [
             {
-                "name": "Cartes numérotées (2-10)",
-                "effect": "Utilisées pour jouer et donner des gorgées.",
-                "count": 36
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour jouer et donner des gorgées.",
-                "count": 12
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour jouer et donner des gorgées.",
-                "count": 4
+                "name": "Cartes classique",
+                "effect": "Utilisées pour former des paires.",
+                "img": "./assets/svg/trump-4-svgrepo-com.svg",
+                "count": 52
             }
         ],
         "steps": [
@@ -381,22 +288,13 @@
         "name": "Président",
         "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
         "description": "Jeu de cartes où l'objectif est de se débarrasser de toutes ses cartes pour devenir le président.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [4, 7],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "52"
-            },
-            {
                 "name": "Cartes par joueur",
-                "value": "Varie selon le nombre de joueurs"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "4 à 7"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard, surface plane pour jouer"
+                "img":"card-games/public/assets/svg/trump-4-svgrepo-com.svg",
+                "value": "13 (pour 4 joueurs), 10 (pour 5 joueurs), 8 (pour 6 joueurs), 7 (pour 7 joueurs)"
             }
         ],
         "rules": [
@@ -411,19 +309,10 @@
         ],
         "material": [
             {
-                "name": "Cartes numérotées (2-10)",
-                "effect": "Utilisées pour jouer et former des combinaisons.",
-                "count": 36
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour jouer et former des combinaisons.",
-                "count": 12
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour jouer et former des combinaisons.",
-                "count": 4
+                "name": "Cartes classique",
+                "effect": "Utilisées gagner le tour",
+                "img": "./assets/svg/trump-4-svgrepo-com.svg",
+                "count": 52
             }
         ],
         "steps": [
@@ -442,18 +331,13 @@
         "name": "Yam's",
         "logo": "./assets/svg/dice-6-svgrepo-com.svg",
         "description": "Jeu de dés où l'objectif est de réaliser des combinaisons spécifiques pour marquer des points.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [1, 6],
         "setup": [
             {
-                "name": "Nombre total de dés",
-                "value": "5"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "1 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "5 dés, feuille de score, stylo"
+                "name": "Piste de lancée de dès",
+                "img":"./assets/svg/piste-des.svg",
+                "value": "1"
             }
         ],
         "rules": [
@@ -467,18 +351,21 @@
         ],
         "material": [
             {
-                "name": "Dès 6 faces)",
+                "name": "Dès 6 faces",
                 "effect": "Utilisées pour obtenir des face spéciales.",
+                "img": "./assets/svg/dice-2-svgrepo-com.svg",
                 "count": 5
             },
             {
                 "name": "Feuille de score",
                 "effect": "Utilisée pour enregistrer les scores des joueurs.",
+                "img": "./assets/svg/new-document-svgrepo-com.svg",
                 "count": 1
             },
             {
                 "name": "Stylo",
                 "effect": "Utilisé pour écrire sur la feuille de score.",
+                "img": "./assets/svg/pen-svgrepo-com.svg",
                 "count": 1
             }
         ],
@@ -495,24 +382,15 @@
     {
         "id": 9,
         "name": "Skyjo",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/straight-skyjo.svg",
         "description": "Jeu de cartes où l'objectif est de terminer la partie avec le moins de points possible en échangeant et en retournant des cartes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 8],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "150"
-            },
-            {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "12"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 8"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes Skyjo, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -530,6 +408,7 @@
             {
                 "name": "Cartes numérotées (-2 à 12)",
                 "effect": "Utilisées pour jouer et échanger.",
+                "img": "./assets/svg/trump-skyjo.svg",
                 "count": 150
             }
         ],
@@ -548,24 +427,15 @@
     {
         "id": 10,
         "name": "Kem's",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/kem's.svg",
         "description": "Jeu de cartes en équipe où l'objectif est de faire un signe secret pour indiquer à son partenaire qu'on a une combinaison de quatre cartes identiques.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [4, 8, "par paire"],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "52"
-            },
-            {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "4"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "4 (2 équipes de 2)"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -582,19 +452,10 @@
         ],
         "material": [
             {
-                "name": "Cartes numérotées (2-10)",
-                "effect": "Utilisées pour jouer et former des combinaisons.",
-                "count": 36
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour jouer et former des combinaisons.",
-                "count": 12
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour jouer et former des combinaisons.",
-                "count": 4
+                "name": "Cartes classique",
+                "effect": "Utilisées gagner le tour",
+                "img": "./assets/svg/trump-4-svgrepo-com.svg",
+                "count": 52
             }
         ],
         "steps": [
@@ -613,20 +474,15 @@
     {
         "id": 11,
         "name": "421",
-        "logo": "./assets/svg/two-dices-svgrepo-com.svg",
+        "logo": "./assets/svg/421.svg",
         "description": "Jeu de dés où l'objectif est de réaliser des combinaisons spécifiques pour marquer des points.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [1, 6],
         "setup": [
             {
-                "name": "Nombre total de dés",
-                "value": "3"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "1 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "Surface plane pour jouer"
+                "name": "Piste de lancée de dès",
+                "img":"./assets/svg/piste-des.svg",
+                "value": "1"
             }
         ],
         "rules": [
@@ -639,8 +495,9 @@
         ],
         "material": [
             {
-                "name": "Dès 6 faces)",
+                "name": "Dès 6 faces",
                 "effect": "Utilisées pour obtenir des face spéciales.",
+                "img": "./assets/svg/dice-2-svgrepo-com.svg",
                 "count": 3
             }
         ],
@@ -658,22 +515,13 @@
         "name": "Loup Garou",
         "logo": "./assets/svg/werewolf-6-svgrepo-com.svg",
         "description": "Jeu de rôle et de déduction où les joueurs incarnent des villageois ou des loups-garous, avec des rôles spéciaux.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [8, 18],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "Varie selon le nombre de joueurs"
-            },
-            {
                 "name": "Cartes par joueur",
+                "img":"./assets/svg/square-hunter.svg",
                 "value": "1"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "8 à 18"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes Loup Garou, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -688,7 +536,8 @@
             {
                 "name": "Cartes Rôle",
                 "effect": "Chaque carte représente un rôle spécifique avec des capacités uniques.",
-                "count": "Varie selon le nombre de joueurs"
+                "img": "./assets/svg/square-werewolf.svg",
+                "count": " Le nombre de joueurs"
             }
         ],
         "steps": [
@@ -703,24 +552,15 @@
     {
         "id": 13,
         "name": "8 Américain",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/8-americain.svg",
         "description": "Jeu de cartes où l'objectif est de se débarrasser de toutes ses cartes en jouant des cartes correspondantes ou des 8 pour changer la couleur.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 6],
         "setup": [
             {
-                "name": "Nombre total de cartes",
-                "value": "52"
-            },
-            {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "7"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -734,20 +574,11 @@
         ],
         "material": [
             {
-                "name": "Cartes numérotées (2-10)",
+                "name": "Cartes numérotées (2-10), Valet, Dame, Rois et As",
                 "effect": "Utilisées pour jouer et correspondre par couleur ou numéro.",
-                "count": 36
-            },
-            {
-                "name": "Figures (Valet, Dame, Roi)",
-                "effect": "Utilisées pour jouer et correspondre par couleur ou numéro.",
-                "count": 12
-            },
-            {
-                "name": "As",
-                "effect": "Utilisé pour jouer et correspondre par couleur ou numéro.",
-                "count": 4
-            }
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 52
+            } 
         ],
         "steps": [
             "Distribuer 7 cartes à chaque joueur, face cachée.",
@@ -764,22 +595,18 @@
         "name": "6 qui prend",
         "logo": "./assets/svg/bull-frontal-head-svgrepo-com.svg",
         "description": "Jeu de cartes où l'objectif est d'éviter de ramasser des cartes en jouant stratégiquement.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 10],
         "setup": [
             {
                 "name": "Nombre total de cartes",
+                "img":"",
                 "value": "104 (deux jeux de 52 cartes)"
             },
             {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "10"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 10"
-            },
-            {
-                "name": "Matériel",
-                "value": "Deux jeux de cartes standard, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -798,6 +625,7 @@
             {
                 "name": "Cartes numérotées (1-104)",
                 "effect": "Utilisées pour jouer et former des rangées.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 104
             }
         ],
@@ -816,22 +644,18 @@
         "name": "1000 Bornes",
         "logo": "./assets/svg/meandering-road-with-trees-at-sides-svgrepo-com.svg",
         "description": "Jeu de cartes où l'objectif est d'être le premier à parcourir 1000 kilomètres en jouant des cartes de distance tout en gérant les obstacles.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 6],
         "setup": [
             {
                 "name": "Nombre total de cartes",
+                "img":"",
                 "value": "106"
             },
             {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "6"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes 1000 Bornes, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -847,16 +671,19 @@
             {
                 "name": "Cartes de distance (25, 50, 75, 100, 200 km)",
                 "effect": "Utilisées pour avancer vers l'objectif de 1000 km.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 56
             },
             {
                 "name": "Cartes d'obstacle (panne d'essence, crevaison, accident, limitation de vitesse)",
                 "effect": "Utilisées pour ralentir les adversaires.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 28
             },
             {
                 "name": "Cartes de réparation (réservoir plein, roue de secours, réparation, fin de limitation)",
                 "effect": "Utilisées pour se débarrasser des obstacles.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 22
             }
         ],
@@ -875,22 +702,18 @@
         "name": "Citadelles",
         "logo": "./assets/svg/protection-fort-svgrepo-com.svg",
         "description": "Jeu de cartes et de stratégie où les joueurs incarnent des personnages avec des capacités spéciales pour construire des quartiers dans une cité.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 8],
         "setup": [
             {
                 "name": "Nombre total de cartes",
+                "img":"",
                 "value": "110"
             },
             {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "4"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 8"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes Citadelles, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -907,16 +730,19 @@
             {
                 "name": "Cartes Personnage",
                 "effect": "Chaque carte représente un personnage avec une capacité spéciale unique.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 28
             },
             {
                 "name": "Cartes Quartier",
                 "effect": "Utilisées pour construire des quartiers dans la cité.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 80
             },
             {
                 "name": "Pièces d'or",
                 "effect": "Utilisées comme monnaie pour acheter des quartiers.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 50
             }
         ],
@@ -936,22 +762,18 @@
         "name": "Poker",
         "logo": "./assets/svg/poker-chip-svgrepo-com.svg",
         "description": "Jeu de cartes où l'objectif est de former la meilleure main possible en combinant des cartes personnelles et communes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 10],
         "setup": [
             {
                 "name": "Nombre total de cartes",
+                "img":"",
                 "value": "52"
             },
             {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "2 (cartes privées) + 5 (cartes communes)"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 10"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes standard, jetons pour les mises, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -968,21 +790,25 @@
             {
                 "name": "Cartes numérotées (2-10)",
                 "effect": "Utilisées pour jouer et former des combinaisons.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 36
             },
             {
                 "name": "Figures (Valet, Dame, Roi)",
                 "effect": "Utilisées pour jouer et former des combinaisons.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 12
             },
             {
                 "name": "As",
                 "effect": "Utilisé pour jouer et former des combinaisons.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 4
             },
             {
                 "name": "Jetons",
                 "effect": "Utilisés pour les mises.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 100
             }
         ],  
@@ -1002,22 +828,18 @@
         "name": "Times'Up",
         "logo": "./assets/svg/time-sand-svgrepo-com.svg",
         "description": "Jeu de société où les joueurs doivent faire deviner des noms de personnages célèbres en trois manches avec des règles différentes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [4, 12],
         "setup": [
             {
                 "name": "Nombre total de cartes",
+                "img":"",
                 "value": "40"
             },
             {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "Varie selon le nombre de joueurs"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "4 à 12"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes Times'Up, sablier, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -1036,11 +858,13 @@
             {
                 "name": "Cartes Personnage",
                 "effect": "Chaque carte représente un personnage/objet/évènement célèbre à faire deviner.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 40
             },
             {
                 "name": "Sablier",
                 "effect": "Utilisé pour limiter le temps de chaque tour.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             }
         ],
@@ -1059,18 +883,13 @@
         "name": "11/21",
         "logo": "./assets/svg/dice-svgrepo-com.svg",
         "description": "Jeu de dés où l'objectif est d'atteindre exactement 11 ou 21 points en lançant des dés et en choisissant judicieusement quand s'arrêter.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [1, 6],
         "setup": [
             {
                 "name": "Nombre total de dés",
+                "img":"",
                 "value": "2"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "1 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "Surface plane pour jouer"
             }
         ],
         "rules": [
@@ -1085,6 +904,7 @@
             {
                 "name": "Dès 6 faces)",
                 "effect": "Utilisées pour obtenir des face spéciales.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 2
             }
         ],
@@ -1100,24 +920,20 @@
     {
         "id": 20,
         "name": "Belote",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/playing-cards-16-svgrepo-com.svg",
         "description": "Jeu de cartes en équipe où l'objectif est de marquer des points en remportant des plis avec des combinaisons spécifiques.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [4],
         "setup": [
             {
                 "name": "Nombre total de cartes",
+                "img":"",
                 "value": "32"
             },
             {
                 "name": "Cartes par joueur",
+                "img":"",
                 "value": "8"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "4 (2 équipes de 2)"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de cartes Belote, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -1136,16 +952,19 @@
             {
                 "name": "Cartes numérotées (7-10)",
                 "effect": "Utilisées pour jouer et former des plis.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 24
             },
             {
                 "name": "Figures (Valet, Dame, Roi)",
                 "effect": "Utilisées pour jouer et former des plis.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 12
             },
             {
                 "name": "As",
                 "effect": "Utilisé pour jouer et former des plis.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 4
             }
         ],
@@ -1167,22 +986,18 @@
         "name": "Echecs",
         "logo": "./assets/svg/chess-3-svgrepo-com.svg",
         "description": "Jeu de stratégie où l'objectif est de mettre le roi adverse en échec et mat.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2],
         "setup": [
             {
-                "name": "Nombre total de pièces",
+                "name": "Nombre de pièces",
+                "img":"",
                 "value": "32"
             },
             {
-                "name": "Pièces par joueur",
-                "value": "16"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2"
-            },
-            {
-                "name": "Matériel",
-                "value": "Échiquier et pièces d'échecs, surface plane pour jouer"
+                "name": "Nombre de pièces de remplacement",
+                "img":"",
+                "value": "4"
             }
         ],
         "rules": [
@@ -1198,32 +1013,44 @@
             {
                 "name": "Roi",
                 "effect": "La pièce la plus importante. Peut se déplacer d'une case dans n'importe quelle direction.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             },
             {
                 "name": "Dame",
-                "effect": "La pièce la plus puissante. Peut se déplacer de n'importe quel nombre de cases en ligne droite ou en diagonale.",
-                "count": 1
+                "effect": "La pièce la plus puissante. Peut se déplacer de n'importe quel nombre de cases en ligne droite ou en diagonale. Une de plus pour le remplacement.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 2
             },
             {
                 "name": "Tour",
                 "effect": "Peut se déplacer de n'importe quel nombre de cases en ligne droite (horizontalement ou verticalement).",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 2
             },
             {
                 "name": "Fou",
                 "effect": "Peut se déplacer de n'importe quel nombre de cases en diagonale.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 2
             },
             {
                 "name": "Cavalier",
-                "effect": "Se déplace en forme de 'L' : deux cases dans une direction et une case perpendiculairement.",
-                "count": 2
+                "effect": "Se déplace en forme de 'L' : deux cases dans une direction et une case perpendiculairement. Une de plus pour le remplacement.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 3
             },
             {
                 "name": "Pion",
                 "effect": "Se déplace d'une case vers l'avant, avec des règles spéciales pour la première avancée et la capture.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 8
+            },
+            {
+                "name": "Echequier",
+                "effect": "Surface de jeu avec un damier 8x8.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 1
             }
         ],
         "steps": [
@@ -1241,22 +1068,13 @@
         "name": "Dames",
         "logo": "./assets/svg/token-bat-coin-svgrepo-com.svg",
         "description": "Jeu de stratégie où l'objectif est de capturer toutes les pièces adverses ou de bloquer leurs mouvements.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2],
         "setup": [
             {
                 "name": "Nombre total de pièces",
+                "img":"",
                 "value": "24"
-            },
-            {
-                "name": "Pièces par joueur",
-                "value": "12"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2"
-            },
-            {
-                "name": "Matériel",
-                "value": "Plateau de dames et pièces de dames, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -1272,11 +1090,13 @@
             {
                 "name": "Pièces de dames",
                 "effect": "Utilisées pour jouer et capturer les pièces adverses.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 24
             },
             {
                 "name": "Plateau de dames",
                 "effect": "Surface de jeu avec un damier 8x8.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             }
         ],
@@ -1295,22 +1115,18 @@
         "name": "Dominos",
         "logo": "./assets/svg/domino-game-svgrepo-com.svg",
         "description": "Jeu de tuiles où l'objectif est de se débarrasser de toutes ses tuiles en les plaçant sur la table selon des règles spécifiques.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 4],
         "setup": [
             {
                 "name": "Nombre total de tuiles",
+                "img":"",
                 "value": "28"
             },
             {
                 "name": "Tuiles par joueur",
+                "img":"",
                 "value": "7 (pour 2 joueurs), 5 (pour 3-4 joueurs)"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2 à 4"
-            },
-            {
-                "name": "Matériel",
-                "value": "Jeu de dominos, surface plane pour jouer"
             }
         ],
         "rules": [
@@ -1326,6 +1142,7 @@
             {
                 "name": "Tuiles de dominos",
                 "effect": "Utilisées pour jouer et former des chaînes.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 28
             }
         ],
@@ -1344,20 +1161,9 @@
         "name": "Bowling",
         "logo": "./assets/svg/bowling-strike-svgrepo-com.svg",
         "description": "Jeu où l'objectif est de faire tomber le maximum de quilles en lançant une boule sur une piste.",
-        "setup": [
-            {
-                "name": "Nombre total de quilles",
-                "value": "10"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "1 à 6"
-            },
-            {
-                "name": "Matériel",
-                "value": "Piste de bowling, boule de bowling, quilles, surface plane pour jouer"
-            }
-        ],
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [1, 6],
+        "setup": [],
         "rules": [
             "Chaque joueur a 10 frames (tours) pour faire tomber le maximum de quilles.",
             "Dans chaque frame, le joueur a droit à deux lancers pour faire tomber les 10 quilles.",
@@ -1371,16 +1177,19 @@
             {
                 "name": "Boule de bowling",
                 "effect": "Utilisée pour faire tomber les quilles.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             },
             {
                 "name": "Quilles",
                 "effect": "Cibles à faire tomber avec la boule.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 10
             },
             {
                 "name": "Piste de bowling",
                 "effect": "Surface sur laquelle le jeu se déroule.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             }
         ],
@@ -1399,20 +1208,9 @@
         "name": "Morpion",
         "logo": "./assets/svg/tictactoe-svgrepo-com.svg",
         "description": "Jeu de stratégie où l'objectif est d'aligner trois symboles identiques sur une grille 3x3.",
-        "setup": [
-            {
-                "name": "Nombre total de cases",
-                "value": "9"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "2"
-            },
-            {
-                "name": "Matériel",
-                "value": "Grille de morpion, surface plane pour jouer"
-            }
-        ],
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2],
+        "setup": [],
         "rules": [
             "Le jeu se joue sur une grille 3x3.",
             "Deux joueurs s'affrontent, l'un utilisant le symbole 'X' et l'autre le symbole 'O'.",
@@ -1424,6 +1222,7 @@
             {
                 "name": "Grille de morpion",
                 "effect": "Surface de jeu avec une grille 3x3.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             }
         ],
@@ -1440,20 +1239,9 @@
         "name": "Billard",
         "logo": "./assets/svg/pool-cue-svgrepo-com.svg",
         "description": "Jeu où l'objectif est de rentrer les boules numérotées dans les poches en utilisant une boule blanche pour les frapper.",
-        "setup": [
-            {
-                "name": "Nombre total de boules",
-                "value": "16 (1 blanche + 15 numérotées)"
-            },
-            {
-                "name": "Nombre de joueurs",
-                "value": "1 à 4"
-            },
-            {
-                "name": "Matériel",
-                "value": "Table de billard, boule blanche, boules numérotées, queue de billard, surface plane pour jouer"
-            }
-        ],
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [1, 4],
+        "setup": [],
         "rules": [
             "Chaque joueur choisit un type de boules (pleines ou rayées) après le premier coup.",
             "Le joueur doit d'abord toucher une de ses boules avant de toucher une boule adverse ou la boule noire (8).",
@@ -1465,21 +1253,37 @@
             {
                 "name": "Boule blanche",
                 "effect": "Utilisée pour frapper les autres boules.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             },
             {
                 "name": "Boules numérotées",
                 "effect": "Cibles à rentrer dans les poches.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 15
             },
             {
                 "name": "Queue de billard",
                 "effect": "Utilisée pour frapper la boule blanche.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             },
             {
                 "name": "Table de billard",
                 "effect": "Surface de jeu avec des poches.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 1
+            },
+            {
+                "name": "Craie",
+                "effect": "Utilisée pour améliorer l'adhérence de la queue sur la boule blanche.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 1
+            },
+            {
+                "name": "Triangle de rangement",
+                "effect": "Utilisé pour disposer les boules numérotées au début de la partie.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             }
         ],
@@ -1496,16 +1300,9 @@
         "name": "Baby-foot",
         "logo": "./assets/svg/babyfoot.svg",
         "description": "Jeu où l'objectif est de marquer des buts en manipulant des figurines montées sur des barres pour frapper une balle dans le but adverse.",
-        "setup": [
-            {
-                "name": "Nombre total de joueurs",
-                "value": "2 à 4"
-            },
-            {
-                "name": "Matériel",
-                "value": "Table de baby-foot, figurines montées sur des barres, balle, surface plane pour jouer"
-            }
-        ],
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 4],
+        "setup": [],
         "rules": [
             "Chaque équipe contrôle une série de barres avec des figurines montées pour frapper la balle.",
             "Le jeu commence par un service, où la balle est placée au centre de la table et un joueur la lance en jeu.",
@@ -1518,16 +1315,13 @@
             {
                 "name": "Table de baby-foot",
                 "effect": "Surface de jeu avec des barres et des figurines.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
-            },
-            {
-                "name": "Figurines montées sur des barres",
-                "effect": "Utilisées pour frapper la balle.",
-                "count": 22 
             },
             {
                 "name": "Balle",
                 "effect": "Utilisée pour marquer des buts.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
                 "count": 1
             }
         ],
@@ -1538,6 +1332,64 @@
             "Un but est marqué lorsque la balle entre complètement dans le but adverse.",
             "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre prédéterminé de buts (généralement 5 ou 10) pour gagner la partie.",
             "Les joueurs ne doivent pas tourner les barres à plus de 360 degrés pour frapper la balle."
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Scrabble",
+        "logo": "./assets/svg/scrabble-rounded-checkered-square-svgrepo-com.svg",
+        "description": "Jeu de lettres où l'objectif est de former des mots sur une grille pour marquer des points en utilisant des lettres avec des valeurs différentes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "playeurs": [2, 4],
+        "setup": [
+            {
+                "name": "Nombre total de lettres",
+                "img":"",
+                "value": "100"
+            },
+            {
+                "name": "Lettres par joueur",
+                "img":"",
+                "value": "7"
+            }
+        ],
+        "rules": [
+            "Chaque joueur commence avec 7 lettres tirées au hasard.",
+            "Le premier joueur place un mot sur la grille, en utilisant au moins une lettre au centre de la grille.",
+            "Les joueurs jouent à tour de rôle, en formant des mots en utilisant leurs lettres et celles déjà sur la grille.",
+            "Les mots doivent être valides selon un dictionnaire prédéterminé.",
+            "Chaque lettre a une valeur en points, et certaines cases sur la grille offrent des bonus (double lettre, triple mot, etc.).",
+            "Le jeu continue jusqu'à ce qu'un joueur utilise toutes ses lettres ou que plus aucun joueur ne puisse jouer.",
+            "Le joueur avec le score total le plus élevé gagne la partie."
+        ],
+        "material": [
+            {
+                "name": "Lettres",
+                "effect": "Utilisées pour former des mots sur la grille.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 100
+            },
+            {
+                "name": "Plateau de Scrabble",
+                "effect": "Surface de jeu avec une grille 15x15.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 1
+            },
+            {
+                "name": "Chevalet",
+                "effect": "Utilisé pour tenir les lettres de chaque joueur.",
+                "img": "./assets/svg/group-svgrepo-com.svg",
+                "count": 4
+            }
+        ],
+        "steps": [
+            "Chaque joueur commence avec 7 lettres tirées au hasard.",
+            "Le premier joueur place un mot sur la grille, en utilisant au moins une lettre au centre de la grille.",
+            "Les joueurs jouent à tour de rôle, en formant des mots en utilisant leurs lettres et celles déjà sur la grille.",
+            "Les mots doivent être valides selon un dictionnaire prédéterminé.",
+            "Chaque lettre a une valeur en points, et certaines cases sur la grille offrent des bonus (double lettre, triple mot, etc.).",
+            "Le jeu continue jusqu'à ce qu'un joueur utilise toutes ses lettres ou que plus aucun joueur ne puisse jouer.",
+            "Le joueur avec le score total le plus élevé gagne la partie."
         ]
     }
 ]

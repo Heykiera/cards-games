@@ -35,8 +35,12 @@
     grid-area: toggle;
 }
 
-.Aside-game button:hover, .Aside-game button:focus {
-    background-color: #dc143c;
+.Aside-game button:hover {
+    background-color: #720117;
+}
+
+.Aside-game button:focus {
+    background-color: #b30303;
 }
 
 .list-game {
@@ -44,11 +48,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     background-color: none;
+    margin-bottom: 5px;
 }
 .list-game button {
     justify-content: center;
+    margin: 5px;
 }
 
 .list-game button img {
