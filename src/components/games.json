@@ -389,7 +389,7 @@
         "setup": [
             {
                 "name": "Cartes par joueur",
-                "img":"",
+                "img":"./assets/svg/tile-card-list-svgrepo-com.svg",
                 "value": "12"
             }
         ],
@@ -434,7 +434,7 @@
         "setup": [
             {
                 "name": "Cartes par joueur",
-                "img":"",
+                "img":"./assets/svg/playing-cards-16-svgrepo-com.svg",
                 "value": "4"
             }
         ],
@@ -1163,7 +1163,13 @@
         "description": "Jeu où l'objectif est de faire tomber le maximum de quilles en lançant une boule sur une piste.",
         "img": "./assets/svg/group-svgrepo-com.svg",
         "playeurs": [1, 6],
-        "setup": [],
+        "setup": [
+            {
+                "name": "Piste de bowling",
+                "img": "./assets/svg/bowling-lane-svgrepo-com.svg",
+                "value": "Surface sur laquelle le jeu se déroule."
+            }
+        ],
         "rules": [
             "Chaque joueur a 10 frames (tours) pour faire tomber le maximum de quilles.",
             "Dans chaque frame, le joueur a droit à deux lancers pour faire tomber les 10 quilles.",
@@ -1177,20 +1183,14 @@
             {
                 "name": "Boule de bowling",
                 "effect": "Utilisée pour faire tomber les quilles.",
-                "img": "./assets/svg/group-svgrepo-com.svg",
+                "img": "./assets/svg/bowling-svgrepo-com.svg",
                 "count": 1
             },
             {
                 "name": "Quilles",
                 "effect": "Cibles à faire tomber avec la boule.",
-                "img": "./assets/svg/group-svgrepo-com.svg",
+                "img": "./assets/svg/bowling-bowls-silhouette-svgrepo-com.svg",
                 "count": 10
-            },
-            {
-                "name": "Piste de bowling",
-                "effect": "Surface sur laquelle le jeu se déroule.",
-                "img": "./assets/svg/group-svgrepo-com.svg",
-                "count": 1
             }
         ],
         "steps": [
@@ -1390,6 +1390,50 @@
             "Chaque lettre a une valeur en points, et certaines cases sur la grille offrent des bonus (double lettre, triple mot, etc.).",
             "Le jeu continue jusqu'à ce qu'un joueur utilise toutes ses lettres ou que plus aucun joueur ne puisse jouer.",
             "Le joueur avec le score total le plus élevé gagne la partie."
+        ]
+    },
+    {
+        "id": 29,
+        "name":"Tennis de Table",
+        "logo": "./assets/svg/two-ping-pong-rackets-svgrepo-com.svg",
+        "description": "Le tennis de table, aussi appelé ping-pong, est un sport de raquette qui oppose deux joueurs (en simple) ou deux équipes de deux joueurs (en double). Les échanges se font sur une table rectangulaire séparée par un filet, avec une petite balle légère et des raquettes recouvertes de caoutchouc. Le but est de marquer des points en frappant la balle de manière à ce que l’adversaire ne puisse pas la renvoyer correctement.",
+        "img": "./assets/svg/people-vs.svg",
+        "playeurs": [2, 4],
+        "setup": [
+            {
+                "name": "Table de tennis de table (2,74 m x 1,525 m, hauteur 76 cm)",
+                "img": "./assets/svg/table-tennis-9-svgrepo-com.svg",
+                "value": "matèriel sur lequel se déroule les parties."
+            }
+        ],
+        "rules": [
+            "Serveur : engage l’échange en respectant la règle du service.",
+            "Receveur : doit renvoyer la balle après un rebond.",
+            "Arbitre (en compétition) : surveille le respect des règles et annonce les scores."
+        ],
+        "material": [
+            {
+                "name": "Raquettes de Ping-pong",
+                "effect": "Utilisées pour jouer et former des combinaisons",
+                "img": "./assets/svg/table-tennis-7-svgrepo-com.svg",
+                "count": 2
+            },
+            {
+                "name": "Balle légère en plastique (40 mm de diamètre, ~2,7 g)",
+                "effect": "Utilisé pour jouer et mettre des points au score.",
+                "img": "./assets/svg/ball-pile-svgrepo-com.svg",
+                "count" : 1
+            }
+        ],
+        "steps": [
+            "Un tirage au sort détermine le serveur (ou choix de service/retour/côté).",
+            "La balle doit être lancée verticalement d’au moins 16 cm et frappée derrière la ligne de fond, en rebondissant une fois de chaque côté de la table.",
+            "En double, le service doit aller de la moitié droite du serveur vers la moitié droite du receveur.",
+            "Les joueurs frappent la balle alternativement après son rebond.",
+            "Le point est perdu si la balle ne touche pas la moitié de table adverse, sort sans rebond, touche deux fois la table, ou si le joueur rate la balle.",
+            "Un match se joue en sets de 11 points (avec au moins 2 points d’écart).",
+            "Les services changent tous les 2 points (et à chaque point si égalité à 10-10, appelée deuce).",
+            "Le premier joueur/équipe à remporter 3 ou 4 sets (selon la compétition) gagne le match."
         ]
     }
 ]

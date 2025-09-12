@@ -107,6 +107,10 @@ main {
     justify-content: center;
 }
 
+.game-rule, .game-step {
+    width: 100%;
+}
+
 footer { 
     grid-area: footer;
     width: calc(100% - 40px);
