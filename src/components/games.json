@@ -286,7 +286,7 @@
     {
         "id": 7,
         "name": "Président",
-        "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
+        "logo": "./assets/svg/president.svg",
         "description": "Jeu de cartes où l'objectif est de se débarrasser de toutes ses cartes pour devenir le président.",
         "img": "./assets/svg/group-svgrepo-com.svg",
         "playeurs": [4, 7],

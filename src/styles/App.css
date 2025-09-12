@@ -98,7 +98,8 @@ main {
     width: 100%;
 }
 
-.game-setup div, .game-rule, .game-step {
+.game-setup div {
+    flex: 1 1 auto;
     margin: 5px;
     padding: 10px;
     color: var(--text-second);
@@ -106,9 +107,14 @@ main {
     border-radius: 10px;
     justify-content: center;
 }
-
 .game-rule, .game-step {
-    width: 100%;
+    width: calc(100% - 25px);
+    margin: 5px;
+    padding: 10px;
+    color: var(--text-second);
+    background-color: #14161a;
+    border-radius: 10px;
+    justify-content: center;
 }
 
 footer { 

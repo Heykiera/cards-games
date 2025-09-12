@@ -40,23 +40,22 @@ const RulesGame = ({ game }) => {
                     {index < game.setup.length - 1 ? '' : ''}</div>
                 ))}
                 </div>
-                
             </div>
             <h3>Règles du jeu :</h3>
             <div className="game-rule">
-                <p>
+                <div>
                     {game.rules.map((rule, index) => (
                         <p key={index}>{rule}</p>
                     ))}
-                </p>
+                </div>
             </div>
             <h3>Etapes du jeu :</h3> 
             <div className="game-step">   
-                <p>
+                <div>
                     {game.steps.map((steps, index) => (
                         <p key={index}>{steps}</p>
                     ))}
-                </p>
+                </div>
             </div>
         </div>
     )
