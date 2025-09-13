@@ -96,7 +96,7 @@ main {
 .game-setup {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% -40px);
+    width: 100%;
 }
 
 .game-setup div, .game-rule div, .game-step div{
