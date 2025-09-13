@@ -98,7 +98,7 @@ main {
     width: 100%;
 }
 
-.game-setup div {
+.game-setup div, .game-rule div, .game-step div{
     flex: 1 1 auto;
     margin: 5px;
     padding: 10px;
@@ -108,7 +108,7 @@ main {
     justify-content: center;
 }
 .game-rule, .game-step {
-    width: calc(100% - 25px);
+    width: 100%;
     margin: 5px;
     padding: 10px;
     color: var(--text-second);

@@ -198,7 +198,7 @@
     },
     {
         "id": 5,
-        "name": "Pouilleux",
+        "name": "Le Pouilleux",
         "logo": "./assets/svg/card-pick-svgrepo-com.svg",
         "description": "Jeu de cartes simple où l'objectif est de ne pas finir avec la carte du pouilleux (le valet de trèfle).",
         "img": "./assets/svg/group-svgrepo-com.svg",
@@ -270,17 +270,28 @@
             }
         ],
         "steps": [
-            "Distribuer 1 carte à chaque joueur avec la question 'Quel couleur sera la catre ?' vrais il distribue une gorgée faux il en bois une.",
-            "Distribuer 1 carte à chaque joueur avec la question 'Inferieur ou superieur ?' vrais il distribue deux gorgées faux il en bois deux.",
-            "Distribuer 1 carte à chaque joueur avec la question 'Interne ou externe ?' vrais il distribue trois gorgées faux il en bois trois.",
-            "Distribuer 1 carte à chaque joueur avec la question 'Quel couleur ?' vrais il distribue quatre gorgées faux il en bois quatre.",
-            "Former une pyramide de cartes au centre de la table, face visible.",
-            "Les joueurs ne peuvent voir que leurs propres cartes.",
+            "Début de distribution de cartes a chaque joueurs.",
+            "Question 1 : Distribuer une carte à chaque joueur → “Quelle couleur sera la carte ?”.",
+            "- Bonne réponse : distribue 1 gorgée.",
+            "- Mauvaise réponse : boit 1 gorgée.",
+            "Question 2 : Distribuer une nouvelle carte → “Inférieure ou supérieure ?”.",
+            "- Bonne réponse : distribue 2 gorgées.",
+            "- Mauvaise réponse : boit 2 gorgées.",
+            "Question 3 : Distribuer une carte → “Interne ou externe ?”.",
+            "- Bonne réponse : distribue 3 gorgées.",
+            "- Mauvaise réponse : boit 3 gorgées.",
+            "Question 4 : Distribuer une carte → “Quelle couleur ?”.",
+            "- Bonne réponse : distribue 4 gorgées.",
+            "- Mauvaise réponse : boit 4 gorgées.",
+            "Former la pyramide au centre, face visible.",
+            "Les joueurs ne regardent que leurs cartes personnelles en le mémoriant le mieux possible.",
             "À tour de rôle, chaque joueur retourne une carte de la pyramide.",
-            "Si un joueur a une carte de même valeur, il peut donner autant de gorgée que l'étage où elle se trouve à un ou plusieurs joueurs qui se partage les gorgées, le joueurs peut aussi choisir de boire lui-même mais le buveurs peuvent dire menteur et le joueur doit boire le double.",
-            "Une carte de la pyramide ne peut être utilisée qu'une seule fois.",
-            "Le jeu continue jusqu'à ce que toutes les cartes soient retournées.",
-            "Le joueur avec le moins de gorgées à la fin gagne."
+            "Si un joueur a une carte identique, il peut donner autant de gorgées que la ligne de la pyramide où la carte se trouve (ex : 3e ligne = 3 gorgées).",
+            "Les gorgées peuvent être partagées entre plusieurs joueurs, ou le joueur peut décider de boire lui-même.",
+            "Attention : les autres peuvent dire “Menteur” → si c’est vrai, le joueur boit le double, mais si cela est faux il boit lui mêm le double",
+            "Le jeu continue jusqu’à ce que toutes les cartes de la pyramide soient retournées.",
+            "Le joueur avec le moins de gorgées à la fin gagne.",
+            "A la fin, pour chaque carte personnelle les joueurs boient une gorgée pour chaque cates d'on il n'a pas la valeur"
         ]
     },
     {

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import '../styles/AsideGames.css';
 
 const GameAside = ({ games, onSelect, setOpen, isOpen}) => {
@@ -6,12 +7,12 @@ const GameAside = ({ games, onSelect, setOpen, isOpen}) => {
         <>
             <section className='Aside-game'>
                 {games.map((game) => (
-                    <div className="list-game">
-                        <button key={game.id} onClick={() => onSelect(game.id)}>
+                    <Link to={`/${encodeURIComponent(game.name)}`} key={game.id} className="list-game">
+                        <button>
                             <img src={game.logo} alt={game.name} />
-                            <span>{game.name}</span>                    
+                            <span>{game.name}</span>                                              
                         </button>
-                    </div>
+                    </Link>  
                 ))}
             </section>
             <div className='Aside-btn'>

@@ -1,4 +1,10 @@
-const RulesGame = ({ game }) => {
+import { useParams } from "react-router-dom";
+
+const RulesGame = ({ games }) => {
+    const { name } = useParams();
+    const decodedName = decodeURIComponent(name);
+    const game = games.find((g) => g.name === decodedName);
+
     function formatPlayers(players) {
             if (!players || players.length === 0) return "";
             if (players.length === 1) return `${players[0]} joueurs`;

@@ -1,0 +1,1524 @@
+[
+  {
+    "id": 1,
+    "name": "Uno",
+    "logo": "./assets/svg/playing-card-uno.svg",
+    "description": "Jeu de cartes très populaire où l'objectif est d'être le premier joueur à atteindre 500 points en se débarrassant de toutes ses cartes.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      10
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "7"
+      }
+    ],
+    "rules": [
+      "Chaque joueur commence avec 7 cartes en main.",
+      "Le reste du paquet constitue la pioche, la première carte de la pioche est posée sur la défausse.",
+      "À son tour, un joueur doit jouer une carte qui correspond à la couleur ou au chiffre/symbole de la carte de défausse.",
+      "Si un joueur ne peut pas jouer, il doit piocher une carte. Si cette carte peut être jouée immédiatement, il peut la poser.",
+      "Lorsqu’il reste une seule carte en main, le joueur doit annoncer 'UNO'. S’il oublie et qu’un autre joueur le signale avant son prochain tour, il doit piocher 2 cartes de pénalité.",
+      "La manche se termine lorsqu’un joueur n’a plus de cartes.",
+      "Les adversaires comptent les points de leurs cartes restantes. Le gagnant de la manche marque la somme des points.",
+      "La partie continue jusqu’à ce qu’un joueur atteigne 500 points (ou un score fixé en début de partie)."
+    ],
+    "material": [
+      {
+        "name": "Cartes numérotées (0-9)",
+        "effect": "Peuvent être jouées si elles correspondent à la couleur ou au chiffre de la défausse.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 76
+      },
+      {
+        "name": "+2",
+        "effect": "Le joueur suivant pioche 2 cartes et perd son tour.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 8
+      },
+      {
+        "name": "Inversion",
+        "effect": "Inverse le sens du jeu.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 8
+      },
+      {
+        "name": "Passe ton tour",
+        "effect": "Le joueur suivant perd son tour.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 8
+      },
+      {
+        "name": "Joker",
+        "effect": "Le joueur choisit une nouvelle couleur de jeu.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 4
+      },
+      {
+        "name": "Joker +4",
+        "effect": "Le joueur choisit une nouvelle couleur et le joueur suivant pioche 4 cartes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 4
+      }
+    ],
+    "steps": [
+      "Distribuer 7 cartes à chaque joueur.",
+      "Poser une carte de la pioche sur la défausse pour commencer.",
+      "À son tour, un joueur joue une carte de même couleur ou chiffre/symbole.",
+      "S’il ne peut pas, il pioche une carte et la joue si possible, sinon il passe.",
+      "Les cartes spéciales déclenchent leurs effets immédiatement.",
+      "Lorsqu’il reste une carte en main, annoncer 'UNO'.",
+      "La manche se termine lorsqu’un joueur n’a plus de cartes.",
+      "Compter les points : chaque carte numérotée vaut sa valeur, les cartes spéciales valent 20 points, les jokers 50 points.",
+      "Recommencer les manches jusqu’à ce qu’un joueur atteigne 500 points ou un score défini."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tarot",
+    "logo": "./assets/svg/tarot-card-2-svgrepo-com.svg",
+    "description": "Jeu de levées avec annonces et atouts.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      3,
+      4,
+      5
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "24 (pour 3 joueurs) 18 (pour 4 joueurs) ou 15 (5 joueurs) "
+      }
+    ],
+    "rules": [
+      "Le jeu se joue avec un jeu de 78 cartes comprenant des atouts, des figures et des cartes numérotées.",
+      "Chaque joueur reçoit un nombre de cartes selon le nombre de participants (24 pour 3 joueurs, 18 pour 4 joueurs, 15 pour 5 joueurs).",
+      "Le reste des cartes forme le chien (cartes communes).",
+      "Un joueur fait une annonce (petite, garde, garde sans le chien, garde contre le chien) avant de jouer.",
+      "Le joueur qui fait l'annonce doit réaliser un certain nombre de points en fonction de son annonce et des bouts (1, 2 ou 3).",
+      "Les joueurs jouent à tour de rôle en suivant la couleur demandée ou en jouant un atout si possible.",
+      "Le joueur qui remporte la levée commence la suivante.",
+      "À la fin de la partie, les points sont comptés en fonction des annonces et des cartes remportées.",
+      "Le gagnant est celui qui atteint le score fixé en début de partie."
+    ],
+    "material": [
+      {
+        "name": "Cartes de Tarot",
+        "effect": "Cartes de 1 à 10 dans chaque couleurs, Valet, Cavalier, Dame, Roi et les attouts de 1 à 21 avec l'Excuse",
+        "img": "./assets/svg/cards-svgrepo-com.svg",
+        "count": 78
+      }
+    ],
+    "steps": [
+      "Mélanger et distribuer les cartes selon le nombre de joueurs.",
+      "Le joueur à gauche du donneur commence la partie.",
+      "Les joueurs jouent une carte en suivant la couleur demandée ou en jouant un atout.",
+      "Le joueur qui remporte la levée prend les cartes et commence la suivante.",
+      "Après toutes les levées, compter les points en fonction des annonces et des cartes remportées.",
+      "Le gagnant est celui qui atteint le score fixé en début de partie."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bataille Corse",
+    "logo": "./assets/svg/bataille-corse.svg",
+    "description": "Jeu de cartes rapide où l'objectif est de collecter toutes les cartes en jouant des paires et en frappant la pile.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      4
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "26 (pour 2 joueurs), 17 (pour 3 joueurs), 13 (pour 4 joueurs)"
+      }
+    ],
+    "rules": [
+      "Distribuer toutes les cartes aux joueurs, face cachée.",
+      "Chaque joueur place son paquet de cartes devant lui, face cachée.",
+      "À tour de rôle, chaque joueur retourne la carte du dessus de son paquet et la place au centre pour former une pile commune.",
+      "Si un joueur retourne une carte qui forme une paire avec une carte déjà sur la pile (même valeur), il doit frapper la pile rapidement.",
+      "Le premier joueur à frapper la pile remporte toutes les cartes de la pile et les ajoute à son paquet, qu'il place sous son paquet existant.",
+      "Si un joueur frappe la pile par erreur (sans qu'il y ait une paire), il doit donner une carte de son paquet au joueur dont c'était le tour.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait collecté toutes les cartes ou que les autres joueurs abandonnent."
+    ],
+    "material": [
+      {
+        "name": "Cartes classique",
+        "effect": "Utilisées pour former des paires.",
+        "img": "./assets/svg/trump-4-svgrepo-com.svg",
+        "count": 52
+      }
+    ],
+    "steps": [
+      "Distribuer toutes les cartes aux joueurs.",
+      "Chaque joueur place son paquet de cartes devant lui, face cachée.",
+      "À tour de rôle, chaque joueur retourne la carte du dessus de son paquet et la place au centre pour former une pile commune.",
+      "Si une paire est formée, frapper la pile rapidement pour la remporter.",
+      "Le premier à frapper la pile remporte toutes les cartes de la pile.",
+      "Si un joueur frappe par erreur, il doit donner une carte au joueur dont c'était le tour.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait collecté toutes les cartes."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Menteur",
+    "logo": "./assets/svg/playing-cards-svgrepo-co.svg",
+    "description": "Jeu de bluff où l'objectif est de se débarrasser de toutes ses cartes en mentant sur les cartes jouées.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "card-games/public/assets/svg/trump-4-svgrepo-com.svg",
+        "value": "26 (pour 2 joueurs), 17 (pour 3 joueurs), 13 (pour 4 joueurs), 10 (pour 5 joueurs, 8 (pour 6 joueurs)"
+      }
+    ],
+    "rules": [
+      "Distribuer toutes les cartes aux joueurs, face cachée.",
+      "Le joueur à gauche du donneur commence en posant une ou plusieurs cartes face cachée au centre et en annonçant leur valeur (par exemple, 'deux 3').",
+      "Les autres joueurs doivent décider si le joueur ment ou dit la vérité.",
+      "Si un joueur pense que le joueur ment, il peut le défier en disant 'Menteur!'.",
+      "Si le joueur qui a posé les cartes mentait, il doit ramasser toutes les cartes du centre. Sinon, le joueur qui a défié doit ramasser les cartes.",
+      "Le jeu continue dans le sens des aiguilles d'une montre jusqu'à ce qu'un joueur se débarrasse de toutes ses cartes.",
+      "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Cartes classique",
+        "effect": "Utilisées pour être honnête ou mentir.",
+        "img": "./assets/svg/trump-4-svgrepo-com.svg",
+        "count": 52
+      }
+    ],
+    "steps": [
+      "Distribuer toutes les cartes aux joueurs.",
+      "Le joueur à gauche du donneur commence en posant des cartes face cachée et en annonçant leur valeur.",
+      "Les autres joueurs décident s'ils croient le joueur ou le défient.",
+      "Si défié, vérifier si le joueur mentait ou disait la vérité.",
+      "Le joueur qui a menti ramasse les cartes du centre, sinon le défiant ramasse les cartes.",
+      "Le jeu continue jusqu'à ce qu'un joueur se débarrasse de toutes ses cartes."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pouilleux",
+    "logo": "./assets/svg/card-pick-svgrepo-com.svg",
+    "description": "Jeu de cartes simple où l'objectif est de ne pas finir avec la carte du pouilleux (le valet de trèfle).",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "card-games/public/assets/svg/trump-4-svgrepo-com.svg",
+        "value": "26 (pour 2 joueurs), 17 (pour 3 joueurs), 13 (pour 4 joueurs), 10 (pour 5 joueurs, 8 (pour 6 joueurs)"
+      }
+    ],
+    "rules": [
+      "Retirer un valet du jeu (généralement le valet de trèfle) pour créer la carte du pouilleux.",
+      "Distribuer toutes les cartes aux joueurs, face cachée.",
+      "Chaque joueur regarde ses cartes et forme des paires de même valeur, qu'il place face visible devant lui.",
+      "Le joueur à gauche du donneur commence en tirant une carte au hasard dans la main du joueur à sa gauche.",
+      "Si la carte tirée forme une paire avec une carte en main, le joueur place la paire face visible devant lui.",
+      "Le jeu continue dans le sens des aiguilles d'une montre jusqu'à ce que toutes les paires soient formées.",
+      "Le joueur qui se retrouve avec la carte du pouilleux (le valet sans paire) à la fin du jeu perd la partie."
+    ],
+    "material": [
+      {
+        "name": "Cartes classique, le valet de pique retiré",
+        "effect": "Utilisées pour former des paires.",
+        "img": "./assets/svg/trump-4-svgrepo-com.svg",
+        "count": 51
+      }
+    ],
+    "steps": [
+      "Retirer un valet du jeu pour créer la carte du pouilleux.",
+      "Distribuer toutes les cartes aux joueurs.",
+      "Chaque joueur forme des paires de même valeur et les place devant lui.",
+      "Le joueur à gauche du donneur commence en tirant une carte dans la main du joueur à sa gauche.",
+      "Si une paire est formée, la placer devant soi.",
+      "Le jeu continue jusqu'à ce que toutes les paires soient formées.",
+      "Le joueur avec la carte du pouilleux à la fin perd la partie."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Pyramide",
+    "logo": "./assets/svg/pyramide.svg",
+    "description": "Jeu de boissons avec une pyramide de cartes.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      10
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "card-games/public/assets/svg/trump-4-svgrepo-com.svg",
+        "value": "4"
+      }
+    ],
+    "rules": [
+      "Distribuer 4 cartes à chaque joueur, face cachée.",
+      "Former une pyramide de cartes au centre de la table (5 rangées, 1 carte en haut, 5 en bas), face visible.",
+      "Les joueurs ne peuvent voir que leurs propres cartes.",
+      "À tour de rôle, chaque joueur retourne une carte de la pyramide, en commençant par le bas.",
+      "Si un joueur a une carte de même valeur que celle retournée, il peut donner une gorgée à un autre joueur.",
+      "Si plusieurs joueurs ont la même valeur, ils peuvent se partager les gorgées.",
+      "Le jeu continue jusqu'à ce que toutes les cartes de la pyramide soient retournées.",
+      "Le joueur avec le moins de gorgées à la fin gagne."
+    ],
+    "material": [
+      {
+        "name": "Cartes classique",
+        "effect": "Utilisées pour former des paires.",
+        "img": "./assets/svg/trump-4-svgrepo-com.svg",
+        "count": 52
+      }
+    ],
+    "steps": [
+      "Distribuer 1 carte à chaque joueur avec la question 'Quel couleur sera la catre ?' vrais il distribue une gorgée faux il en bois une.",
+      "Distribuer 1 carte à chaque joueur avec la question 'Inferieur ou superieur ?' vrais il distribue deux gorgées faux il en bois deux.",
+      "Distribuer 1 carte à chaque joueur avec la question 'Interne ou externe ?' vrais il distribue trois gorgées faux il en bois trois.",
+      "Distribuer 1 carte à chaque joueur avec la question 'Quel couleur ?' vrais il distribue quatre gorgées faux il en bois quatre.",
+      "Former une pyramide de cartes au centre de la table, face visible.",
+      "Les joueurs ne peuvent voir que leurs propres cartes.",
+      "À tour de rôle, chaque joueur retourne une carte de la pyramide.",
+      "Si un joueur a une carte de même valeur, il peut donner autant de gorgée que l'étage où elle se trouve à un ou plusieurs joueurs qui se partage les gorgées, le joueurs peut aussi choisir de boire lui-même mais le buveurs peuvent dire menteur et le joueur doit boire le double.",
+      "Une carte de la pyramide ne peut être utilisée qu'une seule fois.",
+      "Le jeu continue jusqu'à ce que toutes les cartes soient retournées.",
+      "Le joueur avec le moins de gorgées à la fin gagne."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Président",
+    "logo": "./assets/svg/president.svg",
+    "description": "Jeu de cartes où l'objectif est de se débarrasser de toutes ses cartes pour devenir le président.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      4,
+      7
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "card-games/public/assets/svg/trump-4-svgrepo-com.svg",
+        "value": "13 (pour 4 joueurs), 10 (pour 5 joueurs), 8 (pour 6 joueurs), 7 (pour 7 joueurs)"
+      }
+    ],
+    "rules": [
+      "Distribuer toutes les cartes aux joueurs, face cachée.",
+      "Le joueur avec le 3 de trèfle commence en posant cette carte au centre.",
+      "Les joueurs doivent jouer une carte ou une combinaison de cartes de valeur égale ou supérieure à la dernière carte jouée.",
+      "Si un joueur ne peut pas jouer, il passe son tour.",
+      "Le tour continue jusqu'à ce que tous les joueurs passent consécutivement.",
+      "Le dernier joueur à avoir joué commence le nouveau tour en posant une carte ou une combinaison de son choix.",
+      "Le premier joueur à se débarrasser de toutes ses cartes devient le président pour la prochaine manche, le deuxième devient le vice-président, et ainsi de suite.",
+      "Le président peut échanger ses pires cartes avec le vice-président au début de la prochaine manche."
+    ],
+    "material": [
+      {
+        "name": "Cartes classique",
+        "effect": "Utilisées gagner le tour",
+        "img": "./assets/svg/trump-4-svgrepo-com.svg",
+        "count": 52
+      }
+    ],
+    "steps": [
+      "Distribuer toutes les cartes aux joueurs.",
+      "Le joueur avec le 3 de trèfle commence en posant cette carte au centre.",
+      "Les joueurs jouent une carte ou une combinaison de valeur égale ou supérieure à la dernière carte jouée.",
+      "Si un joueur ne peut pas jouer, il passe son tour.",
+      "Le tour continue jusqu'à ce que tous les joueurs passent consécutivement.",
+      "Le dernier joueur à avoir joué commence le nouveau tour.",
+      "Le premier joueur à se débarrasser de toutes ses cartes devient le président pour la prochaine manche.",
+      "Le président peut échanger ses pires cartes avec le vice-président au début de la prochaine manche."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Yam's",
+    "logo": "./assets/svg/dice-6-svgrepo-com.svg",
+    "description": "Jeu de dés où l'objectif est de réaliser des combinaisons spécifiques pour marquer des points.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      1,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Piste de lancée de dès",
+        "img": "./assets/svg/piste-des.svg",
+        "value": "1"
+      }
+    ],
+    "rules": [
+      "Chaque joueur a 13 tours pour remplir sa feuille de score.",
+      "À chaque tour, un joueur lance les 5 dés jusqu'à 3 fois pour obtenir la meilleure combinaison possible.",
+      "Après chaque lancer, le joueur peut choisir de garder certains dés et relancer les autres.",
+      "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il doit choisir une catégorie sur sa feuille de score pour inscrire son score.",
+      "Chaque catégorie ne peut être utilisée qu'une seule fois par partie.",
+      "Le jeu se termine lorsque tous les joueurs ont rempli toutes les catégories de leur feuille de score.",
+      "Le joueur avec le score total le plus élevé gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Dès 6 faces",
+        "effect": "Utilisées pour obtenir des face spéciales.",
+        "img": "./assets/svg/dice-2-svgrepo-com.svg",
+        "count": 5
+      },
+      {
+        "name": "Feuille de score",
+        "effect": "Utilisée pour enregistrer les scores des joueurs.",
+        "img": "./assets/svg/new-document-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Stylo",
+        "effect": "Utilisé pour écrire sur la feuille de score.",
+        "img": "./assets/svg/pen-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Chaque joueur a 13 tours pour remplir sa feuille de score.",
+      "À chaque tour, un joueur lance les 5 dés jusqu'à 3 fois.",
+      "Après chaque lancer, le joueur peut garder certains dés et relancer les autres.",
+      "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il choisit une catégorie pour inscrire son score.",
+      "Chaque catégorie ne peut être utilisée qu'une seule fois par partie.",
+      "Le jeu se termine lorsque tous les joueurs ont rempli toutes les catégories.",
+      "Le joueur avec le score total le plus élevé gagne la partie."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Skyjo",
+    "logo": "./assets/svg/straight-skyjo.svg",
+    "description": "Jeu de cartes où l'objectif est de terminer la partie avec le moins de points possible en échangeant et en retournant des cartes.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      8
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "./assets/svg/tile-card-list-svgrepo-com.svg",
+        "value": "12"
+      }
+    ],
+    "rules": [
+      "Distribuer 12 cartes à chaque joueur, face cachée, en formant un tableau de 3x4 devant eux.",
+      "Chaque joueur retourne 2 de ses cartes pour les révéler.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur peut soit piocher une carte de la pioche, soit prendre la carte du dessus de la défausse.",
+      "Le joueur peut ensuite échanger cette carte avec une de ses cartes (face cachée ou révélée) ou la défausser directement.",
+      "Si une carte est échangée avec une carte face cachée, la nouvelle carte est révélée.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait toutes ses cartes révélées.",
+      "Les autres joueurs ont un dernier tour pour jouer avant de compter les points.",
+      "Le joueur avec le moins de points à la fin de la partie gagne."
+    ],
+    "material": [
+      {
+        "name": "Cartes numérotées (-2 à 12)",
+        "effect": "Utilisées pour jouer et échanger.",
+        "img": "./assets/svg/trump-skyjo.svg",
+        "count": 150
+      }
+    ],
+    "steps": [
+      "Distribuer 12 cartes à chaque joueur, face cachée, en formant un tableau de 3x4.",
+      "Chaque joueur retourne 2 de ses cartes pour les révéler.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur peut piocher une carte de la pioche ou prendre la carte du dessus de la défausse.",
+      "Le joueur peut échanger cette carte avec une de ses cartes ou la défausser directement.",
+      "Si une carte est échangée avec une carte face cachée, la nouvelle carte est révélée.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait toutes ses cartes révélées.",
+      "Les autres joueurs ont un dernier tour pour jouer avant de compter les points.",
+      "Le joueur avec le moins de points à la fin gagne."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Kem's",
+    "logo": "./assets/svg/kem's.svg",
+    "description": "Jeu de cartes en équipe où l'objectif est de faire un signe secret pour indiquer à son partenaire qu'on a une combinaison de quatre cartes identiques.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      4,
+      8,
+      "par paire"
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "./assets/svg/playing-cards-16-svgrepo-com.svg",
+        "value": "4"
+      }
+    ],
+    "rules": [
+      "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+      "Distribuer 4 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur peut soit piocher une carte de la pioche, soit prendre la carte du dessus de la défausse.",
+      "Le joueur peut ensuite échanger cette carte avec une de ses cartes en main ou la défausser directement.",
+      "L'objectif est de collecter quatre cartes identiques (même valeur) en main.",
+      "Lorsqu'un joueur a quatre cartes identiques, il doit faire un signe secret convenu avec son partenaire pour indiquer qu'il a réussi.",
+      "Le partenaire doit alors dire 'Kem's!' pour que l'équipe gagne le point.",
+      "Si un adversaire pense qu'une équipe a fait 'Kem's' sans avoir les quatre cartes, il peut dire 'Contre-Kem's!'. Si l'équipe n'a pas les quatre cartes, elle perd un point. Sinon, l'équipe gagne un point.",
+      "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre de points fixé en début de partie."
+    ],
+    "material": [
+      {
+        "name": "Cartes classique",
+        "effect": "Utilisées gagner le tour",
+        "img": "./assets/svg/trump-4-svgrepo-com.svg",
+        "count": 52
+      }
+    ],
+    "steps": [
+      "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+      "Distribuer 4 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur peut piocher une carte de la pioche ou prendre la carte du dessus de la défausse.",
+      "Le joueur peut échanger cette carte avec une de ses cartes en main ou la défausser directement.",
+      "L'objectif est de collecter quatre cartes identiques en main.",
+      "Lorsqu'un joueur a quatre cartes identiques, il fait un signe secret pour indiquer qu'il a réussi.",
+      "Le partenaire doit dire 'Kem's!' pour que l'équipe gagne le point.",
+      "Si un adversaire pense qu'une équipe a fait 'Kem's' sans avoir les quatre cartes, il peut dire 'Contre-Kem's!'.",
+      "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre de points fixé en début de partie."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "421",
+    "logo": "./assets/svg/421.svg",
+    "description": "Jeu de dés où l'objectif est de réaliser des combinaisons spécifiques pour marquer des points.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      1,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Piste de lancée de dès",
+        "img": "./assets/svg/piste-des.svg",
+        "value": "1"
+      }
+    ],
+    "rules": [
+      "Chaque joueur a 3 lancers de dés par tour pour obtenir la meilleure combinaison possible.",
+      "Les combinaisons possibles sont : 421 (meilleure), brelan (trois dés identiques), paire (deux dés identiques), et somme des dés.",
+      "Le joueur peut choisir de relancer un ou plusieurs dés après chaque lancer, jusqu'à un maximum de 3 lancers.",
+      "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il doit annoncer sa combinaison.",
+      "Le joueur avec la meilleure combinaison à la fin de chaque tour gagne un point.",
+      "Le jeu continue jusqu'à ce qu'un joueur atteigne un nombre de points fixé en début de partie."
+    ],
+    "material": [
+      {
+        "name": "Dès 6 faces",
+        "effect": "Utilisées pour obtenir des face spéciales.",
+        "img": "./assets/svg/dice-2-svgrepo-com.svg",
+        "count": 3
+      }
+    ],
+    "steps": [
+      "Chaque joueur a 3 lancers de dés par tour.",
+      "Les combinaisons possibles sont : 421, brelan, paire, et somme des dés.",
+      "Le joueur peut relancer un ou plusieurs dés après chaque lancer, jusqu'à un maximum de 3 lancers.",
+      "À la fin du troisième lancer ou si le joueur décide de ne pas relancer, il annonce sa combinaison.",
+      "Le joueur avec la meilleure combinaison à la fin de chaque tour gagne un point.",
+      "Le jeu continue jusqu'à ce qu'un joueur atteigne un nombre de points fixé en début de partie."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Loup Garou",
+    "logo": "./assets/svg/werewolf-6-svgrepo-com.svg",
+    "description": "Jeu de rôle et de déduction où les joueurs incarnent des villageois ou des loups-garous, avec des rôles spéciaux.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      8,
+      18
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "./assets/svg/square-hunter.svg",
+        "value": "1"
+      }
+    ],
+    "rules": [
+      "Distribuer une carte rôle à chaque joueur, face cachée. Les rôles incluent villageois, loups-garous, voyante, sorcière, chasseur, etc.",
+      "Le jeu se déroule en deux phases : nuit et jour.",
+      "Pendant la nuit, les loups-garous se réveillent et choisissent une victime. La voyante peut regarder la carte d'un joueur. La sorcière peut utiliser ses potions.",
+      "Pendant le jour, tous les joueurs discutent et votent pour éliminer un joueur qu'ils soupçonnent d'être un loup-garou.",
+      "Le joueur éliminé révèle son rôle et quitte la partie.",
+      "Le jeu continue jusqu'à ce que tous les loups-garous soient éliminés (victoire des villageois) ou que les loups-garous égalent ou dépassent le nombre de villageois (victoire des loups-garous)."
+    ],
+    "material": [
+      {
+        "name": "Cartes Rôle",
+        "effect": "Chaque carte représente un rôle spécifique avec des capacités uniques.",
+        "img": "./assets/svg/square-werewolf.svg",
+        "count": " Le nombre de joueurs"
+      }
+    ],
+    "steps": [
+      "Distribuer une carte rôle à chaque joueur, face cachée.",
+      "Le jeu se déroule en deux phases : nuit et jour.",
+      "Pendant la nuit, les loups-garous choisissent une victime, la voyante regarde une carte, la sorcière peut utiliser ses potions.",
+      "Pendant le jour, tous les joueurs discutent et votent pour éliminer un joueur.",
+      "Le joueur éliminé révèle son rôle et quitte la partie.",
+      "Le jeu continue jusqu'à ce que tous les loups-garous soient éliminés ou qu'ils égalent ou dépassent le nombre de villageois."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "8 Américain",
+    "logo": "./assets/svg/8-americain.svg",
+    "description": "Jeu de cartes où l'objectif est de se débarrasser de toutes ses cartes en jouant des cartes correspondantes ou des 8 pour changer la couleur.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "7"
+      }
+    ],
+    "rules": [
+      "Distribuer 7 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur doit jouer une carte qui correspond soit par la couleur, soit par le numéro à la carte du dessus de la défausse.",
+      "Si un joueur ne peut pas jouer, il doit piocher une carte. S'il peut jouer cette carte, il peut le faire immédiatement.",
+      "Les 8 sont des cartes spéciales qui permettent au joueur de changer la couleur en cours.",
+      "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie.",
+      "Si la pioche est épuisée, mélanger la défausse pour former une nouvelle pioche."
+    ],
+    "material": [
+      {
+        "name": "Cartes numérotées (2-10), Valet, Dame, Rois et As",
+        "effect": "Utilisées pour jouer et correspondre par couleur ou numéro.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 52
+      }
+    ],
+    "steps": [
+      "Distribuer 7 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur doit jouer une carte qui correspond soit par la couleur, soit par le numéro à la carte du dessus de la défausse.",
+      "Si un joueur ne peut pas jouer, il doit piocher une carte. S'il peut jouer cette carte, il peut le faire immédiatement.",
+      "Les 8 sont des cartes spéciales qui permettent au joueur de changer la couleur en cours.",
+      "Le premier joueur à se débarrasser de toutes ses cartes gagne la partie.",
+      "Si la pioche est épuisée, mélanger la défausse pour former une nouvelle pioche."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "6 qui prend",
+    "logo": "./assets/svg/bull-frontal-head-svgrepo-com.svg",
+    "description": "Jeu de cartes où l'objectif est d'éviter de ramasser des cartes en jouant stratégiquement.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      10
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de cartes",
+        "img": "",
+        "value": "104 (deux jeux de 52 cartes)"
+      },
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "10"
+      }
+    ],
+    "rules": [
+      "Mélanger les deux jeux de cartes et distribuer 10 cartes à chaque joueur, face cachée.",
+      "Placer 4 cartes face visible au centre pour commencer 4 rangées.",
+      "À tour de rôle, chaque joueur choisit une carte de sa main et la place face cachée devant lui.",
+      "Une fois que tous les joueurs ont choisi une carte, elles sont révélées simultanément.",
+      "Les cartes sont placées dans les rangées en fonction de leur valeur, en suivant ces règles :",
+      "- La carte doit être placée dans la rangée dont la carte du dessus est la plus proche mais inférieure à la carte jouée.",
+      "- Si une carte est inférieure à toutes les cartes du dessus des rangées, le joueur doit ramasser une rangée de son choix et placer sa carte à la place.",
+      "- Si une rangée atteint 6 cartes, le joueur qui a joué la 6ème carte doit ramasser toute la rangée et placer sa carte à la place.",
+      "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+      "Le joueur avec le moins de points (cartes ramassées) à la fin de la partie gagne."
+    ],
+    "material": [
+      {
+        "name": "Cartes numérotées (1-104)",
+        "effect": "Utilisées pour jouer et former des rangées.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 104
+      }
+    ],
+    "steps": [
+      "Mélanger les deux jeux de cartes et distribuer 10 cartes à chaque joueur, face cachée.",
+      "Placer 4 cartes face visible au centre pour commencer 4 rangées.",
+      "À tour de rôle, chaque joueur choisit une carte de sa main et la place face cachée devant lui.",
+      "Une fois que tous les joueurs ont choisi une carte, elles sont révélées simultanément.",
+      "Les cartes sont placées dans les rangées en fonction de leur valeur, en suivant les règles spécifiées.",
+      "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+      "Le joueur avec le moins de points (cartes ramassées) à la fin de la partie gagne."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "1000 Bornes",
+    "logo": "./assets/svg/meandering-road-with-trees-at-sides-svgrepo-com.svg",
+    "description": "Jeu de cartes où l'objectif est d'être le premier à parcourir 1000 kilomètres en jouant des cartes de distance tout en gérant les obstacles.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de cartes",
+        "img": "",
+        "value": "106"
+      },
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "6"
+      }
+    ],
+    "rules": [
+      "Distribuer 6 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur peut jouer une carte de sa main ou piocher une carte de la pioche.",
+      "Les cartes de distance (25, 50, 75, 100, 200 km) sont jouées pour avancer vers l'objectif de 1000 km.",
+      "Les cartes d'obstacle (panne d'essence, crevaison, accident, limitation de vitesse) sont jouées contre les adversaires pour les ralentir.",
+      "Les cartes de réparation (réservoir plein, roue de secours, réparation, fin de limitation) sont jouées pour se débarrasser des obstacles.",
+      "Le premier joueur à atteindre exactement 1000 km gagne la partie. Si un joueur dépasse 1000 km, il doit attendre son prochain tour pour jouer une carte de distance appropriée."
+    ],
+    "material": [
+      {
+        "name": "Cartes de distance (25, 50, 75, 100, 200 km)",
+        "effect": "Utilisées pour avancer vers l'objectif de 1000 km.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 56
+      },
+      {
+        "name": "Cartes d'obstacle (panne d'essence, crevaison, accident, limitation de vitesse)",
+        "effect": "Utilisées pour ralentir les adversaires.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 28
+      },
+      {
+        "name": "Cartes de réparation (réservoir plein, roue de secours, réparation, fin de limitation)",
+        "effect": "Utilisées pour se débarrasser des obstacles.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 22
+      }
+    ],
+    "steps": [
+      "Distribuer 6 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "À tour de rôle, chaque joueur peut jouer une carte de sa main ou piocher une carte de la pioche.",
+      "Les cartes de distance sont jouées pour avancer vers l'objectif de 1000 km.",
+      "Les cartes d'obstacle sont jouées contre les adversaires pour les ralentir.",
+      "Les cartes de réparation sont jouées pour se débarrasser des obstacles.",
+      "Le premier joueur à atteindre exactement 1000 km gagne la partie. Si un joueur dépasse 1000 km, il doit attendre son prochain tour pour jouer une carte de distance appropriée."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Citadelles",
+    "logo": "./assets/svg/protection-fort-svgrepo-com.svg",
+    "description": "Jeu de cartes et de stratégie où les joueurs incarnent des personnages avec des capacités spéciales pour construire des quartiers dans une cité.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      8
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de cartes",
+        "img": "",
+        "value": "110"
+      },
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "4"
+      }
+    ],
+    "rules": [
+      "Distribuer 4 cartes personnage à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec 2 cartes retirées du jeu.",
+      "À tour de rôle, chaque joueur choisit un personnage parmi ceux disponibles, révélant ainsi son rôle et sa capacité spéciale.",
+      "Les personnages incluent le roi, le voleur, l'assassin, le magicien, le marchand, l'architecte et le condottiere.",
+      "Après que tous les joueurs ont choisi leur personnage, ils jouent dans l'ordre des personnages (du roi au condottiere).",
+      "Chaque joueur peut utiliser la capacité spéciale de son personnage, gagner de l'or, piocher des cartes quartier ou construire des quartiers dans sa cité.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait construit 8 quartiers. La partie se termine alors et les points sont comptés en fonction des quartiers construits et des bonus obtenus.",
+      "Le joueur avec le plus de points gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Cartes Personnage",
+        "effect": "Chaque carte représente un personnage avec une capacité spéciale unique.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 28
+      },
+      {
+        "name": "Cartes Quartier",
+        "effect": "Utilisées pour construire des quartiers dans la cité.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 80
+      },
+      {
+        "name": "Pièces d'or",
+        "effect": "Utilisées comme monnaie pour acheter des quartiers.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 50
+      }
+    ],
+    "steps": [
+      "Distribuer 4 cartes personnage à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec 2 cartes retirées du jeu.",
+      "À tour de rôle, chaque joueur choisit un personnage parmi ceux disponibles, révélant ainsi son rôle et sa capacité spéciale.",
+      "Les personnages incluent le roi, le voleur, l'assassin, le magicien, le marchand, l'architecte et le condottiere.",
+      "Après que tous les joueurs ont choisi leur personnage, ils jouent dans l'ordre des personnages (du roi au condottiere).",
+      "Chaque joueur peut utiliser la capacité spéciale de son personnage, gagner de l'or, piocher des cartes quartier ou construire des quartiers dans sa cité.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait construit 8 quartiers. La partie se termine alors et les points sont comptés en fonction des quartiers construits et des bonus obtenus.",
+      "Le joueur avec le plus de points gagne la partie."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Poker",
+    "logo": "./assets/svg/poker-chip-svgrepo-com.svg",
+    "description": "Jeu de cartes où l'objectif est de former la meilleure main possible en combinant des cartes personnelles et communes.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      10
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de cartes",
+        "img": "",
+        "value": "52"
+      },
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "2 (cartes privées) + 5 (cartes communes)"
+      }
+    ],
+    "rules": [
+      "Distribuer 2 cartes privées à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche.",
+      "Le jeu se déroule en plusieurs tours de mise : pré-flop, flop, turn et river.",
+      "Après chaque tour de mise, des cartes communes sont révélées au centre de la table : 3 cartes pour le flop, 1 carte pour le turn et 1 carte pour la river.",
+      "Les joueurs utilisent leurs 2 cartes privées et les 5 cartes communes pour former la meilleure main possible de 5 cartes.",
+      "Les combinaisons de mains, de la plus faible à la plus forte, sont : carte haute, paire, double paire, brelan, quinte, couleur, full, carré, quinte flush et quinte flush royale.",
+      "Le joueur avec la meilleure main remporte le pot. En cas d'égalité, le pot est partagé entre les joueurs concernés.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait tous les jetons ou que les joueurs décident d'arrêter."
+    ],
+    "material": [
+      {
+        "name": "Cartes numérotées (2-10)",
+        "effect": "Utilisées pour jouer et former des combinaisons.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 36
+      },
+      {
+        "name": "Figures (Valet, Dame, Roi)",
+        "effect": "Utilisées pour jouer et former des combinaisons.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 12
+      },
+      {
+        "name": "As",
+        "effect": "Utilisé pour jouer et former des combinaisons.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 4
+      },
+      {
+        "name": "Jetons",
+        "effect": "Utilisés pour les mises.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 100
+      }
+    ],
+    "steps": [
+      "Distribuer 2 cartes privées à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche.",
+      "Le jeu se déroule en plusieurs tours de mise : pré-flop, flop, turn et river.",
+      "Après chaque tour de mise, des cartes communes sont révélées au centre de la table.",
+      "Les joueurs utilisent leurs 2 cartes privées et les 5 cartes communes pour former la meilleure main possible de 5 cartes.",
+      "Les combinaisons de mains, de la plus faible à la plus forte, sont : carte haute, paire, double paire, brelan, quinte, couleur, full, carré, quinte flush et quinte flush royale.",
+      "Le joueur avec la meilleure main remporte le pot. En cas d'égalité, le pot est partagé entre les joueurs concernés.",
+      "Le jeu continue jusqu'à ce qu'un joueur ait tous les jetons ou que les joueurs décident d'arrêter."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Times'Up",
+    "logo": "./assets/svg/time-sand-svgrepo-com.svg",
+    "description": "Jeu de société où les joueurs doivent faire deviner des noms de personnages célèbres en trois manches avec des règles différentes.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      4,
+      12
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de cartes",
+        "img": "",
+        "value": "40"
+      },
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "Varie selon le nombre de joueurs"
+      }
+    ],
+    "rules": [
+      "Former deux équipes de joueurs.",
+      "Distribuer un nombre égal de cartes à chaque joueur, qui choisit secrètement un certain nombre de cartes à utiliser pour la partie.",
+      "Le jeu se déroule en trois manches :",
+      "- Manche 1 : Les joueurs peuvent dire n'importe quoi pour faire deviner le nom sur la carte (sauf le nom lui-même).",
+      "- Manche 2 : Les joueurs ne peuvent dire qu'un seul mot pour faire deviner le nom sur la carte.",
+      "- Manche 3 : Les joueurs ne peuvent faire que des gestes pour faire deviner le nom sur la carte.",
+      "Chaque équipe joue à tour de rôle, avec un temps limité (généralement 30 secondes) pour faire deviner autant de cartes que possible.",
+      "L'équipe marque un point pour chaque carte correctement devinée.",
+      "Le jeu continue jusqu'à ce que toutes les cartes aient été utilisées.",
+      "L'équipe avec le plus de points à la fin des trois manches gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Cartes Personnage",
+        "effect": "Chaque carte représente un personnage/objet/évènement célèbre à faire deviner.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 40
+      },
+      {
+        "name": "Sablier",
+        "effect": "Utilisé pour limiter le temps de chaque tour.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Former deux équipes de joueurs.",
+      "Distribuer un nombre égal de cartes à chaque joueur, qui choisit secrètement un certain nombre de cartes à utiliser pour la partie.",
+      "Le jeu se déroule en trois manches avec des règles différentes pour faire deviner les cartes.",
+      "Chaque équipe joue à tour de rôle, avec un temps limité pour faire deviner autant de cartes que possible.",
+      "L'équipe marque un point pour chaque carte correctement devinée.",
+      "Le jeu continue jusqu'à ce que toutes les cartes aient été utilisées.",
+      "L'équipe avec le plus de points à la fin des trois manches gagne la partie."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "11/21",
+    "logo": "./assets/svg/dice-svgrepo-com.svg",
+    "description": "Jeu de dés où l'objectif est d'atteindre exactement 11 ou 21 points en lançant des dés et en choisissant judicieusement quand s'arrêter.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      1,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de dés",
+        "img": "",
+        "value": "2"
+      }
+    ],
+    "rules": [
+      "Chaque joueur a 3 lancers de dés par tour pour atteindre exactement 11 ou 21 points.",
+      "Après chaque lancer, le joueur peut choisir de s'arrêter et de conserver son score actuel ou de relancer les dés pour augmenter son score.",
+      "Si le score dépasse 21, le joueur perd automatiquement la partie.",
+      "Si un joueur atteint exactement 11 ou 21 points, il gagne immédiatement la partie.",
+      "Le jeu continue jusqu'à ce qu'un joueur atteigne exactement 11 ou 21 points ou que tous les joueurs aient épuisé leurs lancers.",
+      "Le joueur avec le score le plus proche de 21 sans le dépasser gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Dès 6 faces)",
+        "effect": "Utilisées pour obtenir des face spéciales.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 2
+      }
+    ],
+    "steps": [
+      "Chaque joueur a 3 lancers de dés par tour pour atteindre exactement 11 ou 21 points.",
+      "Après chaque lancer, le joueur peut choisir de s'arrêter et de conserver son score actuel ou de relancer les dés pour augmenter son score.",
+      "Si le score dépasse 21, le joueur perd automatiquement la partie.",
+      "Si un joueur atteint exactement 11 ou 21 points, il gagne immédiatement la partie.",
+      "Le jeu continue jusqu'à ce qu'un joueur atteigne exactement 11 ou 21 points ou que tous les joueurs aient épuisé leurs lancers.",
+      "Le joueur avec le score le plus proche de 21 sans le dépasser gagne la partie."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Belote",
+    "logo": "./assets/svg/playing-cards-16-svgrepo-com.svg",
+    "description": "Jeu de cartes en équipe où l'objectif est de marquer des points en remportant des plis avec des combinaisons spécifiques.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      4
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de cartes",
+        "img": "",
+        "value": "32"
+      },
+      {
+        "name": "Cartes par joueur",
+        "img": "",
+        "value": "8"
+      }
+    ],
+    "rules": [
+      "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+      "Distribuer 8 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "Le joueur à gauche du donneur commence l'enchère en choisissant une couleur d'atout ou en passant. Les autres joueurs peuvent surenchérir ou passer.",
+      "Le joueur qui remporte l'enchère choisit la couleur d'atout et le jeu commence.",
+      "À tour de rôle, chaque joueur joue une carte. Les joueurs doivent suivre la couleur si possible. Si un joueur ne peut pas suivre, il doit jouer un atout s'il en a un.",
+      "Le joueur qui joue la carte la plus forte dans la couleur demandée ou le plus fort atout remporte le pli et commence le prochain tour.",
+      "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+      "Les points sont comptés en fonction des plis remportés et des combinaisons spéciales (belote et rebelote).",
+      "L'équipe avec le plus de points à la fin de la partie gagne."
+    ],
+    "material": [
+      {
+        "name": "Cartes numérotées (7-10)",
+        "effect": "Utilisées pour jouer et former des plis.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 24
+      },
+      {
+        "name": "Figures (Valet, Dame, Roi)",
+        "effect": "Utilisées pour jouer et former des plis.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 12
+      },
+      {
+        "name": "As",
+        "effect": "Utilisé pour jouer et former des plis.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 4
+      }
+    ],
+    "steps": [
+      "Former deux équipes de deux joueurs, chaque joueur s'asseyant en face de son partenaire.",
+      "Distribuer 8 cartes à chaque joueur, face cachée.",
+      "Le reste des cartes forme la pioche, avec une carte retournée pour commencer la défausse.",
+      "Le joueur à gauche du donneur commence l'enchère en choisissant une couleur d'atout ou en passant. Les autres joueurs peuvent surenchérir ou passer.",
+      "Le joueur qui remporte l'enchère choisit la couleur d'atout et le jeu commence.",
+      "À tour de rôle, chaque joueur joue une carte. Les joueurs doivent suivre la couleur si possible. Si un joueur ne peut pas suivre, il doit jouer un atout s'il en a un.",
+      "Le joueur qui joue la carte la plus forte dans la couleur demandée ou le plus fort atout remporte le pli et commence le prochain tour.",
+      "Le jeu continue jusqu'à ce que toutes les cartes aient été jouées.",
+      "Les points sont comptés en fonction des plis remportés et des combinaisons spéciales (belote et rebelote).",
+      "L'équipe avec le plus de points à la fin de la partie gagne."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Echecs",
+    "logo": "./assets/svg/chess-3-svgrepo-com.svg",
+    "description": "Jeu de stratégie où l'objectif est de mettre le roi adverse en échec et mat.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2
+    ],
+    "setup": [
+      {
+        "name": "Nombre de pièces",
+        "img": "",
+        "value": "32"
+      },
+      {
+        "name": "Nombre de pièces de remplacement",
+        "img": "",
+        "value": "4"
+      }
+    ],
+    "rules": [
+      "Chaque joueur commence avec 16 pièces : 1 roi, 1 dame, 2 tours, 2 fous, 2 cavaliers et 8 pions.",
+      "Le joueur avec les pièces blanches commence la partie.",
+      "Les joueurs déplacent leurs pièces selon des règles spécifiques pour chaque type de pièce.",
+      "L'objectif est de mettre le roi adverse en échec et mat, ce qui signifie que le roi est attaqué et ne peut pas échapper à la capture.",
+      "Si un joueur met le roi adverse en échec, l'autre joueur doit immédiatement protéger son roi ou déplacer son roi hors d'échec.",
+      "Le jeu peut également se terminer par une partie nulle dans certaines conditions (pat, accord mutuel, etc.).",
+      "Le joueur qui met le roi adverse en échec et mat gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Roi",
+        "effect": "La pièce la plus importante. Peut se déplacer d'une case dans n'importe quelle direction.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Dame",
+        "effect": "La pièce la plus puissante. Peut se déplacer de n'importe quel nombre de cases en ligne droite ou en diagonale. Une de plus pour le remplacement.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 2
+      },
+      {
+        "name": "Tour",
+        "effect": "Peut se déplacer de n'importe quel nombre de cases en ligne droite (horizontalement ou verticalement).",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 2
+      },
+      {
+        "name": "Fou",
+        "effect": "Peut se déplacer de n'importe quel nombre de cases en diagonale.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 2
+      },
+      {
+        "name": "Cavalier",
+        "effect": "Se déplace en forme de 'L' : deux cases dans une direction et une case perpendiculairement. Une de plus pour le remplacement.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 3
+      },
+      {
+        "name": "Pion",
+        "effect": "Se déplace d'une case vers l'avant, avec des règles spéciales pour la première avancée et la capture.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 8
+      },
+      {
+        "name": "Echequier",
+        "effect": "Surface de jeu avec un damier 8x8.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Chaque joueur commence avec 16 pièces : 1 roi, 1 dame, 2 tours, 2 fous, 2 cavaliers et 8 pions.",
+      "Le joueur avec les pièces blanches commence la partie.",
+      "Les joueurs déplacent leurs pièces selon des règles spécifiques pour chaque type de pièce.",
+      "L'objectif est de mettre le roi adverse en échec et mat.",
+      "Si un joueur met le roi adverse en échec, l'autre joueur doit immédiatement protéger son roi ou déplacer son roi hors d'échec.",
+      "Le jeu peut également se terminer par une partie nulle dans certaines conditions (pat, accord mutuel, etc.).",
+      "Le joueur qui met le roi adverse en échec et mat gagne la partie."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Dames",
+    "logo": "./assets/svg/token-bat-coin-svgrepo-com.svg",
+    "description": "Jeu de stratégie où l'objectif est de capturer toutes les pièces adverses ou de bloquer leurs mouvements.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de pièces",
+        "img": "",
+        "value": "24"
+      }
+    ],
+    "rules": [
+      "Chaque joueur commence avec 12 pièces placées sur les cases noires des trois premières rangées de son côté du plateau.",
+      "Le joueur avec les pièces blanches commence la partie.",
+      "Les pièces se déplacent en diagonale d'une case vers l'avant sur les cases noires.",
+      "Pour capturer une pièce adverse, une pièce doit sauter par-dessus elle dans une case vide immédiatement derrière. Les captures sont obligatoires.",
+      "Si une pièce atteint la dernière rangée du côté adverse, elle est promue en dame, ce qui lui permet de se déplacer en diagonale vers l'avant et vers l'arrière.",
+      "Le jeu continue jusqu'à ce qu'un joueur capture toutes les pièces adverses ou bloque tous leurs mouvements.",
+      "Le joueur qui capture toutes les pièces adverses ou bloque tous leurs mouvements gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Pièces de dames",
+        "effect": "Utilisées pour jouer et capturer les pièces adverses.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 24
+      },
+      {
+        "name": "Plateau de dames",
+        "effect": "Surface de jeu avec un damier 8x8.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Chaque joueur commence avec 12 pièces placées sur les cases noires des trois premières rangées de son côté du plateau.",
+      "Le joueur avec les pièces blanches commence la partie.",
+      "Les pièces se déplacent en diagonale d'une case vers l'avant sur les cases noires.",
+      "Pour capturer une pièce adverse , une pièce doit sauter par-dessus elle dans une case vide immédiatement derrière. Les captures sont obligatoires.",
+      "Si une pièce atteint la dernière rangée du côté adverse, elle est promue en dame, ce qui lui permet de se déplacer en diagonale vers l'avant et vers l'arrière.",
+      "Le jeu continue jusqu'à ce qu'un joueur capture toutes les pièces adverses ou bloque tous leurs mouvements.",
+      "Le joueur qui capture toutes les pièces adverses ou bloque tous leurs mouvements gagne la partie."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Dominos",
+    "logo": "./assets/svg/domino-game-svgrepo-com.svg",
+    "description": "Jeu de tuiles où l'objectif est de se débarrasser de toutes ses tuiles en les plaçant sur la table selon des règles spécifiques.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      4
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de tuiles",
+        "img": "",
+        "value": "28"
+      },
+      {
+        "name": "Tuiles par joueur",
+        "img": "",
+        "value": "7 (pour 2 joueurs), 5 (pour 3-4 joueurs)"
+      }
+    ],
+    "rules": [
+      "Mélanger les tuiles et distribuer le nombre approprié à chaque joueur (7 pour 2 joueurs, 5 pour 3-4 joueurs).",
+      "Le reste des tuiles forme la pioche.",
+      "Le joueur avec la tuile double la plus élevée commence la partie en la plaçant au centre de la table.",
+      "À tour de rôle, chaque joueur doit placer une tuile qui correspond par un côté à une tuile déjà sur la table.",
+      "Si un joueur ne peut pas jouer, il doit piocher une tuile de la pioche. S'il peut jouer cette tuile, il peut le faire immédiatement.",
+      "Le jeu continue jusqu'à ce qu'un joueur se débarrasse de toutes ses tuiles ou que plus aucun joueur ne puisse jouer.",
+      "Le joueur qui se débarrasse de toutes ses tuiles en premier gagne la partie. Si personne ne peut jouer, le joueur avec le moins de points (somme des valeurs des tuiles restantes) gagne."
+    ],
+    "material": [
+      {
+        "name": "Tuiles de dominos",
+        "effect": "Utilisées pour jouer et former des chaînes.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 28
+      }
+    ],
+    "steps": [
+      "Mélanger les tuiles et distribuer le nombre approprié à chaque joueur (7 pour 2 joueurs, 5 pour 3-4 joueurs).",
+      "Le reste des tuiles forme la pioche.",
+      "Le joueur avec la tuile double la plus élevée commence la partie en la plaçant au centre de la table.",
+      "À tour de rôle, chaque joueur doit placer une tuile qui correspond par un côté à une tuile déjà sur la table.",
+      "Si un joueur ne peut pas jouer, il doit piocher une tuile de la pioche. S'il peut jouer cette tuile, il peut le faire immédiatement.",
+      "Le jeu continue jusqu'à ce qu'un joueur se débarrasse de toutes ses tuiles ou que plus aucun joueur ne puisse jouer.",
+      "Le joueur qui se débarrasse de toutes ses tuiles en premier gagne la partie. Si personne ne peut jouer, le joueur avec le moins de points (somme des valeurs des tuiles restantes) gagne."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Bowling",
+    "logo": "./assets/svg/bowling-strike-svgrepo-com.svg",
+    "description": "Jeu où l'objectif est de faire tomber le maximum de quilles en lançant une boule sur une piste.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      1,
+      6
+    ],
+    "setup": [
+      {
+        "name": "Piste de bowling",
+        "img": "./assets/svg/bowling-lane-svgrepo-com.svg",
+        "value": "Surface sur laquelle le jeu se déroule."
+      }
+    ],
+    "rules": [
+      "Chaque joueur a 10 frames (tours) pour faire tomber le maximum de quilles.",
+      "Dans chaque frame, le joueur a droit à deux lancers pour faire tomber les 10 quilles.",
+      "Si le joueur fait tomber toutes les quilles en un seul lancer, c'est un strike. Il marque 10 points plus le total des quilles tombées dans les deux lancers suivants.",
+      "Si le joueur fait tomber toutes les quilles en deux lancers, c'est un spare. Il marque 10 points plus le total des quilles tombées dans le lancer suivant.",
+      "Si le joueur ne fait pas tomber toutes les quilles en deux lancers, il marque le total des quilles tombées dans cette frame.",
+      "Le jeu continue jusqu'à ce que tous les joueurs aient joué leurs 10 frames.",
+      "Le joueur avec le score total le plus élevé gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Boule de bowling",
+        "effect": "Utilisée pour faire tomber les quilles.",
+        "img": "./assets/svg/bowling-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Quilles",
+        "effect": "Cibles à faire tomber avec la boule.",
+        "img": "./assets/svg/bowling-bowls-silhouette-svgrepo-com.svg",
+        "count": 10
+      }
+    ],
+    "steps": [
+      "Chaque joueur a 10 frames (tours) pour faire tomber le maximum de quilles.",
+      "Dans chaque frame, le joueur a droit à deux lancers pour faire tomber les 10 quilles.",
+      "Si le joueur fait tomber toutes les quilles en un seul lancer, c'est un strike. Il marque 10 points plus le total des quilles tombées dans les deux lancers suivants.",
+      "Si le joueur fait tomber toutes les quilles en deux lancers, c'est un spare. Il marque 10 points plus le total des quilles tombées dans le lancer suivant.",
+      "Si le joueur ne fait pas tomber toutes les quilles en deux lancers, il marque le total des quilles tombées dans cette frame.",
+      "Le jeu continue jusqu'à ce que tous les joueurs aient joué leurs 10 frames.",
+      "Le joueur avec le score total le plus élevé gagne la partie."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Morpion",
+    "logo": "./assets/svg/tictactoe-svgrepo-com.svg",
+    "description": "Jeu de stratégie où l'objectif est d'aligner trois symboles identiques sur une grille 3x3.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2
+    ],
+    "setup": [],
+    "rules": [
+      "Le jeu se joue sur une grille 3x3.",
+      "Deux joueurs s'affrontent, l'un utilisant le symbole 'X' et l'autre le symbole 'O'.",
+      "Les joueurs jouent à tour de rôle, en plaçant leur symbole dans une case vide de la grille.",
+      "Le premier joueur à aligner trois de ses symboles horizontalement, verticalement ou en diagonale gagne la partie.",
+      "Si toutes les cases sont remplies sans qu'un joueur ait aligné trois symboles, la partie se termine par un match nul."
+    ],
+    "material": [
+      {
+        "name": "Grille de morpion",
+        "effect": "Surface de jeu avec une grille 3x3.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Le jeu se joue sur une grille 3x3.",
+      "Deux joueurs s'affrontent, l'un utilisant le symbole 'X' et l'autre le symbole 'O'.",
+      "Les joueurs jouent à tour de rôle, en plaçant leur symbole dans une case vide de la grille.",
+      "Le premier joueur à aligner trois de ses symboles horizontalement, verticalement ou en diagonale gagne la partie.",
+      "Si toutes les cases sont remplies sans qu'un joueur ait aligné trois symboles, la partie se termine par un match nul."
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Billard",
+    "logo": "./assets/svg/pool-cue-svgrepo-com.svg",
+    "description": "Jeu où l'objectif est de rentrer les boules numérotées dans les poches en utilisant une boule blanche pour les frapper.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      1,
+      4
+    ],
+    "setup": [],
+    "rules": [
+      "Chaque joueur choisit un type de boules (pleines ou rayées) après le premier coup.",
+      "Le joueur doit d'abord toucher une de ses boules avant de toucher une boule adverse ou la boule noire (8).",
+      "Si un joueur rentre une de ses boules, il continue à jouer. Sinon, c'est au tour du joueur suivant.",
+      "Le joueur qui rentre toutes ses boules en premier, puis la boule noire (8) dans une poche désignée, gagne la partie.",
+      "Si un joueur rentre la boule noire (8) avant d'avoir rentré toutes ses boules, il perd la partie."
+    ],
+    "material": [
+      {
+        "name": "Boule blanche",
+        "effect": "Utilisée pour frapper les autres boules.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Boules numérotées",
+        "effect": "Cibles à rentrer dans les poches.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 15
+      },
+      {
+        "name": "Queue de billard",
+        "effect": "Utilisée pour frapper la boule blanche.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Table de billard",
+        "effect": "Surface de jeu avec des poches.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Craie",
+        "effect": "Utilisée pour améliorer l'adhérence de la queue sur la boule blanche.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Triangle de rangement",
+        "effect": "Utilisé pour disposer les boules numérotées au début de la partie.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Chaque joueur choisit un type de boules (pleines ou rayées) après le premier coup.",
+      "Le joueur doit d'abord toucher une de ses boules avant de toucher une boule adverse ou la boule noire (8).",
+      "Si un joueur rentre une de ses boules, il continue à jouer. Sinon, c'est au tour du joueur suivant.",
+      "Le joueur qui rentre toutes ses boules en premier, puis la boule noire (8) dans une poche désignée, gagne la partie.",
+      "Si un joueur rentre la boule noire (8) avant d'avoir rentré toutes ses boules, il perd la partie."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Baby-foot",
+    "logo": "./assets/svg/babyfoot.svg",
+    "description": "Jeu où l'objectif est de marquer des buts en manipulant des figurines montées sur des barres pour frapper une balle dans le but adverse.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      4
+    ],
+    "setup": [],
+    "rules": [
+      "Chaque équipe contrôle une série de barres avec des figurines montées pour frapper la balle.",
+      "Le jeu commence par un service, où la balle est placée au centre de la table et un joueur la lance en jeu.",
+      "Les joueurs manipulent les barres pour déplacer les figurines et frapper la balle vers le but adverse.",
+      "Un but est marqué lorsque la balle entre complètement dans le but adverse.",
+      "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre prédéterminé de buts (généralement 5 ou 10) pour gagner la partie.",
+      "Les joueurs ne doivent pas tourner les barres à plus de 360 degrés pour frapper la balle."
+    ],
+    "material": [
+      {
+        "name": "Table de baby-foot",
+        "effect": "Surface de jeu avec des barres et des figurines.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Balle",
+        "effect": "Utilisée pour marquer des buts.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Chaque équipe contrôle une série de barres avec des figurines montées pour frapper la balle.",
+      "Le jeu commence par un service, où la balle est placée au centre de la table et un joueur la lance en jeu.",
+      "Les joueurs manipulent les barres pour déplacer les figurines et frapper la balle vers le but adverse.",
+      "Un but est marqué lorsque la balle entre complètement dans le but adverse.",
+      "Le jeu continue jusqu'à ce qu'une équipe atteigne un nombre prédéterminé de buts (généralement 5 ou 10) pour gagner la partie.",
+      "Les joueurs ne doivent pas tourner les barres à plus de 360 degrés pour frapper la balle."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Scrabble",
+    "logo": "./assets/svg/scrabble-rounded-checkered-square-svgrepo-com.svg",
+    "description": "Jeu de lettres où l'objectif est de former des mots sur une grille pour marquer des points en utilisant des lettres avec des valeurs différentes.",
+    "img": "./assets/svg/group-svgrepo-com.svg",
+    "playeurs": [
+      2,
+      4
+    ],
+    "setup": [
+      {
+        "name": "Nombre total de lettres",
+        "img": "",
+        "value": "100"
+      },
+      {
+        "name": "Lettres par joueur",
+        "img": "",
+        "value": "7"
+      }
+    ],
+    "rules": [
+      "Chaque joueur commence avec 7 lettres tirées au hasard.",
+      "Le premier joueur place un mot sur la grille, en utilisant au moins une lettre au centre de la grille.",
+      "Les joueurs jouent à tour de rôle, en formant des mots en utilisant leurs lettres et celles déjà sur la grille.",
+      "Les mots doivent être valides selon un dictionnaire prédéterminé.",
+      "Chaque lettre a une valeur en points, et certaines cases sur la grille offrent des bonus (double lettre, triple mot, etc.).",
+      "Le jeu continue jusqu'à ce qu'un joueur utilise toutes ses lettres ou que plus aucun joueur ne puisse jouer.",
+      "Le joueur avec le score total le plus élevé gagne la partie."
+    ],
+    "material": [
+      {
+        "name": "Lettres",
+        "effect": "Utilisées pour former des mots sur la grille.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 100
+      },
+      {
+        "name": "Plateau de Scrabble",
+        "effect": "Surface de jeu avec une grille 15x15.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 1
+      },
+      {
+        "name": "Chevalet",
+        "effect": "Utilisé pour tenir les lettres de chaque joueur.",
+        "img": "./assets/svg/group-svgrepo-com.svg",
+        "count": 4
+      }
+    ],
+    "steps": [
+      "Chaque joueur commence avec 7 lettres tirées au hasard.",
+      "Le premier joueur place un mot sur la grille, en utilisant au moins une lettre au centre de la grille.",
+      "Les joueurs jouent à tour de rôle, en formant des mots en utilisant leurs lettres et celles déjà sur la grille.",
+      "Les mots doivent être valides selon un dictionnaire prédéterminé.",
+      "Chaque lettre a une valeur en points, et certaines cases sur la grille offrent des bonus (double lettre, triple mot, etc.).",
+      "Le jeu continue jusqu'à ce qu'un joueur utilise toutes ses lettres ou que plus aucun joueur ne puisse jouer.",
+      "Le joueur avec le score total le plus élevé gagne la partie."
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Tennis de Table",
+    "logo": "./assets/svg/two-ping-pong-rackets-svgrepo-com.svg",
+    "description": "Le tennis de table, aussi appelé ping-pong, est un sport de raquette qui oppose deux joueurs (en simple) ou deux équipes de deux joueurs (en double). Les échanges se font sur une table rectangulaire séparée par un filet, avec une petite balle légère et des raquettes recouvertes de caoutchouc. Le but est de marquer des points en frappant la balle de manière à ce que l’adversaire ne puisse pas la renvoyer correctement.",
+    "img": "./assets/svg/people-vs.svg",
+    "playeurs": [
+      2,
+      4
+    ],
+    "setup": [
+      {
+        "name": "Table de tennis de table (2,74 m x 1,525 m, hauteur 76 cm)",
+        "img": "./assets/svg/table-tennis-9-svgrepo-com.svg",
+        "value": "matèriel sur lequel se déroule les parties."
+      }
+    ],
+    "rules": [
+      "Serveur : engage l’échange en respectant la règle du service.",
+      "Receveur : doit renvoyer la balle après un rebond.",
+      "Arbitre (en compétition) : surveille le respect des règles et annonce les scores."
+    ],
+    "material": [
+      {
+        "name": "Raquettes de Ping-pong",
+        "effect": "Utilisées pour jouer et former des combinaisons",
+        "img": "./assets/svg/table-tennis-7-svgrepo-com.svg",
+        "count": 2
+      },
+      {
+        "name": "Balle légère en plastique (40 mm de diamètre, ~2,7 g)",
+        "effect": "Utilisé pour jouer et mettre des points au score.",
+        "img": "./assets/svg/ball-pile-svgrepo-com.svg",
+        "count": 1
+      }
+    ],
+    "steps": [
+      "Un tirage au sort détermine le serveur (ou choix de service/retour/côté).",
+      "La balle doit être lancée verticalement d’au moins 16 cm et frappée derrière la ligne de fond, en rebondissant une fois de chaque côté de la table.",
+      "En double, le service doit aller de la moitié droite du serveur vers la moitié droite du receveur.",
+      "Les joueurs frappent la balle alternativement après son rebond.",
+      "Le point est perdu si la balle ne touche pas la moitié de table adverse, sort sans rebond, touche deux fois la table, ou si le joueur rate la balle.",
+      "Un match se joue en sets de 11 points (avec au moins 2 points d’écart).",
+      "Les services changent tous les 2 points (et à chaque point si égalité à 10-10, appelée deuce).",
+      "Le premier joueur/équipe à remporter 3 ou 4 sets (selon la compétition) gagne le match."
+    ]
+  }
+]
