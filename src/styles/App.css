@@ -109,7 +109,7 @@ main {
     justify-content: center;
 }
 .game-rule, .game-step {
-    width: calc(100vh - 40px);
+    width: calc(100% - 40px);
     margin: 5px;
     padding: 10px;
     color: var(--text-second);
