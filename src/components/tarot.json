@@ -1,0 +1,102 @@
+{
+  "id": "tarot-001",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Jeu_de_tarot.svg",
+  "name": "Tarot",
+  "description": "Le Tarot français est un jeu de cartes traditionnel pratiqué surtout en France, se jouant généralement à 3, 4 ou 5 joueurs. Le but est pour le preneur de réussir son contrat en fonction des points accumulés avec l’aide ou contre les autres joueurs.",
+  "players": [3, 5],
+  "materials": [
+    {
+      "name": "Deck de Tarot",
+      "effect": "Jeu de 78 cartes spécifiques au Tarot français.",
+      "image": "https://example.com/images/deck-tarot.png",
+      "count": 78
+    }
+  ],
+  "cards": [
+    {
+      "name": "Atouts (1 à 21 + Excuse)",
+      "effect": "Cartes spéciales qui battent toutes les autres sauf l’Excuse (jouée comme un joker).",
+      "image": "https://example.com/images/atouts.png",
+      "count": 22
+    },
+    {
+      "name": "Rois",
+      "effect": "Cartes d’honneur valant 4,5 points chacune.",
+      "image": "https://example.com/images/roi.png",
+      "count": 4
+    },
+    {
+      "name": "Dames",
+      "effect": "Cartes d’honneur valant 3,5 points chacune.",
+      "image": "https://example.com/images/dame.png",
+      "count": 4
+    },
+    {
+      "name": "Cavaliers",
+      "effect": "Cartes d’honneur valant 2,5 points chacune.",
+      "image": "https://example.com/images/cavalier.png",
+      "count": 4
+    },
+    {
+      "name": "Valets",
+      "effect": "Cartes d’honneur valant 1,5 point chacune.",
+      "image": "https://example.com/images/valet.png",
+      "count": 4
+    },
+    {
+      "name": "Cartes numérales",
+      "effect": "Cartes classiques (1 à 10) de chaque couleur (trèfle, carreau, cœur, pique), valant 0,5 point chacune.",
+      "image": "https://example.com/images/cartes-numerales.png",
+      "count": 40
+    }
+  ],
+  "place": [
+    {
+      "name": "Table",
+      "effect": "Support pour poser les cartes et jouer.",
+      "image": "https://example.com/images/table.png"
+    },
+    {
+      "name": "Espace libre",
+      "effect": "Zone autour de la table pour la distribution et les annonces.",
+      "image": "https://example.com/images/espace-libre.png"
+    }
+  ],
+  "rules": [
+    "Chaque joueur reçoit un nombre de cartes selon le nombre de participants (24 à 5 joueurs, 25 à 4 joueurs, 15 à 3 joueurs).",
+    "Le chien (6 cartes mises de côté) est constitué face cachée pendant la distribution.",
+    "Un joueur devient le preneur après une enchère et joue contre les autres.",
+    "Le preneur peut ajouter ou non le chien à sa main selon le contrat choisi.",
+    "L’Excuse (ou Fou) permet de ne pas fournir de couleur et n’est pas prise par le pli.",
+    "Les plis se jouent comme dans les jeux de levées : obligation de fournir la couleur demandée, sinon couper avec un atout.",
+    "Les bouts (1 de l’Atout, 21 de l’Atout, Excuse) déterminent le nombre minimum de points nécessaires.",
+    "Contrats : Petite, Garde, Garde sans chien, Garde contre le chien (du plus faible au plus fort).",
+    "Calcul du score :",
+    " - 3 bouts : 36 points nécessaires.",
+    " - 2 bouts : 41 points nécessaires.",
+    " - 1 bout : 51 points nécessaires.",
+    " - 0 bout : 56 points nécessaires.",
+    "Les cartes valent : Rois = 4,5 pts ; Dames = 3,5 pts ; Cavaliers = 2,5 pts ; Valets = 1,5 pt ; Autres = 0,5 pt.",
+    "Le score final dépend du contrat choisi, du succès ou échec, et d’éventuelles primes (Poignées, Chelem, Petit au bout)."
+  ],
+  "extensions": [
+    {
+      "name": "Tarot en ligne",
+      "description": "Version numérique permettant de jouer à distance avec d’autres joueurs."
+    },
+    {
+      "name": "Applications mobiles",
+      "description": "Adaptations du Tarot pour smartphone avec IA ou multijoueur."
+    }
+  ],
+  "derivative": [
+    {
+      "name": "Tarot divinatoire",
+      "description": "Utilisation des cartes de Tarot pour la voyance, sans rapport avec le jeu de société."
+    },
+    {
+      "name": "Jeu de Tarot à 2 joueurs",
+      "description": "Variante simplifiée adaptée pour 2 joueurs."
+    }
+  ]
+}

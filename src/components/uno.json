@@ -1,77 +1,112 @@
 {
-  "id": "uno",
-  "name": "Uno",
-  "logo": "./assets/svg/clover-cards-svgrepo-com.svg",
-  "description": "Jeu de cartes très populaire où l'objectif est d'être le premier joueur à atteindre 500 points en se débarrassant de toutes ses cartes.",
-  "setup": [
+  "id": "uno-001",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/9/95/UNO_Logo.svg",
+  "name": "UNO",
+  "description": "UNO est un jeu de cartes familial où le but est d’être le premier à se débarrasser de toutes ses cartes en associant couleurs ou chiffres, tout en utilisant des cartes spéciales pour gêner les adversaires.",
+  "players": [2, 10],
+  "materials": [
     {
-      "name": "Nombre total de cartes",
-      "value": "108"
-    },
-    {
-      "name": "Cartes par joueur",
-      "value": "7"
-    },
-    {
-      "name": "Nombre de joueurs",
-      "value": "2 à 10"
-    },
-    {
-      "name": "Matériel",
-      "value": "Paquet de cartes UNO, feuilles et stylos pour compter les points"
+      "name": "Deck de cartes UNO",
+      "effect": "Jeu de cartes utilisé pour jouer au UNO.",
+      "image": "https://example.com/images/deck.png",
+      "count": 108
     }
-  ],
-  "rules": [
-    "Chaque joueur commence avec 7 cartes en main.",
-    "Le reste du paquet constitue la pioche, la première carte de la pioche est posée sur la défausse.",
-    "À son tour, un joueur doit jouer une carte qui correspond à la couleur ou au chiffre/symbole de la carte de défausse.",
-    "Si un joueur ne peut pas jouer, il doit piocher une carte. Si cette carte peut être jouée immédiatement, il peut la poser.",
-    "Lorsqu’il reste une seule carte en main, le joueur doit annoncer 'UNO'. S’il oublie et qu’un autre joueur le signale avant son prochain tour, il doit piocher 2 cartes de pénalité.",
-    "La manche se termine lorsqu’un joueur n’a plus de cartes.",
-    "Les adversaires comptent les points de leurs cartes restantes. Le gagnant de la manche marque la somme des points.",
-    "La partie continue jusqu’à ce qu’un joueur atteigne 500 points (ou un score fixé en début de partie)."
   ],
   "cards": [
     {
-      "name": "Cartes numérotées (0-9)",
-      "effect": "Peuvent être jouées si elles correspondent à la couleur ou au chiffre de la défausse.",
+      "name": "Cartes numériques",
+      "effect": "Permettent de jouer normalement en posant une carte de même couleur ou de même valeur.",
+      "image": "https://example.com/images/cartes-numeriques.png",
       "count": 76
     },
     {
       "name": "+2",
-      "effect": "Le joueur suivant pioche 2 cartes et perd son tour.",
+      "effect": "Le joueur suivant doit piocher 2 cartes et passe son tour.",
+      "image": "https://example.com/images/carte-plus2.png",
       "count": 8
     },
     {
       "name": "Inversion",
-      "effect": "Inverse le sens du jeu.", 
+      "effect": "Inverse le sens du jeu.",
+      "image": "https://example.com/images/carte-inverse.png",
       "count": 8
     },
     {
       "name": "Passe ton tour",
-      "effect": "Le joueur suivant perd son tour.", 
+      "effect": "Le joueur suivant ne joue pas.",
+      "image": "https://example.com/images/carte-skip.png",
       "count": 8
     },
     {
       "name": "Joker",
-      "effect": "Le joueur choisit une nouvelle couleur de jeu.", 
+      "effect": "Permet de choisir la couleur à jouer.",
+      "image": "https://example.com/images/carte-joker.png",
       "count": 4
     },
     {
-      "name": "Joker +4",
-      "effect": "Le joueur choisit une nouvelle couleur et le joueur suivant pioche 4 cartes.", 
+      "name": "+4 Joker",
+      "effect": "Permet de choisir une couleur et oblige le joueur suivant à piocher 4 cartes.",
+      "image": "https://example.com/images/carte-joker4.png",
       "count": 4
     }
   ],
-  "etapes": [
-    "Distribuer 7 cartes à chaque joueur.",
-    "Poser une carte de la pioche sur la défausse pour commencer.",
-    "À son tour, un joueur joue une carte de même couleur ou chiffre/symbole.",
-    "S’il ne peut pas, il pioche une carte et la joue si possible, sinon il passe.",
-    "Les cartes spéciales déclenchent leurs effets immédiatement.",
-    "Lorsqu’il reste une carte en main, annoncer 'UNO'.",
-    "La manche se termine lorsqu’un joueur n’a plus de cartes.",
-    "Compter les points : chaque carte numérotée vaut sa valeur, les cartes spéciales valent 20 points, les jokers 50 points.",
-    "Recommencer les manches jusqu’à ce qu’un joueur atteigne 500 points ou un score défini."
+  "place": [
+    {
+      "name": "Table",
+      "effect": "Support pour poser les cartes et jouer.",
+      "image": "https://example.com/images/table.png"
+    },
+    {
+      "name": "Espace libre",
+      "effect": "Zone autour de la table pour que les joueurs puissent poser leurs cartes.",
+      "image": "https://example.com/images/espace-libre.png"
+    }
+  ],
+  "rules": [
+    "Chaque joueur reçoit 7 cartes.",
+    "Le reste des cartes forme la pioche.",
+    "La première carte est retournée pour commencer la défausse.",
+    "Un joueur doit poser une carte de la même couleur ou du même chiffre/symbole.",
+    "S’il ne peut pas jouer, il doit piocher une carte.",
+    "Lorsqu’un joueur n’a plus qu’une carte, il doit dire 'UNO'.",
+    "Le joueur qui n’a plus de cartes remporte la manche.",
+    "Calcul du score :",
+    " - Cartes numériques (0–9) : valeur faciale.",
+    " - Cartes +2, Inversion, Passe ton tour : 20 points chacune.",
+    " - Cartes Joker et +4 Joker : 50 points chacune.",
+    "Le vainqueur d’une manche marque la somme des points des cartes restantes chez les autres joueurs.",
+    "La partie se termine quand un joueur atteint 500 points (ou un autre seuil fixé en début de partie)."
+  ],
+  "extensions": [
+    {
+      "name": "UNO Deluxe",
+      "description": "Version avec plateau et boîte de rangement."
+    },
+    {
+      "name": "UNO Flip",
+      "description": "Cartes recto/verso avec un côté sombre aux effets plus puissants."
+    },
+    {
+      "name": "UNO Attack",
+      "description": "Un lanceur automatique distribue un nombre aléatoire de cartes."
+    },
+    {
+      "name": "UNO Extreme",
+      "description": "Version électronique avec distributeur de cartes rapide."
+    }
+  ],
+  "derivative": [
+    {
+      "name": "DOS",
+      "description": "Variante où l’on joue avec deux cartes au centre."
+    },
+    {
+      "name": "UNO All Wild",
+      "description": "Toutes les cartes sont des jokers avec des effets spéciaux."
+    },
+    {
+      "name": "UNO Online",
+      "description": "Version numérique jouable sur consoles, PC et mobiles."
+    }
   ]
 }
