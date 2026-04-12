@@ -84,7 +84,11 @@
             {
                 "name": "Cartes par joueur",
                 "img":"",
-                "value": "24 (pour 3 joueurs) 18 (pour 4 joueurs) ou 15 (5 joueurs) "
+                "value": [
+                    "24 (pour 3 joueurs)",
+                    "18 (pour 4 joueurs",
+                    "15 (5 joueurs) "
+                ]
             }
         ],
         "rules": [

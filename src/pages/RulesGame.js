@@ -41,7 +41,7 @@ const RulesGame = ({ games }) => {
                 <div className="game-items">
                 {game.setup.map((setup, index) => (
                     <div key={index}>
-                        <p> {setup.name}, {setup.value}</p>
+                        <p> {setup.name} {setup.value}</p>
                         <img src={setup.img} alt="objet nécessaire" height={30}/>
                     {index < game.setup.length - 1 ? '' : ''}</div>
                 ))}

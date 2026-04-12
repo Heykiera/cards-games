@@ -1,0 +1,29 @@
+{
+  "id": "8-americain",
+  "name": "8 Americain",
+  "icon": "/assets/images/icons/8-americain.svg",
+  "type": "cartes",
+  "difficulty": "facile",
+  "duration": 30,
+  "age": "6+",
+  "description": "Description du jeu 8-americain.",
+  "players": {
+    "min": 2,
+    "max": 6
+  },
+  "place": "intérieur",
+  "materials": [
+    "Cartes ou matériel nécessaire"
+  ],
+  "setup": [
+    "Préparer le jeu"
+  ],
+  "rules": [
+    "Respecter les règles du jeu"
+  ],
+  "steps": [
+    "Déroulement du jeu"
+  ],
+  "extensions": [],
+  "derivative": []
+}
