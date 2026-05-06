@@ -1,0 +1,88 @@
+{
+  "id": "421-001",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Dice.png",
+  "name": "421",
+  "description": "421 est un jeu de dés traditionnel français, se jouant avec trois dés. Le but est de réaliser les combinaisons les plus fortes (421 étant la plus haute) pour remporter les jetons mis en jeu.",
+  "players": [2, 6],
+  "materials": [
+    {
+      "name": "3 dés",
+      "effect": "Dés à six faces utilisés pour former des combinaisons.",
+      "image": "https://example.com/images/des.png",
+      "count": 3
+    },
+    {
+      "name": "Jetons",
+      "effect": "Servent de mise et de points de victoire.",
+      "image": "https://example.com/images/jetons.png",
+      "count": 21
+    }
+  ],
+  "dices": [
+    {
+      "name": "421",
+      "effect": "La combinaison la plus forte (4, 2 et 1).",
+      "count": 1
+    },
+    {
+      "name": "Brelan d’As",
+      "effect": "Trois 1 (valeur immédiatement après 421).",
+      "count": 1
+    },
+    {
+      "name": "Brelan (autres)",
+      "effect": "Trois dés identiques (valeur selon le chiffre, 6 le plus fort après les As).",
+      "count": 5
+    },
+    {
+      "name": "Suites (6-5-4, 5-4-3, 4-3-2)",
+      "effect": "Suites décroissantes, classées de la plus forte (6-5-4) à la plus faible (4-3-2).",
+      "count": 3
+    },
+    {
+      "name": "Nénette",
+      "effect": "Combinaison 2-1-1, souvent utilisée comme combinaison spéciale avec valeur fixe.",
+      "count": 1
+    },
+    {
+      "name": "Autres combinaisons",
+      "effect": "Les dés restants se comparent par valeur numérique (de la plus forte à la plus faible).",
+      "count": "variable"
+    }
+  ],
+  "place": [
+    {
+      "name": "Table",
+      "effect": "Support pour lancer les dés et poser les jetons.",
+      "image": "https://example.com/images/table.png"
+    },
+    {
+      "name": "Espace libre",
+      "effect": "Zone autour de la table pour placer les mises et observer le jeu.",
+      "image": "https://example.com/images/espace-libre.png"
+    }
+  ],
+  "rules": [
+    "Chaque joueur dispose d’un nombre égal de jetons au départ.",
+    "Le joueur actif lance les 3 dés jusqu’à trois fois pour obtenir la meilleure combinaison possible.",
+    "L’ordre des combinaisons est : 421 > Brelan d’As > autres Brelans (6 à 2) > Suites (654 > 543 > 432) > Nénette (2-1-1) > autres combinaisons.",
+    "À chaque tour, les jetons misés sont distribués en fonction du résultat (règles variables selon les variantes : manche, partie en 21, ou parties rapides).",
+    "Le vainqueur est celui qui a remporté tous les jetons ou atteint le score fixé en début de partie."
+  ],
+  "extensions": [
+    {
+      "name": "421 en ligne",
+      "description": "Version numérique permettant de jouer au 421 sur PC et mobile."
+    }
+  ],
+  "derivative": [
+    {
+      "name": "421 de comptoir",
+      "description": "Variante populaire dans les bars, utilisée pour décider qui paye la tournée."
+    },
+    {
+      "name": "421 simplifié",
+      "description": "Variante plus rapide avec moins de jetons et des manches écourtées."
+    }
+  ]
+}

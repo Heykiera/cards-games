@@ -1,0 +1,511 @@
+{
+  "games": [
+    {
+      "id": "uno-001",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/95/UNO_Logo.svg",
+      "name": "UNO",
+      "description": "UNO est un jeu de cartes familial où le but est d’être le premier à se débarrasser de toutes ses cartes en associant couleurs ou chiffres, tout en utilisant des cartes spéciales pour gêner les adversaires.",
+      "players": [2, 10],
+      "materials": [
+        {
+          "name": "Deck de cartes UNO",
+          "effect": "Jeu de cartes utilisé pour jouer au UNO.",
+          "image": "https://example.com/images/deck.png",
+          "count": 108
+        }
+      ],
+      "cards": [
+        {
+          "name": "Cartes numériques",
+          "effect": "Permettent de jouer normalement en posant une carte de même couleur ou de même valeur.",
+          "image": "https://example.com/images/cartes-numeriques.png",
+          "count": 76
+        },
+        {
+          "name": "+2",
+          "effect": "Le joueur suivant doit piocher 2 cartes et passe son tour.",
+          "image": "https://example.com/images/carte-plus2.png",
+          "count": 8
+        },
+        {
+          "name": "Inversion",
+          "effect": "Inverse le sens du jeu.",
+          "image": "https://example.com/images/carte-inverse.png",
+          "count": 8
+        },
+        {
+          "name": "Passe ton tour",
+          "effect": "Le joueur suivant ne joue pas.",
+          "image": "https://example.com/images/carte-skip.png",
+          "count": 8
+        },
+        {
+          "name": "Joker",
+          "effect": "Permet de choisir la couleur à jouer.",
+          "image": "https://example.com/images/carte-joker.png",
+          "count": 4
+        },
+        {
+          "name": "+4 Joker",
+          "effect": "Permet de choisir une couleur et oblige le joueur suivant à piocher 4 cartes.",
+          "image": "https://example.com/images/carte-joker4.png",
+          "count": 4
+        }
+      ],
+      "place": [
+        {
+          "name": "Table",
+          "effect": "Support pour poser les cartes et jouer.",
+          "image": "https://example.com/images/table.png"
+        },
+        {
+          "name": "Espace libre",
+          "effect": "Zone autour de la table pour que les joueurs puissent poser leurs cartes.",
+          "image": "https://example.com/images/espace-libre.png"
+        }
+      ],
+      "rules": [
+        "Chaque joueur reçoit 7 cartes.",
+        "Le reste des cartes forme la pioche.",
+        "La première carte est retournée pour commencer la défausse.",
+        "Un joueur doit poser une carte de la même couleur ou du même chiffre/symbole.",
+        "S’il ne peut pas jouer, il doit piocher une carte.",
+        "Lorsqu’un joueur n’a plus qu’une carte, il doit dire 'UNO'.",
+        "Le joueur qui n’a plus de cartes remporte la manche.",
+        "Calcul du score :",
+        " - Cartes numériques (0–9) : valeur faciale.",
+        " - Cartes +2, Inversion, Passe ton tour : 20 points chacune.",
+        " - Cartes Joker et +4 Joker : 50 points chacune.",
+        "Le vainqueur d’une manche marque la somme des points des cartes restantes chez les autres joueurs.",
+        "La partie se termine quand un joueur atteint 500 points (ou un autre seuil fixé en début de partie)."
+      ],
+      "extensions": [
+        {
+          "name": "UNO Deluxe",
+          "description": "Version avec plateau et boîte de rangement."
+        },
+        {
+          "name": "UNO Flip",
+          "description": "Cartes recto/verso avec un côté sombre aux effets plus puissants."
+        },
+        {
+          "name": "UNO Attack",
+          "description": "Un lanceur automatique distribue un nombre aléatoire de cartes."
+        },
+        {
+          "name": "UNO Extreme",
+          "description": "Version électronique avec distributeur de cartes rapide."
+        }
+      ],
+      "derivative": [
+        {
+          "name": "DOS",
+          "description": "Variante où l’on joue avec deux cartes au centre."
+        },
+        {
+          "name": "UNO All Wild",
+          "description": "Toutes les cartes sont des jokers avec des effets spéciaux."
+        },
+        {
+          "name": "UNO Online",
+          "description": "Version numérique jouable sur consoles, PC et mobiles."
+        }
+      ]
+    },
+    {
+      "id": "tarot-001",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Jeu_de_tarot.svg",
+      "name": "Tarot",
+      "description": "Le Tarot français est un jeu de cartes traditionnel pratiqué surtout en France, se jouant généralement à 3, 4 ou 5 joueurs. Le but est pour le preneur de réussir son contrat en fonction des points accumulés avec l’aide ou contre les autres joueurs.",
+      "players": [3, 5],
+      "materials": [
+        {
+          "name": "Deck de Tarot",
+          "effect": "Jeu de 78 cartes spécifiques au Tarot français.",
+          "image": "https://example.com/images/deck-tarot.png",
+          "count": 78
+        }
+      ],
+      "cards": [
+        {
+          "name": "Atouts (1 à 21 + Excuse)",
+          "effect": "Cartes spéciales qui battent toutes les autres sauf l’Excuse (jouée comme un joker).",
+          "image": "https://example.com/images/atouts.png",
+          "count": 22
+        },
+        {
+          "name": "Rois",
+          "effect": "Cartes d’honneur valant 4,5 points chacune.",
+          "image": "https://example.com/images/roi.png",
+          "count": 4
+        },
+        {
+          "name": "Dames",
+          "effect": "Cartes d’honneur valant 3,5 points chacune.",
+          "image": "https://example.com/images/dame.png",
+          "count": 4
+        },
+        {
+          "name": "Cavaliers",
+          "effect": "Cartes d’honneur valant 2,5 points chacune.",
+          "image": "https://example.com/images/cavalier.png",
+          "count": 4
+        },
+        {
+          "name": "Valets",
+          "effect": "Cartes d’honneur valant 1,5 point chacune.",
+          "image": "https://example.com/images/valet.png",
+          "count": 4
+        },
+        {
+          "name": "Cartes numérales",
+          "effect": "Cartes classiques (1 à 10) de chaque couleur (trèfle, carreau, cœur, pique), valant 0,5 point chacune.",
+          "image": "https://example.com/images/cartes-numerales.png",
+          "count": 40
+        }
+      ],
+      "place": [
+        {
+          "name": "Table",
+          "effect": "Support pour poser les cartes et jouer.",
+          "image": "https://example.com/images/table.png"
+        },
+        {
+          "name": "Espace libre",
+          "effect": "Zone autour de la table pour la distribution et les annonces.",
+          "image": "https://example.com/images/espace-libre.png"
+        }
+      ],
+      "rules": [
+            "Chaque joueur reçoit un nombre de cartes selon le nombre de participants (24 à 5 joueurs, 25 à 4 joueurs, 15 à 3 joueurs).",
+            "Le chien (6 cartes mises de côté) est constitué face cachée pendant la distribution.",
+            "Un joueur devient le preneur après une enchère et joue contre les autres.",
+            "L’Excuse (ou Fou) permet de ne pas fournir de couleur et n’est pas prise par le pli.",
+            "Les plis se jouent comme dans les jeux de levées : obligation de fournir la couleur demandée, sinon couper avec un atout.",
+            "Les bouts (1 de l’Atout, 21 de l’Atout, Excuse) déterminent le nombre minimum de points nécessaires.",
+            "Contrats :",
+            " - Petite : le preneur joue normalement avec le chien. Score standard selon les bouts et les cartes.",
+            " - Garde : le preneur prend le chien dans sa main. Multiplication des points (x2).",
+            " - Garde sans chien : le preneur ne regarde pas le chien. Multiplication des points (x4).",
+            " - Garde contre le chien : le chien est mis du côté des défenseurs. Multiplication maximale (x6).",
+            "Calcul du score :",
+            " - 3 bouts : 36 points nécessaires.",
+            " - 2 bouts : 41 points nécessaires.",
+            " - 1 bout : 51 points nécessaires.",
+            " - 0 bout : 56 points nécessaires.",
+            "Les cartes valent : Rois = 4,5 pts ; Dames = 3,5 pts ; Cavaliers = 2,5 pts ; Valets = 1,5 pt ; Autres = 0,5 pt.",
+            "Le score final dépend du contrat choisi, du succès ou échec, et d’éventuelles primes (Poignées, Chelem, Petit au bout)."
+        ],
+      "extensions": [
+        {
+          "name": "Tarot en ligne",
+          "description": "Version numérique permettant de jouer à distance avec d’autres joueurs."
+        },
+        {
+          "name": "Applications mobiles",
+          "description": "Adaptations du Tarot pour smartphone avec IA ou multijoueur."
+        }
+      ],
+      "derivative": [
+        {
+          "name": "Tarot divinatoire",
+          "description": "Utilisation des cartes de Tarot pour la voyance, sans rapport avec le jeu de société."
+        },
+        {
+          "name": "Jeu de Tarot à 2 joueurs",
+          "description": "Variante simplifiée adaptée pour 2 joueurs."
+        }
+      ]
+    },
+    {
+      "id": "421-001",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Dice.png",
+      "name": "421",
+      "description": "421 est un jeu de dés traditionnel français, se jouant avec trois dés. Le but est de réaliser les combinaisons les plus fortes (421 étant la plus haute) pour remporter les jetons mis en jeu.",
+      "players": [2, 6],
+      "materials": [
+        {
+          "name": "dés",
+          "effect": "Dés à six faces utilisés pour former des combinaisons.",
+          "image": "https://example.com/images/des.png",
+          "count": 3
+        },
+        {
+          "name": "Jetons",
+          "effect": "Servent de mise et de points de victoire.",
+          "image": "https://example.com/images/jetons.png",
+          "count": 21
+        },
+        {
+            "name": "Piste de dés",
+            "effect": "Plateau ou surface pour suivre le score ou les tours des dés.",
+            "image": "https://example.com/images/piste-des.png",
+            "count": 1
+        }
+      ],
+      "dices": [
+        {
+          "name": "421",
+          "effect": "La combinaison la plus forte (4, 2 et 1).",
+          "count": 1
+        },
+        {
+          "name": "Brelan d’As",
+          "effect": "Trois 1 (valeur immédiatement après 421).",
+          "count": 1
+        },
+        {
+          "name": "Brelan (autres)",
+          "effect": "Trois dés identiques (valeur selon le chiffre, 6 le plus fort après les As).",
+          "count": 5
+        },
+        {
+          "name": "Suites (6-5-4, 5-4-3, 4-3-2)",
+          "effect": "Suites décroissantes, classées de la plus forte (6-5-4) à la plus faible (4-3-2).",
+          "count": 3
+        },
+        {
+          "name": "Nénette",
+          "effect": "Combinaison 2-1-1, souvent utilisée comme combinaison spéciale avec valeur fixe.",
+          "count": 1
+        },
+        {
+          "name": "Autres combinaisons",
+          "effect": "Les dés restants se comparent par valeur numérique (de la plus forte à la plus faible).",
+          "count": "variable"
+        }
+      ],
+      "place": [
+        {
+          "name": "Table",
+          "effect": "Support pour lancer les dés et poser les jetons.",
+          "image": "https://example.com/images/table.png"
+        },
+        {
+          "name": "Espace libre",
+          "effect": "Zone autour de la table pour placer les mises et observer le jeu.",
+          "image": "https://example.com/images/espace-libre.png"
+        }
+      ],
+      "rules": [
+        "Chaque joueur dispose d’un nombre égal de jetons au départ.",
+        "Le joueur actif lance les 3 dés jusqu’à trois fois pour obtenir la meilleure combinaison possible.",
+        "L’ordre des combinaisons est : 421 > Brelan d’As > autres Brelans (6 à 2) > Suites (654 > 543 > 432) > Nénette (2-1-1) > autres combinaisons.",
+        "À chaque tour, les jetons misés sont distribués en fonction du résultat (règles variables selon les variantes : manche, partie en 21, ou parties rapides).",
+        "Le vainqueur est celui qui a remporté tous les jetons ou atteint le score fixé en début de partie."
+      ],
+      "extensions": [
+        {
+          "name": "421 en ligne",
+          "description": "Version numérique permettant de jouer au 421 sur PC et mobile."
+        }
+      ],
+      "derivative": [
+        {
+          "name": "421 de comptoir",
+          "description": "Variante populaire dans les bars, utilisée pour décider qui paye la tournée."
+        },
+        {
+          "name": "421 simplifié",
+          "description": "Variante plus rapide avec moins de jetons et des manches écourtées."
+        }
+      ]
+    },
+    {
+      "id": "yams-001",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Dice_yahtzee.png",
+      "name": "Yams (Yahtzee)",
+      "description": "Le Yams (Yahtzee) est un jeu de dés joué avec cinq dés à six faces. Le but est de réaliser des combinaisons spécifiques (brelan, carré, full, grande suite, etc.) et de marquer le plus de points sur une feuille de score.",
+      "players": [2, 6],
+      "materials": [
+        {
+          "name": "dés",
+          "effect": "Dés à six faces utilisés pour former des combinaisons.",
+          "image": "https://example.com/images/des-yams.png",
+          "count": 5
+        },
+        {
+          "name": "Feuille de score",
+          "effect": "Permet de noter les points obtenus pour chaque combinaison.",
+          "image": "https://example.com/images/feuille-score.png",
+          "count": "1 par joueur"
+        },
+        {
+          "name": "Crayons",
+          "effect": "Utilisés pour remplir la feuille de score.",
+          "image": "https://example.com/images/crayons.png",
+          "count": "1 par joueur"
+        },
+        {
+            "name": "Piste de dés",
+            "effect": "Plateau ou surface pour suivre le score ou les tours des dés.",
+            "image": "https://example.com/images/piste-des.png",
+            "count": 1
+        }
+      ],
+      "dices": [
+        {
+          "name": "Brelan",
+          "effect": "Trois dés identiques, score = somme des dés.",
+          "count": "variable"
+        },
+        {
+          "name": "Carré",
+          "effect": "Quatre dés identiques, score = somme des dés.",
+          "count": "variable"
+        },
+        {
+          "name": "Full",
+          "effect": "Trois dés identiques + une paire, valeur fixe = 25 points.",
+          "count": 1
+        },
+        {
+          "name": "Petite suite",
+          "effect": "Suite de 4 dés consécutifs (ex: 1-2-3-4), valeur fixe = 30 points.",
+          "count": 1
+        },
+        {
+          "name": "Grande suite",
+          "effect": "Suite de 5 dés consécutifs (ex: 2-3-4-5-6), valeur fixe = 40 points.",
+          "count": 1
+        },
+        {
+          "name": "Yams (Yahtzee)",
+          "effect": "Cinq dés identiques, valeur fixe = 50 points.",
+          "count": 1
+        },
+        {
+          "name": "Chance",
+          "effect": "Somme de tous les dés, quelle que soit la combinaison.",
+          "count": "variable"
+        }
+      ],
+      "place": [
+        {
+          "name": "Table",
+          "effect": "Support pour lancer les dés et poser la feuille de score.",
+          "image": "https://example.com/images/table.png"
+        },
+        {
+          "name": "Espace libre",
+          "effect": "Zone pour lancer et relancer les dés.",
+          "image": "https://example.com/images/espace-libre.png"
+        }
+      ],
+      "rules": [
+        "Chaque joueur dispose de 13 tours.",
+        "À chaque tour, un joueur lance les 5 dés et peut relancer une partie des dés deux fois au maximum (3 lancers au total).",
+        "Après les lancers, il doit inscrire le résultat obtenu dans une case libre de la feuille de score.",
+        "Chaque combinaison ne peut être utilisée qu’une seule fois.",
+        "Certaines combinaisons ont une valeur fixe (Full = 25, Petite suite = 30, Grande suite = 40, Yams = 50).",
+        "Les autres se calculent avec la somme des dés correspondants.",
+        "Un bonus de 35 points est accordé si le joueur atteint au moins 63 points dans la partie haute (total des 1 à 6).",
+        "Le joueur ayant le plus de points après 13 tours gagne la partie."
+      ],
+      "extensions": [
+        {
+          "name": "Yahtzee Deluxe",
+          "description": "Version avec gobelets à dés et jetons de score."
+        },
+        {
+          "name": "Yahtzee électronique",
+          "description": "Version numérique avec calcul automatique des scores."
+        }
+      ],
+      "derivative": [
+        {
+          "name": "Yams simplifié",
+          "description": "Variante plus courte avec moins de tours ou moins de combinaisons."
+        },
+        {
+          "name": "Yams multijoueur en ligne",
+          "description": "Version numérique jouable à distance avec classement."
+        }
+      ]
+    },
+    {
+        "id": "kems-001",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/28/Kems_card_game_logo.png",
+        "name": "Kem's",
+        "description": "Kem's est un jeu de cartes en équipe où le but est de faire un carré (4 cartes de même valeur) et de signaler discrètement son partenaire pour gagner des points.",
+        "players": [4, 6],
+        "materials": [
+            {
+                "name": "Deck de cartes standard",
+                "effect": "Jeu de 52 cartes utilisé pour former des combinaisons.",
+                "image": "https://example.com/images/deck-standard.png",
+                "count": 52
+            }
+        ],
+        "cards": [
+            {
+                "name": "Cartes numérales",
+                "effect": "Cartes classiques (1 à 10) de chaque couleur (trèfle, carreau, cœur, pique)",
+                "image": "https://example.com/images/cartes-numerales.png",
+                "count": 40
+            },
+            {
+                "name": "Valet",
+                "effect": "Carte de chaque couleur (trèfle, carreau, cœur, pique)",
+                "image": "https://example.com/images/valet.png",
+                "count": 4
+            },
+            {
+                "name": "Dame",
+                "effect": "Carte de chaque couleur (trèfle, carreau, cœur, pique)",
+                "image": "https://example.com/images/dame.png",
+                "count": 4
+            },
+            {
+                "name": "Roi",
+                "effect": "Carte de chaque couleur (trèfle, carreau, cœur, pique)",
+                "image": "https://example.com/images/roi.png",
+                "count": 4
+            }
+        ],
+        "place": [
+            {
+                "name": "Table",
+                "effect": "Support pour poser les cartes et jouer.",
+                "image": "https://example.com/images/table.png"
+            },
+            {
+                "name": "Espace libre",
+                "effect": "Zone autour de la table pour observer et communiquer discrètement.",
+                "image": "https://example.com/images/espace-libre.png"
+            }
+        ],
+        "rules": [
+            "Les joueurs sont répartis en équipes de deux.",
+            "Chaque joueur reçoit 4 cartes et le reste constitue la pioche.",
+            "Le but est de former un carré (4 cartes de même valeur) dans sa main.",
+            "Les joueurs peuvent échanger des cartes avec la pioche pendant leur tour pour compléter leur carré.",
+            "Une fois le carré formé, le joueur doit signaler discrètement son partenaire (par geste ou code convenu à l'avance).",
+            "Si le partenaire reconnaît le signal et annonce 'Kem's', l'équipe gagne un point.",
+            "Si un adversaire annonce 'Contre-Kem's' avant que le signal soit reconnu, l'équipe adverse marque le point.",
+            "La partie se joue en un nombre de manches prédéfini ou jusqu'à un score fixé à l’avance (ex: 5 points)."
+        ],
+        "extensions": [
+            {
+                "name": "Kem's en ligne",
+                "description": "Version numérique pour jouer avec des amis à distance."
+            },
+            {
+                "name": "Variantes de signaux",
+                "description": "Règles optionnelles avec différents types de signes ou codes secrets."
+            }
+        ],
+        "derivative": [
+            {
+                "name": "Kem's simplifié",
+                "description": "Variante avec moins de cartes et des parties plus rapides."
+            },
+            {
+                "name": "Kem's junior",
+                "description": "Adapté pour les enfants avec des règles simplifiées et moins de cartes."
+            }
+        ]
+    }
+
+  ]
+}

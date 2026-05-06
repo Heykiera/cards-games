@@ -1,0 +1,106 @@
+{
+  "id": "yams-001",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Dice_yahtzee.png",
+  "name": "Yams (Yahtzee)",
+  "description": "Le Yams (Yahtzee) est un jeu de dés joué avec cinq dés à six faces. Le but est de réaliser des combinaisons spécifiques (brelan, carré, full, grande suite, etc.) et de marquer le plus de points sur une feuille de score.",
+  "players": [2, 6],
+  "materials": [
+    {
+      "name": "5 dés",
+      "effect": "Dés à six faces utilisés pour former des combinaisons.",
+      "image": "https://example.com/images/des-yams.png",
+      "count": 5
+    },
+    {
+      "name": "Feuille de score",
+      "effect": "Permet de noter les points obtenus pour chaque combinaison.",
+      "image": "https://example.com/images/feuille-score.png",
+      "count": "1 par joueur"
+    },
+    {
+      "name": "Crayons",
+      "effect": "Utilisés pour remplir la feuille de score.",
+      "image": "https://example.com/images/crayons.png",
+      "count": "1 par joueur"
+    }
+  ],
+  "dices": [
+    {
+      "name": "Brelan",
+      "effect": "Trois dés identiques, score = somme des dés.",
+      "count": "variable"
+    },
+    {
+      "name": "Carré",
+      "effect": "Quatre dés identiques, score = somme des dés.",
+      "count": "variable"
+    },
+    {
+      "name": "Full",
+      "effect": "Trois dés identiques + une paire, valeur fixe = 25 points.",
+      "count": 1
+    },
+    {
+      "name": "Petite suite",
+      "effect": "Suite de 4 dés consécutifs (ex: 1-2-3-4), valeur fixe = 30 points.",
+      "count": 1
+    },
+    {
+      "name": "Grande suite",
+      "effect": "Suite de 5 dés consécutifs (ex: 2-3-4-5-6), valeur fixe = 40 points.",
+      "count": 1
+    },
+    {
+      "name": "Yams (Yahtzee)",
+      "effect": "Cinq dés identiques, valeur fixe = 50 points.",
+      "count": 1
+    },
+    {
+      "name": "Chance",
+      "effect": "Somme de tous les dés, quelle que soit la combinaison.",
+      "count": "variable"
+    }
+  ],
+  "place": [
+    {
+      "name": "Table",
+      "effect": "Support pour lancer les dés et poser la feuille de score.",
+      "image": "https://example.com/images/table.png"
+    },
+    {
+      "name": "Espace libre",
+      "effect": "Zone pour lancer et relancer les dés.",
+      "image": "https://example.com/images/espace-libre.png"
+    }
+  ],
+  "rules": [
+    "Chaque joueur dispose de 13 tours.",
+    "À chaque tour, un joueur lance les 5 dés et peut relancer une partie des dés deux fois au maximum (3 lancers au total).",
+    "Après les lancers, il doit inscrire le résultat obtenu dans une case libre de la feuille de score.",
+    "Chaque combinaison ne peut être utilisée qu’une seule fois.",
+    "Certaines combinaisons ont une valeur fixe (Full = 25, Petite suite = 30, Grande suite = 40, Yams = 50).",
+    "Les autres se calculent avec la somme des dés correspondants.",
+    "Un bonus de 35 points est accordé si le joueur atteint au moins 63 points dans la partie haute (total des 1 à 6).",
+    "Le joueur ayant le plus de points après 13 tours gagne la partie."
+  ],
+  "extensions": [
+    {
+      "name": "Yahtzee Deluxe",
+      "description": "Version avec gobelets à dés et jetons de score."
+    },
+    {
+      "name": "Yahtzee électronique",
+      "description": "Version numérique avec calcul automatique des scores."
+    }
+  ],
+  "derivative": [
+    {
+      "name": "Yams simplifié",
+      "description": "Variante plus courte avec moins de tours ou moins de combinaisons."
+    },
+    {
+      "name": "Yams multijoueur en ligne",
+      "description": "Version numérique jouable à distance avec classement."
+    }
+  ]
+}

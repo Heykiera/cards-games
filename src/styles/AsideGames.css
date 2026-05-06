@@ -1,0 +1,111 @@
+.App-aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr 40px;
+    grid-template-areas: 
+        'header'
+        'games'
+        'toggle';
+    height: calc(100vh - 35px);
+    width: 250px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    border-radius: 15px;
+    background-color: #14161a;
+    overflow-y: scroll;   
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    justify-content: center;
+    padding: 0.5rem 0.45rem;
+} 
+.Aside-header {
+    grid-area: header;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    -ms-overflow-style: none;
+    border-bottom: 1px #aaaaaa solid;
+}
+
+.Aside-game {
+    grid-area: games;
+    overflow-y: auto;     
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Aside-btn {
+    all: unset;
+    cursor: pointer;
+    grid-area: toggle;
+}
+
+.Aside-game button:hover {
+    background-color: #720117;
+}
+
+.Aside-game button:focus {
+    background-color: #b30303;
+}
+
+.list-game, 
+.Aside-header button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.Aside-header button img,
+.list-game button img{
+    width: 40px;
+    height: 40px;
+}
+
+.list-game button,
+.Aside-header button {
+    justify-content: center;
+    margin: 5px;
+}
+
+.Aside-game button,
+.Aside-header button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem 0.45rem;
+    border-radius: 5px;
+    background-color: none;
+    width: calc(100% - 1.2rem);
+}
+
+.App.sidebar-closed .Aside-game button,
+.App.sidebar-closed .Aside-header button {
+    justify-content: center;    
+} 
+
+.toggle-btn {
+    all: unset;
+    cursor: pointer;
+    bottom: 20px;
+    left: 20px;
+    background-color: #262930;
+    color: #ffffff;
+    padding: 0.5rem 0.5rem;
+    border-radius: 15px;
+    transition: width 0.3s ease;
+    width: calc(100% - 1.2rem);
+    text-align: center;
+    font-size: 1.2rem;
+}

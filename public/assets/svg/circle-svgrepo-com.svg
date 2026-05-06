@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#ffffff"
+   width="800px"
+   height="800px"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="circle-svgrepo-com.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.00875"
+     inkscape:cx="400"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">circle</title>
+  <path
+     d="m 0,15.312416 c 0,1.747271 0.42666667,3.408892 1.28,4.984863 0.8533333,1.57597 1.984,2.946379 3.392,4.111227 1.408,1.164847 3.1146667,2.081308 5.12,2.749382 C 11.797333,27.825963 13.866667,28.16 16,28.16 c 2.133333,0 4.202667,-0.334037 6.208,-1.002112 2.005333,-0.668074 3.712,-1.584535 5.12,-2.749382 1.408,-1.164848 2.538667,-2.535257 3.392,-4.111227 C 31.573333,18.721308 32,17.059687 32,15.312416 32,13.565145 31.573333,11.903524 30.72,10.327554 29.866667,8.751584 28.736,7.381175 27.328,6.216327 25.92,5.0514795 24.224,4.1435837 22.24,3.4926394 20.256,2.8416951 18.176,2.4990929 16,2.4648327 c -2.176,0 -4.245333,0.3426022 -6.208,1.0278067 C 7.8293333,4.1778439 6.1226667,5.0857397 4.672,6.216327 3.2213333,7.346914 2.0906667,8.717323 1.28,10.327554 0.46933333,11.937785 0.04266667,13.599405 0,15.312416 Z m 2.8,0 C 2.8,13.565145 3.3333333,11.954914 4.4,10.481725 5.4666667,9.008536 6.928,7.843688 8.784,6.987182 10.64,6.1306765 13.845333,5.6938587 16,5.6767286 c 2.154667,-0.01713 5.92,0.4196878 7.776,1.3104534 1.856,0.890766 3.317333,2.055614 4.384,3.494543 1.066667,1.438929 1.6,3.04916 1.6,4.830691 0,1.781532 -0.533333,3.400328 -1.6,4.856387 -1.066667,1.456059 -2.528,2.620907 -4.384,3.494543 C 21.92,24.536981 18.154667,24.965234 16,24.948104 13.845333,24.930974 10.64,24.502721 8.784,23.663346 6.928,22.823971 5.4666667,21.659123 4.4,20.168803 3.3333333,18.678483 2.8,17.059687 2.8,15.312416 Z"
+     id="path1"
+     style="stroke-width:0.896088"
+     sodipodi:nodetypes="cssssssssssscssscsssssssssssss" />
+</svg>

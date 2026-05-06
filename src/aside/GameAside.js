@@ -1,19 +1,40 @@
+import { Link } from "react-router-dom";
+import '../styles/AsideGames.css';
 
-import '../styles/Aside.css';
-
-const GameAside = ({ games, onSelect}) => {
+const GameAside = ({ games, onSelect, setOpen, isOpen}) => {
     
     return(
-        <div>
-        {games.map((game) => (
-            <ol className="Aside-game">
-                <button key={game.id} onClick={() => onSelect(game.id)}>
-                    <img src={game.logo} alt={game.name} height={30}/>
-                    <span>{game.name}</span>                    
+        <>
+            <header className="Aside-header">
+                <Link to={`/`} key={''} className="Aside-reset">
+                    <button className="Aside-btn">
+                        <img src="/assets/png/game-die-svgrepo-com.png" alt="games rule's" />
+                        <span>Liste de jeux</span>                                              
+                    </button>
+                </Link>
+                <Link to={`/settings`} key={''} className="Aside-reset">
+                    <button className="Aside-btn">
+                        <img src="/assets/settings.svg" alt="settings" />
+                        <span>Paramètres</span>
+                    </button>
+                </Link>
+            </header>
+            <section className='Aside-game'>
+                {games.map((game) => (
+                    <Link to={`/${encodeURIComponent(game.name)}`} key={game.id} className="list-game">
+                        <button>
+                            <img src={game.logo} alt={game.name} />
+                            <span>{game.name}</span>                                              
+                        </button>
+                    </Link>  
+                ))}
+            </section>
+            <div className='Aside-btn'>
+                <button className="toggle-btn" onClick={() => setOpen(!isOpen)}>
+                {isOpen ? "←" : "→"}
                 </button>
-            </ol>
-        ))}
-        </div>
+            </div>
+        </>
     )
 }
 

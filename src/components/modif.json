@@ -1,0 +1,737 @@
+{
+    "1000-Bornes": {
+        "name": "1000 Bornes", "type": "cartes", "difficulty": "facile", "duration": 45, "age": "7+",
+        "players": {"min": 2, "max": 6},
+        "description": "Un jeu de cartes compétitif où le but est d’atteindre 1000 points en posant des bornes, des attaques et des parades.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de cartes 1000 Bornes", "image": "/svg/materials/cards-full.svg"},
+            {"text": "Feuille de score ou papier", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez 6 cartes à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez la pioche au centre et préparez la défausse.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur joue une carte par tour pour avancer, attaquer ou parer.",
+            "Une borne ne peut être posée que si elle n’enfreint pas la route en cours.",
+            "Le premier joueur ou la première équipe à atteindre 1000 points gagne."
+        ],
+        "steps": [
+            "Piocher une carte en début de tour.",
+            "Jouer une carte pour poser une borne, attaquer ou parer.",
+            "Défausser une carte et laisser le tour au joueur suivant."
+        ],
+        "extensions": ["Variante 2000 Bornes", "Jeu en équipes"],
+        "derivative": ["Bataille Corse", "Belote"]
+    },
+    "11-21": {
+        "name": "11-21", "type": "cartes", "difficulty": "moyen", "duration": 30, "age": "10+",
+        "players": {"min": 2, "max": 8},
+        "description": "Un jeu de cartes inspiré du blackjack où chaque joueur tente de se rapprocher de 21 sans dépasser.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Jeu de 52 cartes", "image": "/svg/materials/cards-full.svg"},
+            {"text": "Jetons ou pièces pour parier", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez 2 cartes à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez le reste de la pioche face cachée.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur peut tirer des cartes pour se rapprocher de 21.",
+            "Si un joueur dépasse 21, il est éliminé de la manche.",
+            "Le joueur le plus proche de 21 gagne la manche."
+        ],
+        "steps": [
+            "Commencez avec deux cartes.",
+            "Tirez ou restez selon votre total.",
+            "Comparez les scores à la fin de la manche."
+        ],
+        "extensions": ["Variante double 22", "Miser avant la distribution"],
+        "derivative": ["Blackjack", "Baccarat"]
+    },
+    "421": {
+        "name": "421", "type": "dés", "difficulty": "facile", "duration": 20, "age": "8+",
+        "players": {"min": 2, "max": 6},
+        "description": "Un jeu de dés rapide où les joueurs tentent de réaliser la meilleure combinaison sur trois lancers.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-duo.svg"},
+        "materials": [
+            {"text": "Trois dés", "image": "/svg/materials/big-dice.svg"},
+            {"text": "Feuille de score", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Placez les dés et la feuille de score à portée.", "image": "/svg/setups/piste-dices.svg"},
+            {"text": "Choisissez l’ordre de jeu.", "image": "/svg/setups/piste-dices.svg"}
+        ],
+        "rules": [
+            "Chaque joueur lance jusqu’à trois fois les dés.",
+            "On garde les dés souhaités entre les lancers.",
+            "La meilleure combinaison remporte la manche."
+        ],
+        "steps": [
+            "Lancer les trois dés.",
+            "Choisir quels dés relancer.",
+            "Comparer la combinaison avec les autres joueurs."
+        ],
+        "extensions": ["Défi du 421 inversé", "Règle du maître"],
+        "derivative": ["Yams", "Poker de dés"]
+    },
+    "6-qui-prend": {
+        "name": "6 Qui Prend", "type": "cartes", "difficulty": "moyen", "duration": 30, "age": "8+",
+        "players": {"min": 2, "max": 10},
+        "description": "Un jeu de cartes tactique où il faut éviter de récupérer des têtes de bœuf en posant des cartes en ligne.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 104 cartes numérotées", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez 10 cartes à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez 4 cartes au centre pour former le début des lignes.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur choisit une carte à jouer en même temps.",
+            "La carte la plus faible se place à la fin de la ligne la plus adaptée.",
+            "Le 6ᵉ carte d’une ligne oblige le joueur à ramasser la ligne entière."
+        ],
+        "steps": [
+            "Sélectionnez une carte puis révélez-la.",
+            "Ajoutez la carte à la ligne correspondante.",
+            "Ramassez la ligne si elle atteint 6 cartes."
+        ],
+        "extensions": ["Variante 5 Qui Prend", "Partie par équipes"],
+        "derivative": ["Bataille Corse", "Le Pouilleux"]
+    },
+    "8-americain": {
+        "name": "8 Américain", "type": "billard", "difficulty": "moyen", "duration": 30, "age": "10+",
+        "players": {"min": 2, "max": 8},
+        "description": "Un jeu de billard où chaque joueur tente d’empocher toutes ses billes puis le 8 en dernier.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Queue de billard et billes", "image": "/svg/materials/billiard-ball.svg"}
+        ],
+        "setup": [
+            {"text": "Nettoyez la table et alignez les billes.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Choisissez l’ordre de jeu.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Un joueur choisit les billes pleines ou rayées après avoir empoché une bille.",
+            "Le 8 doit être empoché en dernier pour gagner.",
+            "Fautes et sorties sont sanctionnées selon les règles du billard américain."
+        ],
+        "steps": [
+            "Briser la formation initiale.",
+            "Jouer ses billes pour libérer le 8.",
+            "Empocher le 8 en dernier pour gagner la partie."
+        ],
+        "extensions": ["Variante sans bande", "Match en équipe"],
+        "derivative": ["Billard", "Snooker"]
+    },
+    "baby-foot": {
+        "name": "Baby-foot", "type": "sport", "difficulty": "moyen", "duration": 20, "age": "8+",
+        "players": {"min": 2, "max": 4},
+        "description": "Un jeu d’adresse où deux équipes s’affrontent sur une table miniature de football.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Table de baby-foot et ballon", "image": "/svg/materials/billiard-ball.svg"}
+        ],
+        "setup": [
+            {"text": "Installez la table et vérifiez les poignées.", "image": "/svg/setups/table-football.svg"},
+            {"text": "Placez le ballon au centre de la surface de jeu.", "image": "/svg/setups/table-football.svg"}
+        ],
+        "rules": [
+            "Chaque équipe contrôle les barres pour marquer dans le camp adverse.",
+            "Un point est marqué à chaque but valide.",
+            "Le premier à atteindre le score cible gagne la partie."
+        ],
+        "steps": [
+            "Servir le ballon.",
+            "Défendre et attaquer avec les barres.",
+            "Recommencer après chaque but."
+        ],
+        "extensions": ["Tournoi à élimination", "Match en double"],
+        "derivative": ["Table tennis", "Billard"]
+    },
+    "bataille-corse": {
+        "name": "Bataille Corse", "type": "cartes", "difficulty": "facile", "duration": 20, "age": "8+",
+        "players": {"min": 2, "max": 4},
+        "description": "Un jeu de cartes rapide où des combinaisons déclenchent des batailles pour récupérer le tas.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 52 cartes", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez toutes les cartes entre les joueurs.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Gardez les cartes face cachée en paquet.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur pose une carte en même temps.",
+            "Les combinaisons spécifiques déclenchent une bataille.",
+            "Le gagnant récupère toutes les cartes du tas."
+        ],
+        "steps": [
+            "Poser une carte simultanément.",
+            "Regarder les combinaisons sur le tas.",
+            "Ramasser le tas si vous gagnez la bataille."
+        ],
+        "extensions": ["Variante à deux jeux de cartes", "Bataille rapide"],
+        "derivative": ["6 Qui Prend", "Le Pouilleux"]
+    },
+    "belote": {
+        "name": "Belote", "type": "cartes", "difficulty": "moyen", "duration": 45, "age": "10+",
+        "players": {"min": 4, "max": 4},
+        "description": "Un jeu de plis à quatre joueurs avec annonces, atout et stratégie d’équipe.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 32 cartes", "image": "/svg/materials/cards-two.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez 8 cartes à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez la carte d’atout découverte sur la table.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Annoncez l’atout et jouez les plis en respectant la couleur.",
+            "Suivez la couleur si possible, sinon vous pouvez couper.",
+            "Les points sont comptés par équipe en fin de manche."
+        ],
+        "steps": [
+            "Choisir l’atout et la faire annoncer.",
+            "Jouer les cartes en respectant les couleurs.",
+            "Compter les points à la fin de la manche."
+        ],
+        "extensions": ["Belote contrée", "Belote coinchée"],
+        "derivative": ["Tarot", "Président"]
+    },
+    "billard": {
+        "name": "Billard", "type": "sport", "difficulty": "moyen", "duration": 30, "age": "8+",
+        "players": {"min": 2, "max": 4},
+        "description": "Un jeu de précision où chaque joueur frappe des billes pour atteindre des cibles et marquer des points.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Table de billard et queues", "image": "/svg/materials/billiard-ball.svg"},
+            {"text": "Billes de billard", "image": "/svg/materials/billiard-ball.svg"}
+        ],
+        "setup": [
+            {"text": "Ranger les billes en formation de départ.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Positionner la bille blanche pour le break.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Frapper les billes avec la queue pour les empocher.",
+            "Éviter les fautes comme toucher la blanche deux fois.",
+            "Le plus grand nombre de points remporte la partie."
+        ],
+        "steps": [
+            "Réaliser le break initial.",
+            "Enchaîner les coups pour empocher les billes.",
+            "Compter les points à la fin de la partie."
+        ],
+        "extensions": ["Billard anglais", "Billard américain"],
+        "derivative": ["8 Américain", "Snooker"]
+    },
+    "bowling": {
+        "name": "Bowling", "type": "sport", "difficulty": "moyen", "duration": 30, "age": "8+",
+        "players": {"min": 1, "max": 6},
+        "description": "Un jeu de quilles où l’on lance une boule pour faire tomber un maximum de quilles en un ou deux lancers.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-duo.svg"},
+        "materials": [
+            {"text": "Boule et quilles de bowling", "image": "/svg/materials/bowling-ball.svg"}
+        ],
+        "setup": [
+            {"text": "Placez les quilles en formation au bout de la piste.", "image": "/svg/setups/bowling-lane.svg"},
+            {"text": "Choisissez l’ordre des lanceurs.", "image": "/svg/setups/bowling-lane.svg"}
+        ],
+        "rules": [
+            "Chaque joueur lance deux boules par frame.",
+            "Un strike correspond à toutes les quilles tombées au premier lancer.",
+            "La partie se joue en 10 frames."
+        ],
+        "steps": [
+            "Lancer la boule vers les quilles.",
+            "Compter les quilles tombées.",
+            "Recommencer avec le joueur suivant."
+        ],
+        "extensions": ["Bowling en relais", "Score à handicap"],
+        "derivative": ["Pétanque", "Quilles"]
+    },
+    "citadelles": {
+        "name": "Citadelles", "type": "cartes", "difficulty": "moyen", "duration": 45, "age": "10+",
+        "players": {"min": 2, "max": 8},
+        "description": "Un jeu de construction de cité où les joueurs choisissent des rôles secrets pour bâtir des quartiers et gagner des pièces.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Cartes de personnages et quartiers", "image": "/svg/materials/cards-full.svg"},
+            {"text": "Pièces ou jetons de monnaie", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez les cartes quartiers et les personnages.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez les ressources à portée de main.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur choisit un rôle secret en début de tour.",
+            "Les rôles déterminent l’ordre de jeu et les actions possibles.",
+            "Construire des quartiers rapporte des points de victoire."
+        ],
+        "steps": [
+            "Choisir un rôle.",
+            "Révéler les rôles et jouer dans l’ordre.",
+            "Construire des quartiers ou récupérer des ressources."
+        ],
+        "extensions": ["Rôles supplémentaires", "Mode avancé"],
+        "derivative": ["Citadelles de l’Âge Moderne", "7 Wonders"]
+    },
+    "dames": {
+        "name": "Dames", "type": "plateau", "difficulty": "moyen", "duration": 30, "age": "8+",
+        "players": {"min": 2, "max": 2},
+        "description": "Un jeu de stratégie abstrait opposant deux joueurs sur un damier pour capturer les pièces adverses.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Plateau et pions de dames", "image": "/svg/materials/card-one.svg"}
+        ],
+        "setup": [
+            {"text": "Placez les pions sur les cases de départ.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Déterminez qui commence.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Se déplacer en diagonale sur les cases autorisées.",
+            "Capturer les pions adverses en les sautant.",
+            "Promouvoir un pion en dame en atteignant la rangée opposée."
+        ],
+        "steps": [
+            "Jouer un pion ou une dame en diagonale.",
+            "Capturer les pièces adverses si possible.",
+            "Continuer jusqu’à ce qu’un joueur n’ait plus de pièces."
+        ],
+        "extensions": ["Dames internationales", "Dames anglaises"],
+        "derivative": ["Échecs", "Morpion"]
+    },
+    "dominos": {
+        "name": "Dominos", "type": "tuiles", "difficulty": "facile", "duration": 20, "age": "6+",
+        "players": {"min": 2, "max": 4},
+        "description": "Un jeu de placement de tuiles où il faut assembler des dominos identiques pour vider sa main.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de dominos", "image": "/svg/materials/Triominoes.svg"}
+        ],
+        "setup": [
+            {"text": "Mélangez les dominos et distribuez-les aux joueurs.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez la pioche au centre.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Posez une tuile en alignant les chiffres identiques.",
+            "Si vous ne pouvez pas jouer, piochez une tuile.",
+            "Le premier joueur sans domino gagne la manche."
+        ],
+        "steps": [
+            "Choisir une tuile compatible.",
+            "Poser la tuile en bordure.",
+            "Piocher si nécessaire."
+        ],
+        "extensions": ["Jeu de dominos mexicain", "Dominos double-six"],
+        "derivative": ["Mahjong", "Morpion"]
+    },
+    "echecs": {
+        "name": "Échecs", "type": "plateau", "difficulty": "difficile", "duration": 30, "age": "8+",
+        "players": {"min": 2, "max": 2},
+        "description": "Un jeu de stratégie abstrait opposant deux joueurs sur un échiquier pour mater le roi adverse.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Plateau d’échecs et pièces", "image": "/svg/materials/card-one.svg"}
+        ],
+        "setup": [
+            {"text": "Placez les pièces dans leurs positions de départ.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Blanc commence la partie.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque pièce se déplace selon un schéma spécifique.",
+            "Le but est de mettre le roi adverse en échec et mat.",
+            "Respecter les règles spéciales comme le roque et la promotion."
+        ],
+        "steps": [
+            "Jouer un coup à tour de rôle.",
+            "Analyser la position et protéger son roi.",
+            "Chercher des combinaisons pour mater l’adversaire."
+        ],
+        "extensions": ["Fischer Random", "Échecs rapides"],
+        "derivative": ["Dames", "Shogi"]
+    },
+    "kems": {
+        "name": "Kems", "type": "cartes", "difficulty": "moyen", "duration": 20, "age": "8+",
+        "players": {"min": 4, "max": 4},
+        "description": "Un jeu de cartes en équipes où il faut former un carré de quatre cartes identiques et communiquer discrètement.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 52 cartes", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez 4 cartes à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez la pioche au centre.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Formez un carré de quatre cartes identiques.",
+            "Communiquez discrètement avec votre partenaire.",
+            "Annoncez Kems lorsque votre équipe a le carré."
+        ],
+        "steps": [
+            "Échanger des cartes avec la pioche.",
+            "Observer les signaux du partenaire.",
+            "Annoncer ou contrer un Kems."
+        ],
+        "extensions": ["Variante Super Kems", "Règles silencieuses"],
+        "derivative": ["Poker", "Belote"]
+    },
+    "le-pouilleux": {
+        "name": "Le Pouilleux", "type": "cartes", "difficulty": "facile", "duration": 20, "age": "7+",
+        "players": {"min": 2, "max": 6},
+        "description": "Un jeu de défausse où le dernier joueur à garder la carte du pouilleux perd.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 32 cartes ou cartes adaptées", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez toutes les cartes entre les joueurs.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Retirez ou conservez la carte spéciale selon la variante.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Défaussez les cartes par paires du même rang.",
+            "Si vous terminez avec le pouilleux, vous perdez.",
+            "La partie se termine lorsqu’il ne reste qu’une carte en main."
+        ],
+        "steps": [
+            "Chercher et poser des paires.",
+            "Défausser les paires au centre.",
+            "Éviter de garder la carte du pouilleux."
+        ],
+        "extensions": ["Variante pouilleux bleu", "Manche chronométrée"],
+        "derivative": ["Bataille Corse", "6 Qui Prend"]
+    },
+    "loup-garou": {
+        "name": "Loup-Garou", "type": "société", "difficulty": "moyen", "duration": 60, "age": "10+",
+        "players": {"min": 8, "max": 20},
+        "description": "Un jeu d’ambiance et de déduction où les villageois tentent d’identifier les loups-garous cachés.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Cartes de rôle ou rôles écrits", "image": "/svg/materials/cards-werewolf.svg"},
+            {"text": "Carnet et stylo pour noter", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez un rôle secret à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Désignez un maître du jeu.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Le maître du jeu guide les phases de nuit et de jour.",
+            "Les loups-garous éliminent un villageois chaque nuit.",
+            "Les villageois votent pour éliminer un suspect chaque jour."
+        ],
+        "steps": [
+            "Nuit : les loups-garous choisissent une victime.",
+            "Jour : discussion et vote.",
+            "Répéter jusqu’à ce qu’un camp gagne."
+        ],
+        "extensions": ["Rôles spéciaux", "Maitre du jeu interactif"],
+        "derivative": ["Mafia", "Spyfall"]
+    },
+    "menteur": {
+        "name": "Menteur", "type": "cartes", "difficulty": "facile", "duration": 15, "age": "8+",
+        "players": {"min": 2, "max": 6},
+        "description": "Un jeu de bluff où l’on tente de se débarrasser de ses cartes en annonçant des valeurs parfois fausses.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Jeu de 52 cartes", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez toutes les cartes aux joueurs.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Déterminez l’ordre de jeu.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur pose des cartes face cachée en annonçant leur valeur.",
+            "Les adversaires peuvent contester le mensonge.",
+            "Le menteur ramasse les cartes si l’on prouve le mensonge."
+        ],
+        "steps": [
+            "Annoncer les cartes posées.",
+            "Décider si l’on croit ou conteste.",
+            "Ramasser les cartes en cas de mensonge prouvé."
+        ],
+        "extensions": ["Variante couleur", "Manche à thème"],
+        "derivative": ["Poker", "Kems"]
+    },
+    "morpion": {
+        "name": "Morpion", "type": "papier", "difficulty": "facile", "duration": 5, "age": "5+",
+        "players": {"min": 2, "max": 2},
+        "description": "Un jeu simple où deux joueurs tentent d’aligner trois symboles sur une grille 3x3.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Feuille de papier et crayons", "image": "/svg/materials/pen-paper.svg"}
+        ],
+        "setup": [
+            {"text": "Dessinez une grille 3x3 sur le papier.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Choisissez les symboles X ou O.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur place un symbole dans une case vide.",
+            "Le but est d’aligner trois symboles horizontalement, verticalement ou diagonalement.",
+            "Si la grille est pleine sans alignement, la partie est nulle."
+        ],
+        "steps": [
+            "Choisir une case vide.",
+            "Tracer son symbole.",
+            "Vérifier la présence d’un alignement."
+        ],
+        "extensions": ["Morpion 4x4", "Variante à thème"],
+        "derivative": ["Puissance 4", "Dames"]
+    },
+    "poker": {
+        "name": "Poker", "type": "cartes", "difficulty": "moyen", "duration": 60, "age": "10+",
+        "players": {"min": 2, "max": 10},
+        "description": "Un jeu de mises et de combinaisons de cartes où le bluff et la stratégie déterminent le vainqueur.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Jeu de 52 cartes", "image": "/svg/materials/card-one.svg"},
+            {"text": "Jetons de poker", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez les cartes et préparez les jetons.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Déterminez le donneur et les blinds.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Misez selon la force de votre main et votre bluff.",
+            "Les combinaisons classent les mains gagnantes.",
+            "Le joueur avec la meilleure main ou le meilleur bluff remporte le pot."
+        ],
+        "steps": [
+            "Faire une mise initiale.",
+            "Suivre, relancer ou se coucher.",
+            "Comparer les mains à l’abattage."
+        ],
+        "extensions": ["Texas Hold’em", "Omaha"],
+        "derivative": ["Blackjack", "Kems"]
+    },
+    "president": {
+        "name": "Président", "type": "cartes", "difficulty": "moyen", "duration": 30, "age": "8+",
+        "players": {"min": 4, "max": 6},
+        "description": "Un jeu de cartes hiérarchique où le but est de se débarrasser de sa main le plus vite possible.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 52 cartes", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez toutes les cartes entre les joueurs.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Déterminez l’ordre de jeu.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Jouez une combinaison plus forte que la précédente pour vous débarrasser.",
+            "Si vous ne pouvez pas jouer, passez votre tour.",
+            "Le premier joueur sans carte devient Président."
+        ],
+        "steps": [
+            "Poser une combinaison valide.",
+            "Suivre ou passer.",
+            "Réévaluer le classement à la fin de la manche."
+        ],
+        "extensions": ["Règles du Président avec cartes bonus", "Classement évolutif"],
+        "derivative": ["Poker", "Menteur"]
+    },
+    "pyramide": {
+        "name": "Pyramide", "type": "cartes", "difficulty": "facile", "duration": 20, "age": "8+",
+        "players": {"min": 2, "max": 6},
+        "description": "Un jeu de cartes où l’on découvre une pyramide et tente d’éliminer des cartes adverses.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 52 cartes", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Placez les cartes en pyramide et distribuez la main des joueurs.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez la pioche au centre.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Chaque joueur découvre une carte à son tour.",
+            "Certaines cartes éliminent des joueurs ou donnent des avantages.",
+            "Le dernier joueur avec des cartes gagne."
+        ],
+        "steps": [
+            "Retourner une carte de la pyramide.",
+            "Appliquer l’effet associé.",
+            "Continuer jusqu’à épuisement des cartes."
+        ],
+        "extensions": ["Pyramide dorée", "Variante cartes spéciales"],
+        "derivative": ["Poker", "Président"]
+    },
+    "scrabble": {
+        "name": "Scrabble", "type": "plateau", "difficulty": "moyen", "duration": 60, "age": "10+",
+        "players": {"min": 2, "max": 4},
+        "description": "Un jeu de lettres où les joueurs construisent des mots sur une grille pour marquer le plus de points.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Plateau de Scrabble", "image": "/svg/materials/scrabble-letter.svg"},
+            {"text": "Jetons de lettres et chevalets", "image": "/svg/materials/scrabble-letter.svg"}
+        ],
+        "setup": [
+            {"text": "Installez le plateau et mélangez les jetons.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Distribuez 7 lettres à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Formez des mots en utilisant les lettres de votre chevalet.",
+            "Les cases bonus multiplient la valeur des lettres ou des mots.",
+            "Le joueur avec le plus de points gagne."
+        ],
+        "steps": [
+            "Former un mot sur le plateau.",
+            "Calculer le score du mot.",
+            "Recharger sa main jusqu’à 7 lettres."
+        ],
+        "extensions": ["Scrabble duplicate", "Tournoi allégé"],
+        "derivative": ["Mots croisés", "Boggle"]
+    },
+    "skyjo": {
+        "name": "Skyjo", "type": "cartes", "difficulty": "facile", "duration": 30, "age": "8+",
+        "players": {"min": 2, "max": 8},
+        "description": "Un jeu de cartes et de mémoire où le but est de minimiser son score sur plusieurs manches.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de cartes Skyjo", "image": "/svg/materials/cards-skyjo.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez 12 cartes face cachée à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez la pioche et la défausse au centre.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Remplacez une carte pour diminuer votre score.",
+            "Révélez des cartes étape par étape.",
+            "Le joueur avec le plus faible score gagne après plusieurs manches."
+        ],
+        "steps": [
+            "Piocher ou prendre la défausse.",
+            "Échanger une carte avec une carte de votre tableau.",
+            "Révéler et compter les points."
+        ],
+        "extensions": ["Variante rapide", "Option à thème"],
+        "derivative": ["Uno", "6 Qui Prend"]
+    },
+    "tarot": {
+        "name": "Tarot", "type": "cartes", "difficulty": "difficile", "duration": 45, "age": "10+",
+        "players": {"min": 4, "max": 4},
+        "description": "Un jeu de cartes à plis français avec un atout spécial, des annonces et un calcul de points précis.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de 78 cartes de tarot", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez les cartes selon la variante jouée.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Formez le chien au centre.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Un joueur prend le rôle de preneur et réalise le contrat.",
+            "Le preneur choisit un atout et joue contre les défenseurs.",
+            "Les points se comptent selon les bouts et les honneurs."
+        ],
+        "steps": [
+            "Choisir le preneur et l’atout.",
+            "Jouer les plis en suivant les couleurs.",
+            "Compter les points à la fin de la partie."
+        ],
+        "extensions": ["Tarot à 5 joueurs", "Tarot à 3 joueurs"],
+        "derivative": ["Belote", "Bridge"]
+    },
+    "tennis-de-table": {
+        "name": "Tennis de table", "type": "sport", "difficulty": "moyen", "duration": 30, "age": "8+",
+        "players": {"min": 2, "max": 4},
+        "description": "Un sport de raquette en intérieur où deux ou quatre joueurs s’affrontent en renvoyant une petite balle par dessus un filet.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-vs.svg"},
+        "materials": [
+            {"text": "Table de tennis de table, raquettes et balle", "image": "/svg/materials/table-tennis.svg"}
+        ],
+        "setup": [
+            {"text": "Montez le filet sur la table.", "image": "/svg/setups/table-tennis.svg"},
+            {"text": "Placez les raquettes et la balle à portée.", "image": "/svg/setups/table-tennis.svg"}
+        ],
+        "rules": [
+            "Un point est marqué à chaque faute adverse.",
+            "La balle doit être renvoyée avant deux rebonds.",
+            "Le premier à 11 points gagne une manche."
+        ],
+        "steps": [
+            "Servir la balle.",
+            "Renvoyer les échanges.",
+            "Gagner 11 points pour remporter la manche."
+        ],
+        "extensions": ["Double mixte", "Match en rotation"],
+        "derivative": ["Baby-foot", "Squash"]
+    },
+    "times-up": {
+        "name": "Times Up", "type": "société", "difficulty": "moyen", "duration": 45, "age": "12+",
+        "players": {"min": 4, "max": 12},
+        "description": "Un jeu d’ambiance en trois phases où il faut faire deviner des personnages ou des titres en un temps limité.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Cartes de personnages ou titres", "image": "/svg/materials/cards-full.svg"},
+            {"text": "Chronomètre ou sablier", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Préparez le paquet de cartes et le sablier.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Distribuez les rôles si nécessaire.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Phase 1 : décrire librement sans nommer le personnage.",
+            "Phase 2 : un seul mot autorisé.",
+            "Phase 3 : mimer sans parler."
+        ],
+        "steps": [
+            "Faire deviner les cartes en temps limité.",
+            "Noter les bonnes réponses.",
+            "Changer de tour et accumuler les points."
+        ],
+        "extensions": ["Variante thématique", "Bataille de sabliers"],
+        "derivative": ["Time’s Up! Party", "Cranium"]
+    },
+    "uno": {
+        "name": "Uno", "type": "cartes", "difficulty": "facile", "duration": 30, "age": "7+",
+        "players": {"min": 2, "max": 10},
+        "description": "Un jeu de cartes coloré où le but est de se débarrasser de toutes ses cartes en respectant les couleurs ou les chiffres.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-group.svg"},
+        "materials": [
+            {"text": "Jeu de cartes Uno", "image": "/svg/materials/cards-full.svg"}
+        ],
+        "setup": [
+            {"text": "Distribuez 7 cartes à chaque joueur.", "image": "/svg/setups/table-scrabble.svg"},
+            {"text": "Placez la pioche et la défausse au centre.", "image": "/svg/setups/table-scrabble.svg"}
+        ],
+        "rules": [
+            "Jouez une carte de même couleur ou même chiffre.",
+            "Respectez les cartes spéciales (+2, +4, inversion, passe ton tour).",
+            "Le premier joueur à dire UNO et vider sa main gagne."
+        ],
+        "steps": [
+            "Poser une carte compatible.",
+            "Utiliser les cartes spéciales au bon moment.",
+            "Dire UNO avant de poser votre avant-dernière carte."
+        ],
+        "extensions": ["Uno Flip", "Uno H2O"],
+        "derivative": ["Mille Bornes", "Skyjo"]
+    },
+    "yams": {
+        "name": "Yams", "type": "dés", "difficulty": "moyen", "duration": 30, "age": "8+",
+        "players": {"min": 2, "max": 6},
+        "description": "Un jeu de dés où il faut réaliser des combinaisons précises sur une feuille de score avant les autres.",
+        "place": {"text": "intérieur", "image": "/svg/places/people-duo.svg"},
+        "materials": [
+            {"text": "Cinq dés", "image": "/svg/materials/big-dice.svg"},
+            {"text": "Feuille de score", "image": "/svg/materials/pen.svg"}
+        ],
+        "setup": [
+            {"text": "Préparez la feuille de score et les dés.", "image": "/svg/setups/piste-dices.svg"},
+            {"text": "Déterminez l’ordre de jeu.", "image": "/svg/setups/piste-dices.svg"}
+        ],
+        "rules": [
+            "Chaque joueur a trois lancers par tour.",
+            "Choisissez une combinaison à remplir à chaque tour.",
+            "Le joueur avec le score total le plus élevé gagne."
+        ],
+        "steps": [
+            "Lancer les dés.",
+            "Relancer certains dés jusqu’à trois fois.",
+            "Noter la meilleure combinaison."
+        ],
+        "extensions": ["Variante bonus", "Yams géant"],
+        "derivative": ["421", "Poker de dés"]
+    }
+}

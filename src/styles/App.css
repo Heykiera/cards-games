@@ -1,10 +1,14 @@
 /*--------------------------------------------------------------------------------
 # VAR
 ------------------------------------------------------------------------------- */
-* {
-    --border-round: 7px;
+*{
+    --text-main: #14161a;
+    --text-second: #e9e9e9;
+    --background-main: #e9e9e9;
+    --background-game: #570000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* Theme ---------- */
+
 html[data-theme*='light']{
     --text-main: #14161a;
     --text-second: #8f95a0;
@@ -17,20 +21,18 @@ html[data-theme*='dark']{
 }
 
 /*--------------------------------------------------------------------------------
-# APP
---------------------------------------------------------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/*--------------------------------------------------------------------------------
 # Grid;
 --------------------------------------------------------------------------------*/
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 .App, body {
     display: grid;
     position: relative;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 70px 2;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         'sidebar header'
@@ -39,12 +41,7 @@ html[data-theme*='dark']{
     background-color: #8f95a0;
     color: #14161a;
     min-height: 100vh;
-}
-/* petit écran */
-@media (max-width: 780px) {
-  .body {
-    grid-template-columns: 70px 1fr;
-  }
+    transition: grid-template-columns 0.3s ease;
 }
 
 aside {
@@ -52,32 +49,116 @@ aside {
     position: fixed;
     width:  250px;
     height: calc(100vh - 20px);
-    align-self: start; 
     grid-area: sidebar;
     margin: 10px;
     border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        'games';
     background-color: #14161a;
     color: #e9e9e9;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    overflow-y: scroll;   /* scrollable */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 100;
+}
+
+aside::-webkit-scrollbar {
+    display: none;
+}
+
+.no-game-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
 }
 
 header { 
     top: 10px;
     position: sticky;
     grid-area: header; 
-    width: 100vh;
+    width: 100%;
+    z-index: 10;
 }
 
 main { 
     grid-area: main; 
-    width: 100vh;
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px;
+    z-index: 10;
+}
+
+.game-setup {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 10px);
+}
+
+.game-setup div, .game-rule div, .game-step div{
+    flex: 1 1 auto;
+    margin: 5px;
+    padding: 10px;
+    color: var(--text-second);
+    background-color: #14161a;
+    border-radius: 10px;
+    justify-content: center;
+}
+.game-rule, .game-step {
+    width: calc(100% - 40px);
+    margin: 5px;
+    padding: 10px;
+    color: var(--text-second);
+    background-color: #14161a;
+    border-radius: 10px;
+    justify-content: center;
 }
 
 footer { 
     grid-area: footer;
-    width: 100vh;
+    width: calc(100% - 40px);
+    margin: 20px;
+    z-index: 10;
 }
+.App.sidebar-closed {
+    grid-template-columns: 70px 1fr;
+}
+.App.sidebar-closed aside {
+    width:  55px;
+}
+.App.sidebar-closed aside .Aside-game button span,
+.App.sidebar-closed aside .Aside-header button span {
+    display: none;
+}
+
+/* smartphones */
+@media (max-width: 480px) { 
+    .App {
+        grid-template-columns: 70px 1fr;
+        max-width: 480px;
+    }
+    Aside {
+        width: 300px;
+    }
+}   
+ /* tablettes */  
+@media (min-width: 481px) and (max-width: 768px) { 
+    .App {
+        grid-template-columns: 70px 2fr;
+        max-width: 768px;
+    }
+    Aside {
+        width: 300px;
+    }
+
+}
+/* laptops / écrans larges / TV */
+@media (min-width: 769px) {
+    .App {
+        grid-template-columns: 70px 2fr;
+    }
+}     
