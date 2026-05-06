@@ -40,7 +40,7 @@ html, body, #root, .App {
         'sidebar footer';
     background-color: #8f95a0;
     color: #14161a;
-    min-height: 170vh;
+    min-height: 100vh;
     transition: grid-template-columns 0.3s ease;
 }
 
@@ -130,7 +130,8 @@ footer {
 .App.sidebar-closed aside {
     width:  55px;
 }
-.App.sidebar-closed aside .Aside-game button span {
+.App.sidebar-closed aside .Aside-game button span,
+.App.sidebar-closed aside .Aside-header button span {
     display: none;
 }
 

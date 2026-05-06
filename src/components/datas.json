@@ -1,7 +1,7 @@
 {
   "id": "8-americain",
   "name": "8 Americain",
-  "icon": "/assets/images/icons/8-americain.svg",
+  "icon": "/svg/icons/8-americain.svg",
   "type": "cartes",
   "difficulty": "facile",
   "duration": 30,
