@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GameAside from './aside/GameAside';
 import RulesGame from './pages/RulesGame';
+import Settings from './pages/Settings'
 import './styles/App.css';
 import Games from './components/games.json';
 
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<p>Sélectionne un jeu</p>} />
             <Route path="/:name" element={<RulesGame games={Games} />} />
+            <Route path="/settings" element={<Settings/>}/>
           </Routes>
         </main>
         <footer className="App-footer">

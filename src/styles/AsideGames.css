@@ -20,12 +20,14 @@
 } 
 .Aside-header {
     grid-area: header;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
     -ms-overflow-style: none;
+    border-bottom: 1px #aaaaaa solid;
 }
 
 .Aside-game {

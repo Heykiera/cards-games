@@ -12,10 +12,12 @@ const GameAside = ({ games, onSelect, setOpen, isOpen}) => {
                         <span>Liste de jeux</span>                                              
                     </button>
                 </Link>
-                <button className="Aside-btn">
-                    <img src="/assets/settings.svg" alt="settings" />
-                    <span>Paramètres</span>
-                </button>
+                <Link to={`/settings`} key={''} className="Aside-reset">
+                    <button className="Aside-btn">
+                        <img src="/assets/settings.svg" alt="settings" />
+                        <span>Paramètres</span>
+                    </button>
+                </Link>
             </header>
             <section className='Aside-game'>
                 {games.map((game) => (
